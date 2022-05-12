@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Breadcrumbs",
+"subtitle": "Breadcrumbs support users and help them understand their current location in relation to the rest of the application."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Breadcrumbs ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Small</h3>
+                <div class="datta-example">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Large</h3>
+                <div class="datta-example">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb f-16">
+                            <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#!">Library</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Data</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <!-- [ Breadcrumbs ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 d-flex align-items-center mb-4">
+                        <h1 class="d-inline-block font-weight-normal mb-0">Projects</h1>
+                        <h6 class="d-inline-block mb-0 ml-4"><i class="feather icon-download"></i> Download list</h6>
+                    </div>
+                    <div class="col-sm-6 d-block d-sm-flex align-items-center justify-content-end mb-4 text-right">
+                        <button type="button" class="btn d-block ml-auto btn-primary"><i class="feather icon-plus mr-2"></i>Add</button>
+                        <div class="btn-group btn-group-toggle btn-group-link">
+                            <label class="btn active">
+                                <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                            <label class="btn ">
+                                <div class="dropdown mb-0 mr-2">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <span class="my-2">|</span>
+                        <div class="btn-group btn-group-toggle btn-group-link">
+                            <label class="btn active">
+                                <input type="radio" name="options" id="listopt11" checked=""> <i class="fas fa-th-large"></i></label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="listopt12"> <i class="fas fa-list"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="projtable" class="table table-center mb-0 ">
+                                        <thead>
+                                            <tr>
+                                                <th>Project name</th>
+                                                <th>Team</th>
+                                                <th>due date</th>
+                                                <th>Open Tasks</th>
+                                                <th>Priority</th>
+                                                <th class="text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Engineering</td>
+                                                <td>9/01/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Product Design</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Product Design</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-dark">ON track</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Marketing</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-light-dark">not started</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Marketing</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td class="text-danger">High</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Projects</a>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<!-- datatable Js -->
+<script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#projtable').DataTable();
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

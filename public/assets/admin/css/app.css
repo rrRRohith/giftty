@@ -1,0 +1,116 @@
+
+.form-error {
+	color:#eb0a33;
+}
+
+.image-existing {
+	max-width: 300px;
+	max-height: 250px;
+}
+
+
+#tabs-wrapper #tabs {
+	border:1px solid #CCC;
+}
+
+#tabs-wrapper ul#tabs-titles {
+	list-style: none;
+	padding:0px;
+	margin:0px;
+}
+
+#tabs-wrapper ul#tabs-titles li {
+	list-style: none;
+	padding:0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+#tabs-wrapper ul#tabs-titles li a {
+	display: block;
+	border:1px solid #DDD;
+	padding: 10px;
+	background: #EEE;
+	color: #000000;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: -1px;
+}
+
+#tabs-wrapper ul#tabs-titles li a.active {
+	background: White;
+	border-bottom-color: White;
+}
+
+#tabs-wrapper #tabs .tab-item {
+	display: none;
+	padding: 25px;
+}
+
+#tabs-wrapper #tabs .tab-item.active {
+	display: block;
+}
+/*#tabs-wrapper #tabs #tabs-item ul.tab-sub-titles li a.tab-sub-title {
+	background: #DC143C;	
+}*/
+
+
+.empty{
+	text-align:center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#empty-message {
+    text-align:center;
+    font-size: 120%;
+    padding: 50px;
+    min-height: 250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    
+}
+.email-content{
+    min-height: 200px;
+}
+
+.faq-content{
+	min-height:400px;
+	border:1px solid;
+}
+.faq-list{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.faq-form{
+	padding-left: 40px;
+	padding-top:20px;
+
+}
+.button-faq{
+	margin-top: 12px;
+}
+.pull-right-trash{
+   float: right;
+
+}
+
+.faq-item {
+	background: #EEE;
+	padding: 15px;
+	padding-bottom: 25px;
+	margin-bottom: 5px;
+}
+.btn-default {
+    border: 1px solid ;
+    color: #ff;
+    background: #FFF;
+    margin-bottom: 5px;
+}
+#product-variants .variant-item {
+    border-bottom: 1px solid #fff;
+    padding: 25px 0;
+    margin-bottom: 25px;
+    position: relative;
+}
+

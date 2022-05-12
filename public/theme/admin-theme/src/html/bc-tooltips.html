@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Tooltips",
+"subtitle": "Tooltips are floating labels that quickly explain the function of an element."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row btn-page">
+            <!-- [ Tooltips ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Tooltips</h3>
+                <div class="datta-example">
+                    <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="tooltip on top">Top</button>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="left" title="tooltip on left">Left</button>
+                    <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="tooltip on right">Right</button>
+                    <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="bottom" title="tooltip on bottom">Bottom</button>
+                    <button type="button" class="btn btn-info" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">Html Tooltip</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Popover</h3>
+                <div class="datta-example">
+                    <button type="button" class="btn  btn-danger" data-toggle="popover" data-placement="top" title="" data-content="top by popover" data-original-title="popup on top">Top</button>
+                    <button type="button" class="btn  btn-primary" data-toggle="popover" data-placement="left" title="popup on left" data-content="left by popover">Left</button>
+                    <button type="button" class="btn  btn-success" data-toggle="popover" data-placement="right" title="popup on right" data-content="right by popover">Right</button>
+                    <button type="button" class="btn  btn-warning" data-toggle="popover" data-placement="bottom" title="popup on bottom" data-content="bottom by popover">Bottom</button>
+                    <button type="button" class="btn  btn-info" data-toggle="popover" data-html="true" data-placement="top" title="<em>popup</em> <u>with</u> <b>HTML</b>" data-content="popup by HTML">Html popup</button>
+                </div>
+            </div>
+            <!-- [ Tooltips ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

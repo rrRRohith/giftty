@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Buttons",
+"subtitle": "Buttons are used to trigger actions and links. Buttons can contain a combination of text and icon."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Buttons ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">REGULAR</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">OUTLINE</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">DISABLED</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn disabled btn-primary" disabled>Primary</button>
+                    <button type="button" class="btn disabled btn-secondary" disabled>Secondary</button>
+                    <button type="button" class="btn disabled btn-success" disabled>Success</button>
+                    <button type="button" class="btn disabled btn-danger" disabled>Danger</button>
+                    <button type="button" class="btn disabled btn-warning" disabled>Warning</button>
+                    <button type="button" class="btn disabled btn-info" disabled>Info</button>
+                    <button type="button" class="btn disabled btn-light" disabled>Light</button>
+                    <button type="button" class="btn disabled btn-dark" disabled>Dark</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Loading</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn disabled btn-primary" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-secondary" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-success" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-danger" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-warning" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-info" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-light" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <button type="button" class="btn disabled btn-dark" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span></button>
+                    <br>
+                    <button type="button" class="btn disabled btn-primary" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Primary ...</button>
+                    <button type="button" class="btn disabled btn-secondary" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Secondary ...</button>
+                    <button type="button" class="btn disabled btn-success" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Success ...</button>
+                    <button type="button" class="btn disabled btn-danger" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Danger ...</button>
+                    <button type="button" class="btn disabled btn-warning" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Warning ...</button>
+                    <button type="button" class="btn disabled btn-info" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Info ...</button>
+                    <button type="button" class="btn disabled btn-light" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Light ...</button>
+                    <button type="button" class="btn disabled btn-dark" disabled><span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Dark ...</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Sizes [ Large ]</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn  btn-primary btn-lg">Large button</button>
+                    <button type="button" class="btn  btn-secondary btn-lg">Large button</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Sizes [ Small ]</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn  btn-primary btn-sm">Small button</button>
+                    <button type="button" class="btn  btn-secondary btn-sm">Small button</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Checkbox Button</h3>
+                <div class="datta-example">
+                    <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn  btn-secondary active">
+                            <input type="checkbox" checked> Checked</label>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Radio Buttons</h3>
+                <div class="datta-example">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn  btn-secondary active">
+                            <input type="radio" name="options" id="option1" checked> Active</label>
+                        <label class="btn  btn-secondary">
+                            <input type="radio" name="options" id="option2"> Radio</label>
+                        <label class="btn  btn-secondary">
+                            <input type="radio" name="options" id="option3"> Radio</label>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Button With Icon</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-primary"><i class="feather mr-2 icon-thumbs-up"></i>Primary</button>
+                    <button type="button" class="btn btn-secondary"><i class="feather mr-2 icon-camera"></i>Secondary</button>
+                    <button type="button" class="btn btn-success"><i class="feather mr-2 icon-check-circle"></i>Success</button>
+                    <button type="button" class="btn btn-danger"><i class="feather mr-2 icon-slash"></i>Danger</button>
+                    <button type="button" class="btn btn-warning"><i class="feather mr-2 icon-alert-triangle"></i>Warning</button>
+                    <button type="button" class="btn btn-info"><i class="feather mr-2 icon-info"></i>Info</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Outline Icon Buttons</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-outline-primary"><i class="feather mr-2 icon-thumbs-up"></i>Primary</button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="feather mr-2 icon-camera"></i>Secondary</button>
+                    <button type="button" class="btn btn-outline-success"><i class="feather mr-2 icon-check-circle"></i>Success</button>
+                    <button type="button" class="btn btn-outline-danger"><i class="feather mr-2 icon-slash"></i>Danger</button>
+                    <button type="button" class="btn btn-outline-warning"><i class="feather mr-2 icon-alert-triangle"></i>Warning</button>
+                    <button type="button" class="btn btn-outline-info"><i class="feather mr-2 icon-info"></i>Info</button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Only Icon</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-primary"><i class="feather icon-thumbs-up"></i></button>
+                    <button type="button" class="btn btn-secondary"><i class="feather icon-camera"></i></button>
+                    <button type="button" class="btn btn-success"><i class="feather icon-check-circle"></i></button>
+                    <button type="button" class="btn btn-danger"><i class="feather icon-slash"></i></button>
+                    <button type="button" class="btn btn-warning"><i class="feather icon-alert-triangle"></i></button>
+                    <button type="button" class="btn btn-info"><i class="feather icon-info"></i></button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Outline Icon</h3>
+                <div class="btn-page datta-example">
+                    <button type="button" class="btn btn-outline-primary"><i class="feather icon-thumbs-up"></i></button>
+                    <button type="button" class="btn btn-outline-secondary"><i class="feather icon-camera"></i></button>
+                    <button type="button" class="btn btn-outline-success"><i class="feather icon-check-circle"></i></button>
+                    <button type="button" class="btn btn-outline-danger"><i class="feather icon-slash"></i></button>
+                    <button type="button" class="btn btn-outline-warning"><i class="feather icon-alert-triangle"></i></button>
+                    <button type="button" class="btn btn-outline-info"><i class="feather icon-info"></i></button>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">CIRCULAR</h3>
+                <div class="datta-example">
+                    <div class="table-responsive d-inline-block">
+                        <table class="table table-borderless table-center w-auto text-center">
+                            <tr>
+                                <td>
+                                    <label class="d-block">SMALL</label>
+                                    <label>ICON</label>
+                                </td>
+                                <td>
+                                    <label class="d-block">MEDIUM</label>
+                                    <label>NUMBER</label>
+                                </td>
+                                <td>
+                                    <label class="d-block">MEDIUM</label>
+                                    <label>ICON</label>
+                                </td>
+                                <td>
+
+                                    <label class="d-block">LARGE</label>
+                                    <label>ICON</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn btn-icon icon-sm"><i class="feather icon-check"></i></button></td>
+                                <td><button type="button" class="btn btn-icon">+5</button></td>
+                                <td><button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button></td>
+                                <td><button type="button" class="btn btn-icon icon-lg"><i class="feather icon-plus"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><button type="button" class="btn disabled btn-icon icon-sm" disabled><i class="feather icon-check"></i></button></td>
+                                <td><button type="button" class="btn disabled btn-icon" disabled>+5</button></td>
+                                <td><button type="button" class="btn disabled btn-icon" disabled><i class="feather icon-plus"></i></button></td>
+                                <td><button type="button" class="btn disabled btn-icon icon-lg" disabled><i class="feather icon-plus"></i></button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Buttons ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

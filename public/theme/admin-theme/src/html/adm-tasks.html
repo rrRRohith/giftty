@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/dragula.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fullcalendar.min.css">
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 mb-4">
+                        <h1 class="d-inline-block font-weight-normal mb-0">My Tasks</h1>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs mb-3" id="TasksmyTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase active" id="List-tab" data-toggle="tab" href="#List1" role="tab" aria-controls="List1" aria-selected="false">List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="kanban-tab" data-toggle="tab" href="#kanban1" role="tab" aria-controls="kanban1" aria-selected="false">kanban</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="Timeline-tab" data-toggle="tab" href="#Timeline1" role="tab" aria-controls="Timeline1" aria-selected="false">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="Calendar-tab" data-toggle="tab" href="#Calendar1" role="tab" aria-controls="Calendar1" aria-selected="false">Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" id="Projects-tab" data-toggle="tab" href="#Projects1" role="tab" aria-controls="Projects1" aria-selected="false">Projects</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="TasksmyTabContent">
+                    <div class="tab-pane fade show active" id="List1" role="tabpanel" aria-labelledby="List-tab">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex align-items-center mb-4">
+                                <h5 class="d-inline-block font-weight-normal text-body mb-0">56 Tasks</h5>
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center justify-content-end mb-4">
+                                <div class="btn-group btn-group-toggle btn-group-link">
+                                    <label class="btn active">
+                                        <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                    <label class="btn">
+                                        <div class="dropdown mb-0 mr-2">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="tasktable" class="table table-hover table-center mb-0 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>task name</th>
+                                                        <th>project</th>
+                                                        <th>due date</th>
+                                                        <th>Priority</th>
+                                                        <th class="text-right">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Updated payment modules based on Accessibility <br>assessment</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>8/04/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-5.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>7/25/2019</td>
+                                                        <td class="text-danger">High</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur sed <br>posuere consectetur est at lobortis</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td class="text-danger">High</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Aenean eu leo quam pellentesque ornare sem lacinia <br>quam venenatis vestibulum morbi leo risus, <br>porta acs...</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Maecenas sed diam eget risus varius blandit</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Updated payment modules based on Accessibility <br>assessment</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>8/04/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-5.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>7/25/2019</td>
+                                                        <td class="text-danger">High</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur sed <br>posuere consectetur est at lobortis</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td class="text-danger">High</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Aenean eu leo quam pellentesque ornare sem lacinia <br>quam venenatis vestibulum morbi.</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <p class="mb-0">Maecenas sed diam eget risus varius blandit</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        </td>
+                                                        <td>9/01/2019</td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Tasks</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kanban1" role="tabpanel" aria-labelledby="kanban-tab">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <h6 class="mb-3">Backlog</h6>
+                                <div id="taskbacklog">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-nike.svg" alt="images" class="img-fluid"></span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-1">Nike, Inc.</h5>
+                                                    <p class="mb-0 text-truncate">Sports</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <h6 class="text-body text-uppercase f-12">Members</h6>
+                                            <span class="avtar text-orange-2 bg-orange-1 avtar-xs mr-2">AS</span>
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <span class="avtar text-purple-2 bg-purple-1 avtar-xs mr-2">CD</span>
+                                            <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-teal-2 b-teal-2 ">PD</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-1">Product Design</h5>
+                                                    <p class="mb-0 text-truncate">Chicago, San Francisco</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <h6 class="text-body text-uppercase f-12">Members</h6>
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <span class="avtar text-yellow-2 bg-yellow-1 avtar-xs mr-2">LO</span>
+                                            <span class="avtar text-teal-2 bg-teal-1 avtar-xs mr-2">HS</span>
+                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <button type="button" class="btn btn-icon mr-2">+5</button>
+                                            <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-purple-2 ">DE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-0">Death Star version 3 Construction</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <div class="border p-2 mb-3">
+                                                <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-danger float-right text-uppercase">off track</span> 11 Open Tasks • 8/04/2019</h6>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                                    <div class="media">
+                                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                                    <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">HS</span>
+                                                    <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                                    <button type="button" class="btn btn-icon mr-1">+2</button>
+                                                    <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-purple-2 ">DE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-0">Death Star version 3 Construction</h5>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Marketing</p>
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <div class="border p-2 mb-3">
+                                                <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-danger float-right text-uppercase">off track</span> 11 Open Tasks • 8/04/2019</h6>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-5">
+                                                    <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                                    <div class="media">
+                                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-7">
+                                                    <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                                    <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">HS</span>
+                                                    <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                                    <button type="button" class="btn btn-icon mr-1">+2</button>
+                                                    <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h6 class="mb-3">In progress</h6>
+                                <div id="taskprogress">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-nike.svg" alt="images" class="img-fluid"></span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-1">Nike, Inc.</h5>
+                                                    <p class="mb-0 text-truncate">Sports</p>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Active Projects 12 <i class="feather icon-arrow-up text-success"></i></p>
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <h6 class="text-body text-uppercase f-12">Members</h6>
+                                            <span class="avtar text-orange-2 bg-orange-1 avtar-xs mr-2">AS</span>
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                            <span class="avtar text-purple-2 bg-purple-1 avtar-xs mr-2">CD</span>
+                                            <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <div class="media">
+                                                <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-dropbox.svg" alt="images" class="img-fluid"></span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <h5 class="mb-1">Dropbox</h5>
+                                                    <span class="badge badge-pill badge-success f-12 text-uppercase">Active</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <p>Version 2.0 <span class="text-primary m-r-10">Update available</span></p>
+                                            <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                            <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <h6 class="mb-3">In review</h6>
+                                <div id="taskreview">
+                                    <div class="card">
+                                        <div class="card-header pb-0">
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <span class="badge badge-pill badge-success f-12 text-uppercase">on track</span>
+                                            <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header pb-0">
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <span class="badge badge-pill badge-warning f-12 text-uppercase">on hold</span>
+                                            <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                            <div class="mb-3">
+                                                <span class="badge badge-light-primary">Wireframes</span>
+                                                <span class="badge badge-light-success">Design</span>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-img-top px-4 pt-4">
+                                            <img class="img-fluid rounded" src="assets/images/slider/img-slide-3.jpg" alt="Card IMAGES">
+                                        </div>
+                                        <div class="card-header pb-0">
+                                            <div class="card-header-right">
+                                                <div class="btn-group card-option">
+                                                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <i class="feather icon-more-horizontal"></i>
+                                                    </button>
+                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <span class="badge badge-pill badge-danger f-12 text-uppercase">off track</span>
+                                            <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                            <div class="mb-3">
+                                                <span class="badge badge-light-primary">Wireframes</span>
+                                                <span class="badge badge-light-success">Design</span>
+                                            </div>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Timeline1" role="tabpanel" aria-labelledby="Timeline-tab">
+                        <div class="row">
+                            <div class="col-xl-2 col-md-12">
+                                <div id='external-events' class="external-events">
+                                    <h4>Events</h4>
+                                    <div class='fc-event'>Pellentesque ornar</div>
+                                    <div class='fc-event'>My Event 2</div>
+                                    <div class='fc-event'>My Event 3</div>
+                                    <div class='fc-event'>My Event 4</div>
+                                    <div class='fc-event'>My Event 5</div>
+                                    <div class="form-group">
+                                        <div class="switch switch-primary d-inline m-r-10">
+                                            <input type="checkbox" id="drop-remove">
+                                            <label for="drop-remove" class="cr"></label>
+                                        </div>
+                                        <label>Remove Event</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-md-12">
+                                <div id='calendar' class='calendar bg-white'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Calendar1" role="tabpanel" aria-labelledby="Calendar-tab">
+                        <div class="row">
+                            <div class="col-xl-2 col-md-12">
+                                <div id='external-events1' class="external-events">
+                                    <h4>Events</h4>
+                                    <div class='fc-event'>Pellentesque ornar</div>
+                                    <div class='fc-event'>My Event 2</div>
+                                    <div class='fc-event'>My Event 3</div>
+                                    <div class='fc-event'>My Event 4</div>
+                                    <div class='fc-event'>My Event 5</div>
+                                    <div class="form-group">
+                                        <div class="switch switch-primary d-inline m-r-10">
+                                            <input type="checkbox" id="drop-remove1">
+                                            <label for="drop-remove" class="cr"></label>
+                                        </div>
+                                        <label>Remove Event</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-md-12">
+                                <div id='calendar1' class='calendar bg-white'></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Projects1" role="tabpanel" aria-labelledby="Projects-tab">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex align-items-center mb-4">
+                                <h5 class="d-inline-block font-weight-normal text-body mb-0">5 Projects</h5>
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center justify-content-end mb-4">
+                                <div class="btn-group btn-group-toggle btn-group-link">
+                                    <label class="btn active">
+                                        <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                    <label class="btn ">
+                                        <input type="radio" name="options" id="filteropt12"> <i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</label>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table id="taskprojtable" class="table table-center mb-0 ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Project name</th>
+                                                        <th>Team</th>
+                                                        <th>due date</th>
+                                                        <th>Open Tasks</th>
+                                                        <th>Priority</th>
+                                                        <th class="text-right">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media">
+                                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                                <div class="media-body ml-3 align-self-center">
+                                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Engineering</td>
+                                                        <td>9/01/2019</td>
+                                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media">
+                                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                                <div class="media-body ml-3 align-self-center">
+                                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Product Design</td>
+                                                        <td>8/04/2019</td>
+                                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media">
+                                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                                <div class="media-body ml-3 align-self-center">
+                                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Product Design</td>
+                                                        <td>8/04/2019</td>
+                                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-dark">ON track</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media">
+                                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                                <div class="media-body ml-3 align-self-center">
+                                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Marketing</td>
+                                                        <td>8/04/2019</td>
+                                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                        <td>Low</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-light-dark">not started</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="media">
+                                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                                <div class="media-body ml-3 align-self-center">
+                                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>Marketing</td>
+                                                        <td>8/04/2019</td>
+                                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                        <td class="text-danger">High</td>
+                                                        <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<script src="assets/js/plugins/dragula.min.js"></script>
+<!-- Full calendar js -->
+<script src="assets/js/plugins/moment.js"></script>
+<script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/fullcalendar.min.js"></script>
+<!-- datatable Js -->
+<script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script>
+    // [ advance card ] start
+    $(function() {
+        dragula([document.getElementById('taskbacklog'), document.getElementById('taskprogress'), document.getElementById('taskreview')]);
+    });
+    $(window).on('load', function() {
+        $('#tasktable').DataTable();
+        $('#taskprojtable').DataTable();
+        $('#external-events .fc-event').each(function() {
+            var tmp = $(this).html();
+            $(this).data('event', {
+                title: $(this).html(),
+                stick: true
+            });
+            $(this).draggable({
+                zIndex: 999,
+                revert: true,
+                revertDuration: 0
+            });
+        });
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultView: 'agendaWeek',
+            defaultDate: '2018-08-12',
+            editable: true,
+            droppable: true,
+            events: [{
+                title: 'All Day Event',
+                start: '2018-08-01',
+                borderColor: '#B3F4E1',
+                backgroundColor: '#B3F4E1',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                title: 'Long Event',
+                start: '2018-08-07',
+                end: '2018-08-10',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-09T16:00:00',
+                borderColor: '#FFD89D',
+                backgroundColor: '#FFD89D',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-16T16:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Conference',
+                start: '2018-08-11',
+                end: '2018-08-13',
+                borderColor: '#A9ECA3',
+                backgroundColor: '#A9ECA3',
+                textColor: '#171F46'
+            }, {
+                title: 'Lunch',
+                start: '2018-08-12T12:00:00',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                textColor: '#171F46'
+            }, {
+                title: 'Happy Hour',
+                start: '2018-08-12T17:30:00',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }, {
+                title: 'Birthday Party',
+                start: '2018-08-13T07:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2018-08-28',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }],
+            drop: function() {
+                if ($('#drop-remove').is(':checked')) {
+                    $(this).remove();
+                }
+            },
+        });
+    });
+    $(window).on('load', function() {
+        $('#external-events1 .fc-event').each(function() {
+            var tmp = $(this).html();
+            $(this).data('event', {
+                title: $(this).html(),
+                stick: true
+            });
+            $(this).draggable({
+                zIndex: 999,
+                revert: true,
+                revertDuration: 0
+            });
+        });
+        $('#calendar1').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: '2018-08-12',
+            editable: true,
+            droppable: true,
+            events: [{
+                title: 'All Day Event',
+                start: '2018-08-01',
+                borderColor: '#B3F4E1',
+                backgroundColor: '#B3F4E1',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                title: 'Long Event',
+                start: '2018-08-07',
+                end: '2018-08-10',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-09T16:00:00',
+                borderColor: '#FFD89D',
+                backgroundColor: '#FFD89D',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-16T16:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Conference',
+                start: '2018-08-11',
+                end: '2018-08-13',
+                borderColor: '#A9ECA3',
+                backgroundColor: '#A9ECA3',
+                textColor: '#171F46'
+            }, {
+                title: 'Lunch',
+                start: '2018-08-12T12:00:00',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                textColor: '#171F46'
+            }, {
+                title: 'Happy Hour',
+                start: '2018-08-12T17:30:00',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }, {
+                title: 'Birthday Party',
+                start: '2018-08-13T07:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2018-08-28',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }],
+            drop: function() {
+                if ($('#drop-remove1').is(':checked')) {
+                    $(this).remove();
+                }
+            },
+        });
+    });
+    // [ advance card ] start
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

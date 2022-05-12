@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "PRIMITIVES",
+"title": "Rich Text",
+"subtitle": "Additional text components and styles to enrich the user experience making it easy and useful."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Rich Text ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">TEXT LISTS</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="datta-example">
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="datta-example">
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Consectetur adipiscing elit</li>
+                                <li>Integer molestie lorem at massa</li>
+                                <li>Facilisis in pretium nisl aliquet</li>
+                                <li>Nulla volutpat aliquam velit
+                                    <ul>
+                                        <li>Phasellus iaculis neque</li>
+                                        <li>Purus sodales ultricies</li>
+                                        <li>Vestibulum laoreet porttitor sem</li>
+                                        <li>Ac tristique libero volutpat at</li>
+                                    </ul>
+                                </li>
+                                <li>Faucibus porta lacus fringilla vel</li>
+                                <li>Aenean sit amet erat nunc</li>
+                                <li>Eget porttitor lorem</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">BLOCKQUOTE</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="datta-example">
+                            <blockquote class="blockquote">
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="datta-example">
+                            <blockquote class="blockquote text-right">
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Rich Text ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

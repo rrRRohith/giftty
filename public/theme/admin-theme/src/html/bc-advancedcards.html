@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/dragula.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Advanced Cards",
+"subtitle": "Cards used use for visual represent complex information and data"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Advanced Cards ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <h6 class="mb-3">Backlog</h6>
+                        <div id="backlog">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-square text-teal-2 b-teal-2 ">PD</span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-1">Product Design</h5>
+                                            <p class="mb-0 text-truncate">Chicago, San Francisco</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <h6 class="text-body text-uppercase f-12">Members</h6>
+                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                    <span class="avtar text-yellow-2 bg-yellow-1 avtar-xs mr-2 mb-2">LO</span>
+                                    <span class="avtar text-teal-2 bg-teal-1 avtar-xs mr-2 mb-2">HS</span>
+                                    <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                    <button type="button" class="btn btn-icon mr-2 mb-2">+5</button>
+                                    <button type="button" class="btn btn-icon mb-2"><i class="feather icon-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-square text-white bg-purple-2 ">DE</span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-0">Death Star version 3 Construction</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <div class="border p-2 mb-3">
+                                        <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-danger float-right text-uppercase">off track</span> 11 Open Tasks • 8/04/2019</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                            <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">HS</span>
+                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                            <button type="button" class="btn btn-icon mr-1">+2</button>
+                                            <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-square text-white bg-purple-2 ">DE</span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-0">Death Star version 3 Construction</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Marketing</p>
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <div class="border p-2 mb-3">
+                                        <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-danger float-right text-uppercase">off track</span> 11 Open Tasks • 8/04/2019</h6>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                            <div class="media">
+                                                <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0 text-truncate">Tobias B.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                            <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">HS</span>
+                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                            <button type="button" class="btn btn-icon mr-1">+2</button>
+                                            <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="mb-3">In progress</h6>
+                        <div id="progress">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-nike.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-1">Nike, Inc.</h5>
+                                            <p class="mb-0 text-truncate">Sports</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <h6 class="text-body text-uppercase f-12">Members</h6>
+                                    <span class="avtar text-orange-2 bg-orange-1 avtar-xs mr-2">AS</span>
+                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                    <span class="avtar text-purple-2 bg-purple-1 avtar-xs mr-2">CD</span>
+                                    <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-nike.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-1">Nike, Inc.</h5>
+                                            <p class="mb-0 text-truncate">Sports</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Active Projects 12 <i class="feather icon-arrow-up text-success"></i></p>
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <h6 class="text-body text-uppercase f-12">Members</h6>
+                                    <span class="avtar text-orange-2 bg-orange-1 avtar-xs mr-2">AS</span>
+                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2">
+                                    <span class="avtar text-purple-2 bg-purple-1 avtar-xs mr-2">CD</span>
+                                    <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-dropbox.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h5 class="mb-1">Dropbox</h5>
+                                            <span class="badge badge-pill badge-success f-12 text-uppercase">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Version 2.0 <span class="text-primary m-r-10">Update available</span></p>
+                                    <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                    <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                    <div class="media">
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                        <div class="media-body ml-3 align-self-center">
+                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h6 class="mb-3">In review</h6>
+                        <div id="review">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-success f-12 text-uppercase">on track</span>
+                                    <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                    <div class="media">
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                        <div class="media-body ml-3 align-self-center">
+                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-warning f-12 text-uppercase">on hold</span>
+                                    <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                    <div class="mb-3">
+                                        <span class="badge badge-light-primary">Wireframes</span>
+                                        <span class="badge badge-light-success">Design</span>
+                                    </div>
+                                    <div class="media">
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                        <div class="media-body ml-3 align-self-center">
+                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-img-top px-4 pt-4">
+                                    <img class="img-fluid rounded" src="assets/images/slider/img-slide-3.jpg" alt="Card IMAGES">
+                                </div>
+                                <div class="card-header pb-0">
+                                    <div class="card-header-right">
+                                        <div class="btn-group card-option">
+                                            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="feather icon-more-horizontal"></i>
+                                            </button>
+                                            <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <span class="badge badge-pill badge-danger f-12 text-uppercase">off track</span>
+                                    <p class="my-3">Payment modules based on new Accessibilty assessment</p>
+                                    <div class="mb-3">
+                                        <span class="badge badge-light-primary">Wireframes</span>
+                                        <span class="badge badge-light-success">Design</span>
+                                    </div>
+                                    <div class="media">
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                        <div class="media-body ml-3 align-self-center">
+                                            <p class="mb-0 text-truncate">Tobias B.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Advanced Cards ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<script src="assets/js/plugins/dragula.min.js"></script>
+<script>
+    // [ advance card ] start
+    $(function() {
+        dragula([document.getElementById('backlog'), document.getElementById('progress'), document.getElementById('review')]);
+    });
+    // [ advance card ] start
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

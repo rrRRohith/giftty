@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            .<div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-12 mb-4">
+                        <h1 class="d-inline-block font-weight-normal mb-0">Edit Profile</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <figure class="figure">
+                            <img src="assets/images/user/user-profile.jpg" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-center mt-2"><i class="m-r-10 f-18 feather icon-upload"></i>Change photo</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-md-12 col-xl-9">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">name</label>
+                                    <input type="text" class="form-control" value="Ashoka Tano">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">email</label>
+                                    <input type="text" class="form-control" value="ashoka@galactic.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">user type</label>
+                                    <select class="form-control">
+                                        <option>Internal</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <button class="btn btn-primary">Update</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">TEAM</label>
+                                    <input type="text" class="form-control" value="Product Design">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">location</label>
+                                    <select class="form-control">
+                                        <option>Chicago</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">location</label>
+                                    <select class="location-mlt-select col-sm-12" multiple="multiple">
+                                        <option value="AL">Designer</option>
+                                        <option value="WY" selected>Admin</option>
+                                        <option value="WY">Tester</option>
+                                        <option value="WY">Developer</option>
+                                        <option value="WY">Project Manager</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-4"></div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<script src="assets/js/plugins/select2.full.min.js"></script>
+<script>
+    $(function() {
+        $(".location-mlt-select").select2();
+    });
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

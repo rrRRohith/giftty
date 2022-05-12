@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- ekko-lightbox css -->
+    <link rel="stylesheet" href="assets/css/plugins/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Lightbox",
+"subtitle": "Lightbox is use to view media on modal"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- [ lightbox ] start -->
+                <h3 class="mb-3 font-weight-bold">Single Images</h3>
+                <span class="d-block mb-4">Use this code <code>data-toggle="lightbox"</code> to see image in lightbox popup.</span>
+                <div class="row text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l1.jpg" data-toggle="lightbox" data-title="Nextro Image 1" data-footer="Nextro Image 1"><img src="assets/images/light-box/sl1.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l2.jpg" data-toggle="lightbox" data-title="Nextro Image 2" data-footer="Nextro Image 2"><img src="assets/images/light-box/sl2.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l3.jpg" data-toggle="lightbox" data-title="Nextro Image 3" data-footer="Nextro Image 3"><img src="assets/images/light-box/sl3.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l4.jpg" data-toggle="lightbox" data-title="Nextro Image 4" data-footer="Nextro Image 4"><img src="assets/images/light-box/sl4.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l5.jpg" data-toggle="lightbox" data-title="Nextro Image 5" data-footer="Nextro Image 5"><img src="assets/images/light-box/sl5.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l6.jpg" data-toggle="lightbox" data-title="Nextro Image 6" data-footer="Nextro Image 6"><img src="assets/images/light-box/sl6.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Image Gallery</h3>
+                <span class="d-block mb-4">AddAdd this code <code>data-gallery="example-gallery"</code> to see image gallery in lightbox popup.</span>
+                <div class="row text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l1.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl1.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l2.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl2.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l3.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl3.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l4.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl4.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l5.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl5.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l6.jpg" data-toggle="lightbox" data-gallery="example-gallery"><img src="assets/images/light-box/sl6.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Video Gallery</h3>
+                <span class="d-block mb-4">Add this code <code>data-gallery="youtubevideos"</code> to see videos in lightbox popup.</span>
+                <div class="row  text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="https://www.youtube.com/watch?v=IkyZHPnfFnE" data-toggle="lightbox" data-gallery="youtubevideos"><img src="assets/images/light-box/v1.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="https://www.youtube.com/watch?v=IkyZHPnfFnE" data-toggle="lightbox" data-gallery="youtubevideos"><img src="assets/images/light-box/v2.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="https://www.youtube.com/watch?v=IkyZHPnfFnE" data-toggle="lightbox" data-gallery="youtubevideos"><img src="assets/images/light-box/v3.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Mixin Gallery</h3>
+                <span class="d-block mb-4">Add this code <code>data-gallery="mixedgallery"</code> to see mixed gallery in lightbox popup. to use vimeo add code <code>data-remote="vimeo url"</code></span>
+                <div class="row text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="https://www.youtube.com/watch?v=IkyZHPnfFnE" data-toggle="lightbox" data-gallery="mixedgallery"><img src="assets/images/light-box/v1.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/mixin.jpg" data-toggle="lightbox" data-gallery="mixedgallery"><img src="assets/images/light-box/smixin.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="http://vimeo.com/246066429" data-remote="http://player.vimeo.com/video/246066429" data-toggle="lightbox" data-gallery="mixedgallery"><img src="assets/images/light-box/v4.jpg" class="img-fluid m-b-10"
+                                alt=""></a>
+                    </div>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Single Images ( light box 2 )</h3>
+                <span class="d-block mb-4">Add this code <code>data-lightbox="roadtrip"</code> to see roadtrip gallery in lightbox popup.</span>
+                <div class="row text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l3.jpg" data-lightbox="roadtrip"><img src="assets/images/light-box/sl3.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l4.jpg" data-lightbox="roadtrip" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing."><img
+                                src="assets/images/light-box/sl4.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Multiple Images or Image Set (light box 2)</h3>
+                <span class="d-block mb-4">Add this code <code>data-lightbox="example-set"</code> to see roadtrip gallery in lightbox popup.</span>
+                <div class="row  text-center">
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l1.jpg" data-lightbox="example-set"><img src="assets/images/light-box/sl1.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l2.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing."><img
+                                src="assets/images/light-box/sl2.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l5.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing."><img
+                                src="assets/images/light-box/sl5.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-sm-4 col-xs-12">
+                        <a href="assets/images/light-box/l6.jpg" data-lightbox="example-set" data-title="Lorem ipsum dolor sit amet, consectetur adipiscing lorem impus dolorsit.onsectetur adipiscing."><img
+                                src="assets/images/light-box/sl6.jpg" class="img-fluid m-b-10" alt=""></a>
+                    </div>
+                </div>
+                <!-- [ lightbox ] end -->
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- ekko-lightbox Js -->
+<script src="assets/js/plugins/ekko-lightbox.min.js"></script>
+<script src="assets/js/plugins/lightbox.min.js"></script>
+<script src="assets/js/pages/ac-lightbox.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

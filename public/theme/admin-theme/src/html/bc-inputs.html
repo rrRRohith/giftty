@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Inputs",
+"subtitle": "Inputs allow users enter data or to configure options. Inputs are usually used to get, store and send information."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Inputs ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>REGULAR</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5>Default [ Input ]</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ACTIVE</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" value="Death Star Constrction">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <input type="text" class="form-control" value="Death Star Constrction">
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">SUCCESS</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" value="Death Star Constrction">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">LABEL</label>
+                                        <input type="text" class="form-control" value="Death Star Constrction">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ERROR</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Death Star Constrction" required>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">LABEL</label>
+                                        <input type="text" class="form-control" placeholder="Death Star Constrction" required>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                        <h5 class="mt-4">DISABLED</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ex. Luke S." disabled>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <input type="text" class="form-control" placeholder="Ex. Luke S." disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <h5 class="mt-4">Default [ Textarea ]</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ACTIVE</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3">Death Star Constrction</textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <textarea class="form-control" rows="3">Death Star Constrction</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">SUCCESS</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3">Death Star Constrction</textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">LABEL</label>
+                                        <textarea class="form-control" rows="3">Death Star Constrction</textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ERROR</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="3" required></textarea>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">LABEL</label>
+                                        <textarea class="form-control" rows="3" required></textarea>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">DISABLED</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="3" disabled> Death Star Constrction </textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">LABEL</label>
+                                    <textarea class="form-control" rows="3" disabled> Death Star Constrction </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Inputs ] end -->
+            <!-- [ Inputs ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="datta-example mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Base Controls</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Email address</label>
+                                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                                                <span class="form-text text-muted">We'll never share your email with anyone else.</span>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleInputPassword1">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Static:</label>
+                                                <p class="form-control-static">email@example.com</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleSelect1">Example select</label>
+                                                <select class="form-control" id="exampleSelect1">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleSelect2">Example multiple select</label>
+                                                <select multiple="" class="form-control" id="exampleSelect2">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleTextarea">Example textarea</label>
+                                                <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" class="btn btn-danger">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datta-example mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Input States</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Disabled Input</label>
+                                                <input type="email" class="form-control" disabled="disabled" placeholder="Disabled input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Disabled select</label>
+                                                <select class="form-control" disabled="disabled">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleTextarea">Disabled textarea</label>
+                                                <textarea class="form-control" disabled="disabled" rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Readonly Input</label>
+                                                <input type="email" class="form-control" readonly placeholder="Readonly input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleTextarea">Readonly textarea</label>
+                                                <textarea class="form-control" readonly rows="3"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datta-example mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Input Sizing</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>Large Input</label>
+                                                <input type="email" class="form-control form-control-lg" aria-describedby="emailHelp" placeholder="Large input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Default Input</label>
+                                                <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Large input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Small Input</label>
+                                                <input type="email" class="form-control form-control-sm" aria-describedby="emailHelp" placeholder="Large input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="exampleSelectl">Large Select</label>
+                                                <select class="form-control form-control-lg" id="exampleSelectl">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleSelectd">Default Select</label>
+                                                <select class="form-control" id="exampleSelectd">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleSelects">Small Select</label>
+                                                <select class="form-control form-control-sm" id="exampleSelects">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datta-example mb-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5>Textual HTML5 Inputs</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="example-text-input" class="col-form-label">Text</label>
+                                                <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-search-input" class="col-form-label">Search</label>
+                                                <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-email-input" class="col-form-label">Email</label>
+                                                <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-url-input" class="col-form-label">URL</label>
+                                                <input class="form-control" type="url" value="https://getbootstrap.com" id="example-url-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-tel-input" class="col-form-label">Telephone</label>
+                                                <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-password-input" class="col-form-label">Password</label>
+                                                <input class="form-control" type="password" value="hunter2" id="example-password-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-number-input" class="col-form-label">Number</label>
+                                                <input class="form-control" type="number" value="42" id="example-number-input">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="example-datetime-local-input" class="col-form-label">Date and time</label>
+                                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-date-input" class="col-form-label">Date</label>
+                                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-month-input" class="col-form-label">Month</label>
+                                                <input class="form-control" type="month" value="2011-08" id="example-month-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-week-input" class="col-form-label">Week</label>
+                                                <input class="form-control" type="week" value="2011-W33" id="example-week-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-time-input" class="col-form-label">Time</label>
+                                                <input class="form-control" type="time" value="13:45:00" id="example-time-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-color-input" class="col-form-label">Color</label>
+                                                <input class="form-control" type="color" value="#563d7c" id="example-color-input">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="example-email-input" class="col-form-label">Range</label>
+                                                <input class="form-control" type="range">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Input Group</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="datta-example mb-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon1">@</span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="basic-url">Your vanity URL</label>
+                                <div class="datta-example mb-4">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                        </div>
+                                        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">$</span>
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">.00</span>
+                                        </div>
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">With textarea</span>
+                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Sizing</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group input-group-sm mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-default">Default</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                                            </div>
+                                            <div class="input-group input-group-lg">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Large" aria-describedby="inputGroup-sizing-sm">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Checkboxes and radios</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                            </div>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <input type="radio" aria-label="Radio button for following text input">
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with radio button">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Multiple inputs</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">First and last name</span>
+                                                </div>
+                                                <input type="text" class="form-control">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Multiple addons</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">0.00</span>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">$</span>
+                                                    <span class="input-group-text">0.00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="mt-5">Button Addons</h5>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                    <button class="btn  btn-secondary" type="button">Button</button>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn  btn-secondary" type="button">Button</button>
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Buttons With Dropdowns</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn  btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#!">Action</a>
+                                                        <a class="dropdown-item" href="#!">Another action</a>
+                                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#!">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                                <div class="input-group-append">
+                                                    <button class="btn  btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#!">Action</a>
+                                                        <a class="dropdown-item" href="#!">Another action</a>
+                                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#!">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-5">Segmented Buttons</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button type="button" class="btn  btn-secondary">Action</button>
+                                                    <button type="button" class="btn  btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle
+                                                            Dropdown</span></button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#!">Action</a>
+                                                        <a class="dropdown-item" href="#!">Another action</a>
+                                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#!">Separated link</a>
+                                                    </div>
+                                                </div>
+                                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn  btn-secondary">Action</button>
+                                                    <button type="button" class="btn  btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle
+                                                            Dropdown</span></button>
+                                                    <div class="dropdown-menu">
+                                                        <a class="dropdown-item" href="#!">Action</a>
+                                                        <a class="dropdown-item" href="#!">Another action</a>
+                                                        <a class="dropdown-item" href="#!">Something else here</a>
+                                                        <div role="separator" class="dropdown-divider"></div>
+                                                        <a class="dropdown-item" href="#!">Separated link</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="mt-5">Custom Forms</h3>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class="mt-3">Custom Select</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                                                </div>
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <select class="custom-select" id="inputGroupSelect02">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                                <select class="custom-select" id="inputGroupSelect03">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-group">
+                                                <select class="custom-select" id="inputGroupSelect04">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                                <div class="input-group-append">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="mt-3">Custom File Input</h5>
+                                        <hr>
+                                        <div class="datta-example mb-4">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">Upload</span>
+                                                </div>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                                    <label class="custom-file-label" for="inputGroupFile02">Choose file</label>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">Upload</span>
+                                                </div>
+                                            </div>
+                                            <div class="input-group cust-file-button mb-3">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile03">
+                                                    <label class="custom-file-label" for="inputGroupFile03">Choose file</label>
+                                                </div>
+                                            </div>
+                                            <div class="input-group cust-file-button">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile04">
+                                                    <label class="custom-file-label" for="inputGroupFile04">Choose file</label>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <button class="btn  btn-primary" type="button">Button</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Inputs ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

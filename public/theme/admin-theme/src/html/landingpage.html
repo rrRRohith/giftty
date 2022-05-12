@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+
+<body class="landing-page">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navbar ] start -->
+    <nav class="navbar pcoded-header navbar-expand-lg navbar-light header-purple">
+        <div class="container">
+            <div class="m-header">
+                <!-- <a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a> -->
+                <a href="index.html" class="b-brand">
+                    <!-- ========   change your logo hear   ============ -->
+                    <img src="assets/images/logo.svg" alt="" class="logo">
+                </a>
+                <a href="#!" class="mob-toggler">
+                    <i class="feather icon-more-vertical"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+                        <div class="search-bar">
+                            <input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+                                Dashboard
+                            </a>
+                            <div class="dropdown-menu profile-notification dropdown-menu-right">
+                                <ul class="pro-body">
+                                    <li><a href="adm-dashboard.html" class="dropdown-item"><i class="fas fa-circle"></i> Dashboard</a></li>
+                                    <li><a href="adm-client-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Clients</a></li>
+                                    <li><a href="adm-teams-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Teams</a></li>
+                                    <li><a href="adm-users-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Users</a></li>
+                                    <li><a href="adm-projects-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Projects</a></li>
+                                    <li><a href="adm-integrations-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Integrations</a></li>
+                                    <li><a href="adm-files-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Files</a></li>
+                                    <li><a href="adm-profile-edit.html" class="dropdown-item"><i class="fas fa-circle"></i> Profile</a></li>
+                                    <li><a href="adm-tasks.html" class="dropdown-item"><i class="fas fa-circle"></i> Tasks</a></li>
+                                    <li><a href="adm-invoice.html" class="dropdown-item"><i class="fas fa-circle"></i> Invoice</a></li>
+                                    <li><a href="adm-em-inbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Inbox</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown mega-menu">
+                            <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+                                Components
+                            </a>
+                            <div class="dropdown-menu profile-notification dropdown-menu-right">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <h6 class="mega-title">Primitives</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-colors.html" class="dropdown-item"><i class="fas fa-circle"></i> Colors</a></li>
+                                            <li><a href="bc-typography.html" class="dropdown-item"><i class="fas fa-circle"></i> Typography</a></li>
+                                            <li><a href="bc-richtext.html" class="dropdown-item"><i class="fas fa-circle"></i> Rich Text</a></li>
+                                            <li><a href="bc-shadows.html" class="dropdown-item"><i class="fas fa-circle"></i> Elevation & Shadows</a></li>
+                                            <li><a href="bc-border.html" class="dropdown-item"><i class="fas fa-circle"></i> Shapes & Curves</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Landingpage</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="landingpage.html" class="dropdown-item"><i class="fas fa-circle"></i> Landingpage</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Table</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="tbl-bootstrap.html" class="dropdown-item"><i class="fas fa-circle"></i> Bootstrap</a></li>
+                                            <li><a href="tbl-datatable.html" class="dropdown-item"><i class="fas fa-circle"></i> Datatable</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">UI Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-alerts.html" class="dropdown-item"><i class="fas fa-circle"></i> Alerts</a></li>
+                                            <li><a href="bc-accordions.html" class="dropdown-item"><i class="fas fa-circle"></i> Accordions</a></li>
+                                            <li><a href="bc-avatars.html" class="dropdown-item"><i class="fas fa-circle"></i> Avatars</a></li>
+                                            <li><a href="bc-badges.html" class="dropdown-item"><i class="fas fa-circle"></i> Badges</a></li>
+                                            <li><a href="bc-breadcrumbs.html" class="dropdown-item"><i class="fas fa-circle"></i> Breadcrumbs</a></li>
+                                            <li><a href="bc-button.html" class="dropdown-item"><i class="fas fa-circle"></i> Button</a></li>
+                                            <li><a href="bc-button-group.html" class="dropdown-item"><i class="fas fa-circle"></i> Buttons Groups</a></li>
+                                            <li><a href="bc-cards.html" class="dropdown-item"><i class="fas fa-circle"></i> Cards</a></li>
+                                            <li><a href="bc-conversation.html" class="dropdown-item"><i class="fas fa-circle"></i> Conversation</a></li>
+                                            <li><a href="bc-datepickers.html" class="dropdown-item"><i class="fas fa-circle"></i> Date Pickers</a></li>
+                                            <li><a href="bc-icons.html" class="dropdown-item"><i class="fas fa-circle"></i> Icons</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">UI Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-menus.html" class="dropdown-item"><i class="fas fa-circle"></i> Menus</a></li>
+                                            <li><a href="bc-sliderscarousel.html" class="dropdown-item"><i class="fas fa-circle"></i> Media Sliders / Carousel</a></li>
+                                            <li><a href="bc-modals.html" class="dropdown-item"><i class="fas fa-circle"></i> Modals</a></li>
+                                            <li><a href="bc-pagination.html" class="dropdown-item"><i class="fas fa-circle"></i> Pagination</a></li>
+                                            <li><a href="bc-barsgraphs.html" class="dropdown-item"><i class="fas fa-circle"></i> Progress Bars & Graphs</a></li>
+                                            <li><a href="bc-searchbar.html" class="dropdown-item"><i class="fas fa-circle"></i> Search Bar</a></li>
+                                            <li><a href="bc-tabs.html" class="dropdown-item"><i class="fas fa-circle"></i> Tabs</a></li>
+                                            <li><a href="bc-toasts.html" class="dropdown-item"><i class="fas fa-circle"></i> Toasts</a></li>
+                                            <li><a href="bc-tooltips.html" class="dropdown-item"><i class="fas fa-circle"></i> Tooltips</a></li>
+                                            <li><a href="bc-uploadareas.html" class="dropdown-item"><i class="fas fa-circle"></i> Upload Areas</a></li>
+                                            <li><a href="bc-spinner.html" class="dropdown-item"><i class="fas fa-circle"></i> Spinner</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">Advance Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-advancedstats.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Stats</a></li>
+                                            <li><a href="bc-advancedcards.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Cards</a></li>
+                                            <li><a href="ac-lightbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Lightbox</a></li>
+                                            <li><a href="ac-notification.html" class="dropdown-item"><i class="fas fa-circle"></i> Notification</a></li>
+                                            <li><a href="ac-pnotify.html" class="dropdown-item"><i class="fas fa-circle"></i> Pnotify</a></li>
+                                            <li><a href="ac-rating.html" class="dropdown-item"><i class="fas fa-circle"></i> Rating</a></li>
+                                            <li><a href="bc-sidebarforms.html" class="dropdown-item"><i class="fas fa-circle"></i> Sidebar Forms</a></li>
+                                            <li><a href="ac-sweetalert.html" class="dropdown-item"><i class="fas fa-circle"></i> Sweetalert</a></li>
+                                            <li><a href="ac-syn-highlighter.html" class="dropdown-item"><i class="fas fa-circle"></i> Syntax Highlighter</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">Forms</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-inputs.html" class="dropdown-item"><i class="fas fa-circle"></i> Inputs</a></li>
+                                            <li><a href="bc-selects.html" class="dropdown-item"><i class="fas fa-circle"></i> Selects</a></li>
+                                            <li><a href="bc-f-validation.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Validation</a></li>
+                                            <li><a href="bc-f-masking.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Masking</a></li>
+                                            <li><a href="bc-f-wizard.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Wizard</a></li>
+                                            <li><a href="bc-f-picker.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Picker</a></li>
+                                            <li><a href="bc-f-select.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Select</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Extension</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="page-editor.html" class="dropdown-item"><i class="fas fa-circle"></i> Editor</a></li>
+                                            <li><a href="page-image-croper.html" class="dropdown-item"><i class="fas fa-circle"></i> Image Cropper</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- [ navbar ] end -->
+
+    <!-- [ navbar ] start -->
+    <header class="l-header bg-purple meta-header">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-sm-8">
+                    <h4 class="text-uppercase font-weight-normal text-white">Welcome to the future of projects.</h4>
+                    <h1 class="text-white f-40 font-weight-light my-4 ">
+                        Treva gives you everything you need to stay in sync, hit deadlines, and reach your goals.
+                    </h1>
+                    <button type="button" class="btn btn-light px-md-4">Get Started</button>
+                    <button type="button" class="btn btn-link px-md-4 text-white">Learn More</button>
+                </div>
+                <div class="col-md-6 col-sm-8">
+                    <img src="assets/images/landing/home-moke.png" alt="" class="img-fluid moke-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- [ navbar ] end -->
+
+    <!-- [ Content ] start -->
+    <section class="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/landing/widget-1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase">eyebrow</h6>
+                    <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="widget-2">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase">eyebrow</h6>
+                    <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    <div class="media mb-3">
+                        <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-dropbox.svg" alt="images" class="img-fluid"></span>
+                        <div class="media-body ml-3 align-self-center">
+                            <h6 class="mb-6">Lorem ipsum dolor sit amet dolor <br> consectetur</h6>
+                        </div>
+                    </div>
+                    <div class="media mb-5">
+                        <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-slack.svg" alt="images" class="img-fluid"></span>
+                        <div class="media-body ml-3 align-self-center">
+                            <h6 class="mb-6">Lorem ipsum dolor sit amet dolor <br> consectetur</h6>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary px-md-5">Button</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/landing/img-moke-1.png" alt="" class="img-fluid moke-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="video-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <h1 class="text-white f-40 font-weight-light ">
+                        Treva gives you everything you need to stay in sync, hit deadlines, and reach your goals.
+                    </h1>
+                </div>
+                <div class="col-sm-6 text-center">
+                    <a href="#!" class="text-white"><i class="fab fa-youtube f-40"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/landing/widget-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase">eyebrow</h6>
+                    <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="assets/images/landing/widget-3.png" alt="" class="img-fluid">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-5 text-center">
+                            <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="widget-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h6 class="text-uppercase">eyebrow</h6>
+                    <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    <button class="btn btn-primary px-md-5 mb-3">Button</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="assets/images/landing/img-task.png" alt="" class="img-fluid moke-img">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="widget-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="assets/images/landing/widget-5.png" alt="" class="img-fluid moke-img">
+                </div>
+                <div class="col-md-6">
+                    <h6 class="text-uppercase">eyebrow</h6>
+                    <h2 class="mb-4 font-weight-light my-4">Vestibulum id ligula porta felis <br> euismod semper faucibus mollis</h2>
+                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                    <span class="avtar avtar-icon avtar-square mr-3"><img src="assets/images/uikit/logo-dropbox.svg" alt="images" class="img-fluid"></span>
+                    <span class="avtar avtar-icon avtar-square mr-3"><img src="assets/images/uikit/logo-slack.svg" alt="images" class="img-fluid"></span>
+                    <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-mailchimp.svg" alt="images" class="img-fluid"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="testimonial">
+        <div class="position-relative d-md-flex align-items-end">
+            <img src="assets/images/landing/test-bg.jpg" alt="" class="img-fluid p-5">
+            <div class="w-100 position-absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="bg-purple p-5 text-white rounded">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <h2 class="text-white font-weight-light mb-3">Etiam porta sem malesuada magna mollis euismod donec sed odio dui nullam id dolor id nibh ultricies vehicula ut im sociis natoque penatibus et magnis dis.</h2>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="media">
+                                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0 text-truncate">Luke S, <span class="text-white-50">Galatic Inc.</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <h2 class="text-white font-weight-light mb-3">Etiam porta sem malesuada magna mollis euismod donec sed odio dui nullam id dolor id nibh ultricies vehicula ut im sociis natoque penatibus et magnis dis.</h2>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="media">
+                                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0 text-truncate">Luke S, <span class="text-white-50">Galatic Inc.</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <h2 class="text-white font-weight-light mb-3">Etiam porta sem malesuada magna mollis euismod donec sed odio dui nullam id dolor id nibh ultricies vehicula ut im sociis natoque penatibus et magnis dis.</h2>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div class="media">
+                                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0 text-truncate">Luke S, <span class="text-white-50">Galatic Inc.</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ol class="carousel-indicators mb-0 mr-0 w-25 d-inline-flex ml-auto">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="price">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-5">
+                    <h6 class="text-uppercase mb-4">eyebrow</h6>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$19</h1>
+                            <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6>
+                            <h2 class="mt-5 font-weight-normal mb-4">Freelance</h2>
+                            <p class="mb-4 px-md-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <button class="btn btn-outline-secondary px-md-5">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center rec-price">
+                        <span class="rec-badge">recommended</span>
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$29</h1>
+                            <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6>
+                            <h2 class="mt-5 font-weight-normal mb-4">Startup</h2>
+                            <p class="mb-4 px-md-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <button class="btn btn-primary px-md-5">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$49</h1>
+                            <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6>
+                            <h2 class="mt-5 font-weight-normal mb-4">Enterprise</h2>
+                            <p class="mb-4 px-md-4">Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                            <button class="btn btn-outline-secondary px-md-5">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Content ] start -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <hr class="my-5">
+                </div>
+                <div class="col-md-7 text-center text-md-left">
+                    <ul class="list-inline mb-5 ">
+                        <li class="list-inline-item"><img src="assets/images/logo-dark.svg" alt="" class="logo hei-20"></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">product</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">features</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">pricing</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <p>© 2019 Treva, Inc. All rights reserved.</p>
+                    <p>Proudly Design by <a href="#!" class="text-primary">Tarful</a> & Built by <a href="#!" class="text-primary">Codedthemes</a>.</p>
+                </div>
+                <div class="col-md-5 text-center text-md-right">
+                    <a href="#!"><img src="assets/images/landing/img-apple-dnld.svg" alt="" class="img-fluid"></a>
+                    <a href="#!"><img src="assets/images/landing/img-google-dnld.svg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    @@include('./layouts/footer.html')
+    <script>
+    </script>
+    @@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

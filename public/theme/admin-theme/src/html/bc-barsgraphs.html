@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+    <script src="assets/js/plugins/apexcharts.min.js"></script>
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Progress Bars & Graphs",
+"subtitle": "Visually represent complex data to be easy to understand"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Progress Bars & Graphs ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold"><span class="text-muted"> BAR /</span> HORIZONTAL</h3>
+                <h5>Progress</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h5>Labels</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4" style="height: 15px;">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                    </div>
+                </div>
+                <h5>Height</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4" style="height: 1px;">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4" style="height: 20px;">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h5>Backgrounds</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h5>Multiple Bars</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h5>Striped</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <h5>Animated Stripes</h5>
+                <div class="datta-example mb-4">
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
+                    </div>
+                    <div class="progress mb-4">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+                    </div>
+                    <button type="button" class="btn  btn-secondary bd-toggle-animated-progress" data-toggle="button" aria-pressed="false">Toggle animation</button>
+                    <script>
+                        $(".bd-toggle-animated-progress").on("click", function() {
+                            $(this).siblings(".progress").find(".progress-bar-striped").toggleClass("progress-bar-animated")
+                        })
+                    </script>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5"><span class="text-muted"> BAR /</span> VERTICAL</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="datta-example mb-4">
+                            <div class="row text-center">
+                                <div class="col-sm-4">
+                                    <label class="d-block">SIMPLE</label>
+                                    <div id="bar-v-1" class="d-inline-block"></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="d-block">ADVANCED</label>
+                                    <div id="bar-v-2" class="d-inline-block"></div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label class="d-block">GROUP</label>
+                                    <div id="bar-v-3" class="d-inline-block"></div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 160,
+                                            width: 18,
+                                            type: 'bar',
+                                            stacked: true,
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                horizontal: false,
+                                                endingShape: 'rounded'
+                                            },
+                                        },
+                                        colors: ['#FF0B37', '#d7dfe9'],
+                                        series: [{
+                                            name: 'PRODUCT A',
+                                            data: [13]
+                                        }, {
+                                            name: 'PRODUCT B',
+                                            data: [44]
+                                        }],
+                                        xaxis: {
+                                            categories: ['vertical bar'],
+                                        },
+                                        legend: {
+                                            show: false,
+                                        },
+                                        fill: {
+                                            opacity: 1
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#bar-v-1"), options);
+                                    chart.render();
+                                });
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 160,
+                                            width: 18,
+                                            type: 'bar',
+                                            stacked: true,
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                horizontal: false,
+                                                endingShape: 'rounded'
+                                            },
+                                        },
+                                        colors: ['#FF0B37', '#FFB800', '#d7dfe9'],
+                                        series: [{
+                                            name: 'PRODUCT A',
+                                            data: [13]
+                                        }, {
+                                            name: 'PRODUCT B',
+                                            data: [15]
+                                        }, {
+                                            name: 'PRODUCT c',
+                                            data: [20]
+                                        }],
+                                        xaxis: {
+                                            categories: ['vertical bar'],
+                                        },
+                                        legend: {
+                                            show: false,
+                                        },
+                                        fill: {
+                                            opacity: 1
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#bar-v-2"), options);
+                                    chart.render();
+                                });
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 160,
+                                            width: 38,
+                                            type: 'bar',
+                                            stacked: true,
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                horizontal: false,
+                                                endingShape: 'rounded'
+                                            },
+                                        },
+                                        colors: ['#FF0B37', '#FFB800', '#2DCA73', '#d7dfe9'],
+                                        series: [{
+                                            name: 'PRODUCT A',
+                                            data: [10, 0, 0]
+                                        }, {
+                                            name: 'PRODUCT B',
+                                            data: [0, 25, 0]
+                                        }, {
+                                            name: 'PRODUCT c',
+                                            data: [0, 0, 15]
+                                        }, {
+                                            name: 'PRODUCT d',
+                                            data: [25, 10, 20]
+                                        }],
+                                        xaxis: {
+                                            categories: ['vertical bar'],
+                                        },
+                                        legend: {
+                                            show: false,
+                                        },
+                                        fill: {
+                                            opacity: 1
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#bar-v-3"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="datta-example mb-4">
+                            <div class="text-center">
+                                <label class="d-block">ADVANCED</label>
+                                <div id="bar-v-4" class="d-inline-block"></div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 260,
+                                            type: 'bar',
+                                            stacked: true,
+                                            toolbar: {
+                                                show: false,
+                                            }
+                                        },
+                                        plotOptions: {
+                                            bar: {
+                                                horizontal: false,
+                                                columnWidth: '50%',
+                                                endingShape: 'rounded'
+                                            },
+                                        },
+                                        colors: ['#FF0B37', '#FFB800', '#d7dfe9'],
+                                        series: [{
+                                            name: 'PRODUCT A',
+                                            data: [13, 13, 13, 13, 13]
+                                        }, {
+                                            name: 'PRODUCT B',
+                                            data: [15, 15, 15, 15, 15]
+                                        }, {
+                                            name: 'PRODUCT c',
+                                            data: [20, 20, 20, 20, 20]
+                                        }],
+                                        xaxis: {
+                                            categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                                            axisBorder: {
+                                                show: false,
+                                            },
+                                            axisTicks: {
+                                                show: false,
+                                            }
+                                        },
+                                        grid: {
+                                            show: false,
+                                        },
+                                        yaxis: {
+                                            show: false,
+                                        },
+                                        legend: {
+                                            show: false,
+                                        },
+                                        fill: {
+                                            opacity: 1
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#bar-v-4"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5"><span class="text-muted"> DOUGHNUT /</span> HALF</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="datta-example">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-8 text-center">
+                                    <label class="d-block">SIMPLE</label>
+                                    <div id="half-dog-chart1"></div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            type: 'radialBar',
+                                            offsetY: -20,
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        plotOptions: {
+                                            radialBar: {
+                                                startAngle: -90,
+                                                endAngle: 90,
+                                                track: {
+                                                    background: "#D7DFE9",
+                                                    strokeWidth: '97%',
+                                                    margin: 5, // margin is in pixels
+                                                    shadow: {
+                                                        enabled: true,
+                                                        top: 2,
+                                                        left: 0,
+                                                        color: '#999',
+                                                        opacity: 1,
+                                                        blur: 2
+                                                    }
+                                                },
+                                                dataLabels: {
+                                                    value: {
+                                                        offsetY: -50,
+                                                        fontSize: '22px'
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        colors: ['#FFB800'],
+                                        fill: {
+                                            type: 'solid',
+                                        },
+                                        series: [65],
+                                        labels: ['open'],
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#half-dog-chart1"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="datta-example">
+                            <div class="row justify-content-center">
+                                <div class="col-sm-8 text-center">
+                                    <label class="d-block">ADVANCED</label>
+                                    <div id="half-dog-chart2"></div>
+                                </div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            type: 'radialBar',
+                                            offsetY: -20,
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        plotOptions: {
+                                            radialBar: {
+                                                startAngle: -130,
+                                                endAngle: 130,
+                                                track: {
+                                                    background: "#D7DFE9",
+                                                    strokeWidth: '97%',
+                                                    margin: 5, // margin is in pixels
+                                                    shadow: {
+                                                        enabled: true,
+                                                        top: 2,
+                                                        left: 0,
+                                                        color: '#999',
+                                                        opacity: 1,
+                                                        blur: 2
+                                                    }
+                                                },
+                                                dataLabels: {
+                                                    value: {
+                                                        offsetY: 50,
+                                                        fontSize: '22px'
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        colors: ['#2DCA73'],
+                                        fill: {
+                                            type: 'solid',
+                                        },
+                                        series: [100],
+                                        labels: ['open'],
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#half-dog-chart2"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5"><span class="text-muted"> DOUGHNUT /</span> FULL</h3>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="datta-example mb-4">
+                            <div class="text-center">
+                                <label class="d-block">FULL SIMPLE</label>
+                                <div id="full-dog-chart1"></div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 120,
+                                            type: 'donut',
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        series: [61, 20],
+                                        colors: ["#0e9e4a", "#ffffff00"],
+                                        legend: {
+                                            show: false,
+                                        },
+                                        plotOptions: {
+                                            pie: {
+                                                donut: {
+                                                    size: '85%',
+                                                    labels: {
+                                                        show: false,
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        dataLabels: {
+                                            enabled: false
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#full-dog-chart1"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="datta-example mb-4">
+                            <div class="text-center">
+                                <label class="d-block">FULL ADVANCED</label>
+                                <div id="full-dog-chart2"></div>
+                            </div>
+                            <script>
+                                $(function() {
+                                    var options = {
+                                        chart: {
+                                            height: 200,
+                                            type: 'donut',
+                                            sparkline: {
+                                                enabled: true
+                                            },
+                                        },
+                                        series: [44, 55, 41, 17, 15],
+                                        colors: ["#4680ff", "#0e9e4a", "#00acc1", "#ffa21d", "#ff5252"],
+                                        legend: {
+                                            show: false,
+                                        },
+                                        plotOptions: {
+                                            pie: {
+                                                donut: {
+                                                    size: '85%',
+                                                    labels: {
+                                                        show: true,
+                                                        name: {
+                                                            show: true
+                                                        },
+                                                        value: {
+                                                            show: true
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        dataLabels: {
+                                            enabled: false
+                                        },
+                                    }
+                                    var chart = new ApexCharts(document.querySelector("#full-dog-chart2"), options);
+                                    chart.render();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Progress Bars & Graphs ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+</html>

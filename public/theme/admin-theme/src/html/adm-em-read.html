@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+
+    <!-- ekko-lightbox css -->
+    <link rel="stylesheet" href="assets/css/plugins/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css">
+
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#!">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Email</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Read Mail</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <!-- [ Invoice ] start -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card email-card">
+                            <div class="card-header">
+                                <div class="mail-header">
+                                    <div class="row align-items-center">
+                                        <!-- [ email-left section ] start -->
+                                        <div class="col-xl-2 col-md-3">
+                                            <a href="index.html" class="b-brand">
+                                                <img src="assets/images/logo-dark.svg" alt="" class="logo">
+                                            </a>
+                                        </div>
+                                        <!-- [ email-left section ] end -->
+                                        <!-- [ email-right section ] start -->
+                                        <div class="col-xl-10 col-md-9">
+                                            <div class="input-group mb-0">
+                                                <div class="input-group-prepend">
+                                                    <label class="input-group-text" for="inputGroupSelect01"><i class="feather icon-search"></i></label>
+                                                </div>
+                                                <select class="custom-select" id="inputGroupSelect01">
+                                                    <option selected>Search ...</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- [ email-right section ] end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="mail-body">
+                                    <div class="row">
+                                        <!-- [ email-left section ] start -->
+                                        <div class="col-xl-2 col-md-3">
+                                            <div class="mb-3">
+                                                <a href="adm-em-compose.html" class="btn waves-effect waves-light btn-rounded btn-outline-primary">+ Compose</a>
+                                            </div>
+                                            <ul class="mb-2 nav nav-tab flex-column nav-pills">
+                                                <li class="nav-item mail-section">
+                                                    <a class="nav-link text-left active" href="adm-em-inbox.html">
+                                                        <span><i class="feather icon-inbox"></i>Index</span>
+                                                        <span class="float-right">6</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item mail-section">
+                                                    <a class="nav-link text-left" href="adm-em-inbox.html">
+                                                        <span><i class="feather icon-star-on"></i>Starred</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item mail-section">
+                                                    <a class="nav-link text-left" href="adm-em-inbox.html">
+                                                        <span><i class="feather icon-file-text"></i>Drafts</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item mail-section">
+                                                    <a class="nav-link text-left" href="adm-em-inbox.html">
+                                                        <span><i class="feather icon-navigation"></i>Sent Mail</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item mail-section">
+                                                    <a class="nav-link text-left" href="adm-em-inbox.html">
+                                                        <span><i class="feather icon-trash-2"></i>Trash</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a class="email-more-link" data-toggle="collapse" href="#email-more-cont" role="button" aria-expanded="false" aria-controls="email-more-cont"><span><i
+                                                        class="feather icon-chevron-down mr-2"></i>More</span><span style="display: none;"><i class="feather icon-chevron-up mr-2"></i>Less</span></a>
+                                            <div class="collapse" id="email-more-cont">
+                                                <ul class="nav nav-tab flex-column nav-pills">
+                                                    <li class="nav-item mail-section">
+                                                        <a class="nav-link text-left">
+                                                            <span><i class="feather icon-zap"></i> Important</span>
+                                                            <span class="float-right">6</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mail-section">
+                                                        <a class="nav-link text-left">
+                                                            <span><i class="feather icon-message-circle"></i> Chats</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item mail-section">
+                                                        <a class="nav-link text-left">
+                                                            <span><i class="feather icon-alert-triangle"></i> Spam</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- [ email-left section ] end -->
+                                        <!-- [ email-right section ] start -->
+                                        <div class="col-xl-10 col-md-9">
+                                            <div class="card">
+                                                <div class="card-header">
+                                                    <h6 class="d-inline-block m-0">Here You Have New Opportunity...</h6>
+                                                    <p class="float-right m-0"><strong>08:23 AM</strong></p>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="email-read">
+                                                        <div class="photo-table m-r-10">
+                                                            <a href="#">
+                                                                <img class="media-object img-radius" src="assets/images/user/avatar-1.jpg" alt="E-mail user" style="width:50px;">
+                                                            </a>
+                                                        </div>
+                                                        <div>
+                                                            <a href="#">
+                                                                <p class="user-name text-dark mb-1"><strong>John Doe</strong></p>
+                                                            </a>
+                                                            <a class="user-mail txt-muted" href="#">
+                                                                <p class="user-name text-dark mb-1"><strong>From:johndoe7869@gmail.com</strong></p>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-b-20 m-l-50 p-l-10 email-contant">
+                                                        <div class="photo-contant">
+                                                            <div>
+                                                                <p class="user-name text-dark mb-1"><strong>Hello Dear...</strong></p>
+                                                                <div class="email-content">
+                                                                    <p class="">
+                                                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                                                        montes, nascetur ridiculus mus.Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis.
+                                                                    </p>
+                                                                    <ul>
+                                                                        <li>Lorem ipsum dolor sit amet</li>
+                                                                        <li>Consectetur adipiscing elit</li>
+                                                                        <li>Facilisis in pretium nisl aliquet</li>
+                                                                        <li>Nulla volutpat aliquam velit
+                                                                            <ul>
+                                                                                <li>Phasellus iaculis neque</li>
+                                                                                <li>Purus sodales ultricies</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                        <li>Faucibus porta lacus fringilla vel</li>
+                                                                        <li>Eget porttitor lorem</li>
+                                                                    </ul>
+                                                                    <blockquote class="blockquote">
+                                                                        <p class="mb-2">
+                                                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
+                                                                            montes, nascetur ridiculus mus.
+                                                                        </p>
+                                                                        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                                                                    </blockquote>
+                                                                </div>
+                                                            </div>
+                                                            <div class="m-t-15">
+                                                                <i class="feather icon-paperclip f-20 m-r-10"></i>Attachments <b>(3)</b>
+                                                                <div class="row mail-img m-t-20">
+                                                                    <div class="col-sm-4 col-md-3 col-xl-2 m-b-20">
+                                                                        <a href="assets/images/slider/img-slide-2.jpg" data-toggle="lightbox" data-title="Nextro Image 1" data-footer="Nextro Image 1"><img src="assets/images/slider/img-slide-2.jpg"
+                                                                                class="img-fluid img-thumbnail" alt=""></a>
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-md-3 col-xl-2 m-b-20">
+                                                                        <a href="assets/images/slider/img-slide-1.jpg" data-toggle="lightbox" data-title="Nextro Image 2" data-footer="Nextro Image 2"><img src="assets/images/slider/img-slide-1.jpg"
+                                                                                class="img-fluid img-thumbnail" alt=""></a>
+                                                                    </div>
+                                                                    <div class="col-sm-4 col-md-3 col-xl-2 m-b-20">
+                                                                        <a href="assets/images/slider/img-slide-3.jpg" data-toggle="lightbox" data-title="Nextro Image 3" data-footer="Nextro Image 3"><img src="assets/images/slider/img-slide-3.jpg"
+                                                                                class="img-fluid img-thumbnail" alt=""></a>
+                                                                    </div>
+                                                                </div>
+                                                                <form class="form-material">
+                                                                    <div class="form-group">
+                                                                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Reply Your Thoughts" required="">
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- [ email-right section ] start -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- [ email-read ] end -->
+                    </div>
+                </div>
+                <!-- [ Invoice ] end -->
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+@@include('./layouts/footer.html')
+<!-- ekko-lightbox Js -->
+<script src="assets/js/plugins/ekko-lightbox.min.js"></script>
+<script src="assets/js/plugins/lightbox.min.js"></script>
+<script src="assets/js/pages/ac-lightbox.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

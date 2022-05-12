@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Treva - Bootstrap 4 Admin Template Documentation</title>
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta -->
+    <meta name="description" content="Treva Bootstrap Admin Template Documentation helper file." />
+    <meta name="author" content="Codedthemes" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- required CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/prism-coy.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li.pcoded-trigger>a {
+            background: transparent;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active {
+            background: transparent;
+            color: #000;
+            position: relative;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active>.pcoded-micon {
+            color: #000;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active:after {
+            content: "";
+            background-color: #0B69FF;
+            z-index: 1027;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3px;
+            height: 100%;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background: #0B69FF;
+            box-shadow: none;
+        }
+
+        pre[class*=language-]>code {
+            border-left: 5px solid #0B69FF;
+        }
+
+        .nav-pills {
+            /* padding: 15px 25px; */
+        }
+
+        .nav-pills>li i {
+            display: inline-block;
+            font-size: 15px;
+            padding: 0px 0;
+        }
+
+        #gulp pre[class*=language-].line-numbers.line-numbers code {
+            padding-left: 1.5em;
+        }
+    </style>
+</head>
+
+<nav class="pcoded-navbar dashboard-nav menu-light menupos-fixed">
+    <div class="navbar-wrapper">
+        <div class="navbar-content scroll-div">
+            <ul class="nav pcoded-inner-navbar">
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Home page</label>
+                </li>
+                <li class="nav-item"><a href="index.html" class="nav-link"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Back to home</span></a></li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Structure</label>
+                </li>
+                <li class="nav-item"><a href="#gulp" class="nav-link active"><span class="pcoded-micon"><i class="fab fa-gulp"></i></span><span class="pcoded-mtext">Gulp setup</span></a></li>
+                <li class="nav-item"><a href="#task" class="nav-link"><span class="pcoded-micon"><i class="fas fa-tasks"></i></span><span class="pcoded-mtext">Task</span></a></li>
+                <li class="nav-item"><a href="#filestruct" class="nav-link"><span class="pcoded-micon"><i class="fas fa-align-center"></i></span><span class="pcoded-mtext">Gulp Structure</span></a></li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>layouts</label>
+                </li>
+                <li class="nav-item"><a href="#cont" class="nav-link"><span class="pcoded-micon"><i class="fas fa-code"></i></span><span class="pcoded-mtext">content</span></a></li>
+                <li class="nav-item"><a href="#layout" class="nav-link"><span class="pcoded-micon"><i class="fas fa-desktop"></i></span><span class="pcoded-mtext">Layout</span></a></li>
+                <li class="nav-item"><a href="#customizer" class="nav-link"><span class="pcoded-micon"><i class="feather icon-scissors"></i></span><span class="pcoded-mtext">Theme Customizer</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+    <div class="m-header">
+        <a href="index.html">
+            <img class="img-fluid" src="assets/images/logo-dark.svg" alt="Treva Logo" />
+        </a>
+    </div>
+    <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li><a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+        </ul>
+    </div>
+</header>
+<div class="pcoded-main-container" id="home">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <div class="page-header breadcumb-sticky">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <div class="page-header-title">
+                                    <h5 class="m-b-10">Gulp Documentation</h5>
+                                </div>
+                                <ul class="breadcrumb">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card" id="gulp">
+                                    <div class="card-header">
+                                        <h5>Gulp (i.e. Optional)</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i>Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="alert alert-warning mb-0" role="alert">
+                                            <h4 class="alert-heading"><i class="feather icon-alert-triangle mr-2"></i>Gulp is not mandatory</h4>
+                                            <hr>
+                                            <p class="mb-1">You may skip this section if you don't want Gulp in your project. Please use <code>quickstart/</code> directory in your project.</p>
+                                        </div>
+                                        <p class="mt-3">You can use <a href="https://gulpjs.com/" target="_blank">Gulp</a> for Automate and enhance your project workflow.</p>
+                                        <h6>Don't know about Gulp?</h6>
+                                        <hr class="my-2">
+                                        <p>Gulp is a toolkit for automating painful or time-consuming tasks in your project development workflow, so you can stop messing around and build something easier than ever.</p>
+                                        <ul>
+                                            <li>Auto Minify/Uglify CSS, HTML, JS codes</li>
+                                            <li>Auto Compile SaSS file</li>
+                                            <li>3000+ <a href="https://gulpjs.com/plugins/" target="_blank">Plugins </a></li>
+                                        </ul>
+                                        <h6>Gulp for Treva</h6>
+                                        <hr class="my-2">
+                                        <p class="mb-1">Use <a href="https://gulpjs.com/" target="_blank">Gulp</a> in Treva is for build different layouts and theme customization with lots of useful tasks like Image Optimization, SaSS compile
+                                            etc...which really useful to build the production ready <code>dist/</code>directory.</p>
+                                        <h6 class="mt-3">How to setup Gulp for Treva?</h6>
+                                        <hr class="my-2">
+                                        <ol class="">
+                                            <li>Make sure that you have already <b class="f-w-600">install <a href="https://nodejs.org/en/" target="_blank">Nodejs</a> and <a href="https://gulpjs.com/" target="_blank">Gulp</a></b> in your
+                                                server/computer</li>
+                                            <li>Open "Nodejs Command prompt" and redirect to your project root directory.</li>
+                                            <li>Enter the command <code>npm install</code> in command prompt.</li>
+                                            <li>After that you need to run below <code>gulp</code> tasks to build production ready <code>dist/</code> directory.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="task">
+                                    <div class="card-header">
+                                        <h5>Gulp Commands(task)</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i>Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6>Default task</h6>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Gulp Command</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>gulp</code></td>
+                                                        <td class="text-wrap">which build template in <code>/dist</code> directory</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h6>Basic task</h6>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Gulp Command</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>gulp sass</code></td>
+                                                        <td class="text-wrap">which compile .scss files from <code>/src/assets/scss</code> directory and place it into a <code>/dist/assets/css</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp imgmin</code></td>
+                                                        <td class="text-wrap">which use to optimize images from <code>/src/assets/images</code> directory and place it into a <code>/dist/assets/images</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp build</code></td>
+                                                        <td class="text-wrap">which use to copy files from <code>/src/assets</code> directory and place it into a <code>/dist/assets</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp build-html</code></td>
+                                                        <td class="text-wrap">which use compile your html file from <code>/src/html</code> directory and place it into a <code>/dist</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp build-js</code></td>
+                                                        <td class="text-wrap">which use to build <code>.js</code> files from <code>/src/assets/js</code> directory and place it into a <code>/dist/assets/js</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp watch</code></td>
+                                                        <td class="text-wrap">It will automatically start your build process if you make any changes in html,scss,js file from <code>/src</code> directory and put new changes to <code>/dist</code>
+                                                            directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>gulp watch-minify</code></td>
+                                                        <td class="text-wrap">It will automatically start your build process if you make any changes in html,scss,js file from <code>/src</code> directory and put new changes to <code>/dist</code>
+                                                            directory with <b class="f-w-500">minify assets</b></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h6>Minify task</h6>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Gulp Command</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>mincss</code></td>
+                                                        <td class="text-wrap">which minify all css in <code>/dist/assets/css</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>uglify</code></td>
+                                                        <td class="text-wrap">which minify all javascript in <code>/dist/assets/js</code> directory</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>htmlmin</code></td>
+                                                        <td class="text-wrap">which minify all html in <code>/dist</code> directory</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="filestruct">
+                                    <div class="card-header">
+                                        <h5>Gulp structure</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre>
+<code class="language-markup">
+    Treva/
+    ├── src/
+    │   ├── assets/
+    │   ├── html/
+    ├── .babelrc
+    ├── gulpfile.js
+    ├── package.json
+    ├── package-lock.json
+
+</code>
+                                        </pre>
+                                    </div>
+                                </div>
+
+                                <div class="card" id="cont">
+                                    <div class="card-header">
+                                        <h5>Content</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i>Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="mt-4 mb-0">Change header ( topbar ) content</h6>
+                                        <p>to change header content just open <code>src/html/layouts/main-dashboard.html</code> and change the file as you want.</p>
+                                        <h6 class="mt-4 mb-0">Change navbar ( menu ) list</h6>
+                                        <p>to change header content just open <code>src/html/layouts/menu-list-dashboard.html</code> and change the file as you want.</p>
+                                    </div>
+                                </div>
+                                <div class="card" id="layout">
+                                    <div class="card-header">
+                                        <h5>Tons of layout using gulp</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i>Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="mt-2">Pre-build layout( build ) using gulp</h3>
+                                        <div class="alert alert-danger mb-0" role="alert">
+                                            <h4 class="alert-heading"><i class="feather icon-alert-triangle mr-2"></i>Take care when add class</h4>
+                                            <hr>
+                                            <p class="mb-1">be careful while adding a class in header, menu & body using prebuild layouts</p>
+                                            <p class="mb-0">the class will be separated by the <b class="f-w-500">space(" ")</b> so you <b class="f-w-500">don't need to add commas(",") or dash("-")</b> to separated two class</p>
+                                        </div>
+                                        <h5 class="mt-4">Steps to use pre-build layouts</h5>
+                                        <ol class="mt-2">
+                                            <li>Open <code>/gulpfile.js</code> file at root directory of theme package.</li>
+                                            <li>Find the code <code>const layout = {</code> in <code>/gulpfile.js</code> file.</li>
+                                            <li>Replace the whole <code>const layout = {</code> block with respected given code which you can find given below for different layout.</li>
+                                            <li>For other supported customization option you need to refer the respected layout pages in the theme package.</li>
+                                        </ol>
+                                        <h5 class="mt-4">Variable description</h5>
+                                        <hr class="mt-2 mb-3">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Variable</th>
+                                                        <th>Description</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>layouts</code></td>
+                                                        <td class="text-wrap">This variable store value of layout types<br>eg.<code>vertical</code>,<code>horizontal</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>menuclass</code></td>
+                                                        <td class="text-wrap">This variable store value which add in right navbar class<br>
+                                                            eg. <code> menupos-fixed</code> . . .
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>headerclass</code></td>
+                                                        <td class="text-wrap">This variable store value which add in right header class<br>
+                                                            eg. <code> headerpos-fixed</code> . . .
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>Gulp Layout customizer</h5>
+                                        <ul class="nav nav-pills mb-0" id="pills-glp-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-glp-vertical-tab" data-toggle="pill" href="#pills-glp-vertical" role="tab" aria-controls="pills-glp-vertical" aria-selected="true">Vertical</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-glp-horizontal-tab" data-toggle="pill" href="#pills-glp-horizontal" role="tab" aria-controls="pills-glp-horizontal" aria-selected="false">Horizontal</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content mb-0 pt-2" id="pills-glp-tabContent">
+                                            <div class="tab-pane show active" id="pills-glp-vertical" role="tabpanel" aria-labelledby="pills-glp-vertical-tab">
+                                                <p>Set <code>vertical</code> value in <code>layouts</code> variable</p>
+                                                <pre class="line-numbers language-js">
+<code class="language-js">
+    //=============================================================
+    //    this is default layout of theme which already setup
+    //=============================================================
+    const layout = {
+        'layouts': 'vertical',
+        'sublayouts': '',
+        'bodyclass': '',
+        'menuclass': 'menu-light menupos-fixed',
+        'headerclass': 'headerpos-fixed',
+    }
+
+</code>
+                                                </pre>
+                                            </div>
+                                            <div class="tab-pane" id="pills-glp-horizontal" role="tabpanel" aria-labelledby="pills-glp-horizontal-tab">
+                                                <p>Set <code>horizontal</code> value in <code>layouts</code> variable</p>
+                                                <p>remove <code>menupos-fixed</code> from <code>menuclass</code> variable</p>
+                                                <p>remove <code>headerpos-fixed</code> from <code>headerclass</code> variable</p>
+                                                <pre class="line-numbers language-js">
+<code class="language-js">
+    const layout = {
+        'layouts': 'horizontal',
+        'sublayouts': '',
+        'bodyclass': '',
+        'menuclass': 'menu-light',
+        'headerclass': '',
+    }
+
+</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- required JS -->
+<script src="assets/js/vendor-all.min.js"></script>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/plugins/prism.js"></script>
+
+<!-- custom JS -->
+<script type="text/javascript">
+    $('body').scrollspy({
+        target: ".pcoded-inner-navbar"
+    });
+    $('body').scroll(function() {
+        $('.nav-item').removeClass('pcoded-trigger');
+    });
+    $(".pcoded-inner-navbar a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: ($(hash).offset().top)
+            }, 1500, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
+
+</body>
+
+</html>

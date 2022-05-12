@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/trumbowyg.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "Pages",
+"title": "Editor",
+"subtitle": "Editor is use to Enter advance data on page"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- [ tinymce editor ] start -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Trumbowyg editor</h5>
+                    </div>
+                    <div class="card-body">
+                        <textarea id="trumbowyg-editor-sample">
+                            <p>hello..</p>
+                        </textarea>
+                    </div>
+                </div>
+                <!-- [ tinymce editor ] end -->
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+<!-- trumbowyg editor -->
+<script src="assets/js/plugins/trumbowyg.min.js"></script>
+<script>
+    // tinymce editor
+    $(window).on('load', function() {
+        $('#trumbowyg-editor-sample').trumbowyg({
+            svgPath: 'assets/css/plugins/icons.svg',
+            btns: [
+                ['viewHTML'],
+                ['undo', 'redo'],
+                ['formatting'],
+                ['strong', 'em', 'del'],
+                ['superscript', 'subscript'],
+                ['link'],
+                ['insertImage'],
+                ['unorderedList', 'orderedList'],
+                ['horizontalRule'],
+                ['removeformat'],
+                ['fullscreen']
+            ]
+        });
+    });
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+</html>

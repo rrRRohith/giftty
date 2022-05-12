@@ -1,0 +1,20 @@
+#empty-message {
+    text-align:center;
+    font-size: 100%;
+    padding: 50px;
+    min-height: 150px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    
+}
+#empty-message h1{
+	color: red;
+}
+.shopping-cart-mt{
+	margin-top: 15px;
+	text-align: center;
+	padding: 10px 0;
+}
+

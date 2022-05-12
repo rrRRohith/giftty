@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Pagination",
+"subtitle": "Use to help users move between a large number of items in a a table or list, it could be linking across different pages or on the same page."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Pagination ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">SIMPLE</h3>
+                <div class="datta-example">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#!">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h5 class="mt-5">Working with Icons</h5>
+                <hr>
+                <div class="datta-example">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#!" aria-label="Previous"><span aria-hidden="true">&laquo;</span><span class="sr-only">Previous</span></a></li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true">&raquo;</span><span class="sr-only">Next</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h5 class="mt-5">Disabled and Active States</h5>
+                <hr>
+                <div class="datta-example">
+                    <nav aria-label="...">
+                        <ul class="pagination">
+                            <li class="page-item disabled"><span class="page-link">Previous</span></li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item active"><span class="page-link">2<span class="sr-only">(current)</span></span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h5 class="mt-5">Sizing</h5>
+                <hr>
+                <div class="datta-example">
+                    <nav class="mb-4" aria-label="...">
+                        <ul class="pagination pagination-lg">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#!" tabindex="-1">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        </ul>
+                    </nav>
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-sm">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#!" tabindex="-1">1</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <h5 class="mt-5">Alignment</h5>
+                <hr>
+                <div class="datta-example">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#!" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#!">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#!" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#!">Next</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <h5 class="mt-5">DOTS</h5>
+                <hr>
+                <div class="datta-example mb-4">
+                    <ol class="carousel-indicators position-relative d-inline-flex mx-0 bg-white px-3 py-2 rounded">
+                        <li data-target="#carouselExampleIndicators" class="bg-dark"></li>
+                        <li data-target="#carouselExampleIndicators" class="bg-dark active"></li>
+                        <li data-target="#carouselExampleIndicators" class="bg-dark"></li>
+                        <li data-target="#carouselExampleIndicators" class="bg-dark"></li>
+                        <li data-target="#carouselExampleIndicators" class="bg-dark"></li>
+                    </ol>
+                </div>
+                <div class="datta-example">
+                    <ol class="carousel-indicators position-relative d-inline-flex mx-0 bg-dark px-3 py-2 rounded">
+                        <li data-target="#carouselExampleIndicators"></li>
+                        <li data-target="#carouselExampleIndicators" class="active"></li>
+                        <li data-target="#carouselExampleIndicators"></li>
+                        <li data-target="#carouselExampleIndicators"></li>
+                        <li data-target="#carouselExampleIndicators"></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- [ Pagination ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

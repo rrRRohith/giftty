@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "PRIMITIVES",
+"title": "Shapes & Curves",
+"subtitle": "Boxes and other elements could have different rounded borders based on the context."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Shapes & Curves ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Squre</h3>
+                        <p><code>class="rounded-0"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-0"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded sm</h3>
+                        <p><code>class="rounded-sm"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-sm"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded lg</h3>
+                        <p><code>class="rounded-lg"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-lg"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded circle</h3>
+                        <p><code>class="rounded-circle"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-circle"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded pill</h3>
+                        <p><code>class="rounded-pill"</code></p>
+                        <span class="wid-150 hei-120 mb-3 d-inline-block border bg-white rounded-pill"></span>
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded top</h3>
+                        <p><code>class="rounded-top"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-top"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded right</h3>
+                        <p><code>class="rounded-right"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-right"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded bottom</h3>
+                        <p><code>class="rounded-bottom"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-bottom"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Rounded left</h3>
+                        <p><code>class="rounded-left"</code></p>
+                        <span class="wid-120 hei-120 mb-3 d-inline-block border bg-white rounded-left"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Shapes & Curves ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

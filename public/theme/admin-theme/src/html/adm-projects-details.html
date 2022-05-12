@@ -1,0 +1,1562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/plugins/dropify.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/fullcalendar.min.css">
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#!"><i class="feather icon-chevron-left"></i> Back to Projects</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="row">
+                    <div class="col-sm-12 mb-4">
+                        <div class="media">
+                            <span class="avtar avtar-square text-white bg-red-2">RE</span>
+                            <div class="media-body ml-3 align-self-center">
+                                <h1 class="mb-0 font-weight-normal">Revamp Design System based on new vision</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase active" id="Overview-tab" data-toggle="tab" href="#Overview" role="tab" aria-controls="Overviewe" aria-selected="true">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="List-tab" data-toggle="tab" href="#List" role="tab" aria-controls="List" aria-selected="false">List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="Timeline-tab" data-toggle="tab" href="#Timeline" role="tab" aria-controls="Timeline" aria-selected="false">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="Calendar-tab" data-toggle="tab" href="#Calendar" role="tab" aria-controls="Calendar" aria-selected="false">Calendar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="Conversations-tab" data-toggle="tab" href="#Conversations" role="tab" aria-controls="Conversations" aria-selected="false">Conversations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-uppercase" id="Files-tab" data-toggle="tab" href="#Files" role="tab" aria-controls="Files" aria-selected="false">Files</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Overview" role="tabpanel" aria-labelledby="Overview-tab">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div id="dashboarddatepicker1" class="form-control d-inline-block w-auto mb-4">
+                                            <i class="feather icon-calendar"></i>&nbsp;
+                                            <span></span> <i class="feather icon-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div id="opentask-taskchart1"></div>
+                                                        <h5 class="text-success">10.5%<i class="mr-2 ml-1 feather icon-arrow-up"></i><small class="text-body">Since last week</small></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="card">
+                                                    <div class="card-body text-center">
+                                                        <div id="opentask-taskchart2"></div>
+                                                        <h5 class="text-danger">10.5%<i class="mr-2 ml-1 feather icon-arrow-up"></i><small class="text-body">Since last week</small></h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h2 class="font-weight-normal mb-4">Tasks by Team</h2>
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-4">
+                                                        <div id="taskfull-dashboard-chart1" class="my-2"></div>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-blue f-10 m-r-10"></i>Engineering <span class="float-right h6 mb-0 text-body">11</span></p>
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-green f-10 m-r-10"></i>Creative <span class="float-right h6 mb-0 text-body">7</span></p>
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>Finance <span class="float-right h6 mb-0 text-body">4</span></p>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-yellow f-10 m-r-10"></i>Marketing <span class="float-right h6 mb-0 text-body">6</span></p>
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-purple f-10 m-r-10"></i>Product design <span class="float-right h6 mb-0 text-body">28</span></p>
+                                                                <p class="mb-3"><i class="fas fa-circle text-c-red f-10 m-r-10"></i>User research <span class="float-right h6 mb-0 text-body">9</span></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="my-4">
+                                                <div class="row align-items-center justify-content-between mb-4">
+                                                    <div class="col-auto">
+                                                        <h2 class="font-weight-normal mb-0">Weekly Variation</h2>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row justify-content-end  d-none d-sm-flex">
+                                                            <div class="col-auto">
+                                                                <span class=""><i class="fas fa-circle text-danger f-10 m-r-5"></i>Overdue</span>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <span class=""><i class="fas fa-circle text-warning f-10 m-r-5"></i>Open</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">Creative</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">Engineering</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">Finance</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">Marketing</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-danger d-inline-block mb-0">9.3%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">product design</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-success d-inline-block mb-0">1.9%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-3">
+                                                        <h6 class="text-body text-uppercase">uwer research</h6>
+                                                        <div class="progress my-2">
+                                                            <div class="progress-bar bg-warning" role="progressbar" style="width: 20%"></div>
+                                                            <div class="progress-bar bg-danger" role="progressbar" style="width: 15%"></div>
+                                                        </div>
+                                                        <p class="text-danger d-inline-block mb-0">9.3%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                                        <p class="d-inline-block">Last 7 days</p>
+                                                    </div>
+                                                </div>
+                                                <hr class="my-4">
+                                                <div class="text-center">
+                                                    <a href="#!" class="text-body">See all</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row align-items-center justify-content-between">
+                                                    <div class="col-auto">
+                                                        <h2 class="font-weight-normal mb-0">Tasks by Day</h2>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row justify-content-end  d-none d-sm-flex">
+                                                            <div class="col-auto">
+                                                                <span class=""><i class="fas fa-circle text-danger f-10 m-r-5"></i>Overdue</span>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <span class=""><i class="fas fa-circle text-warning f-10 m-r-5"></i>Open</span>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <span class=""><i class="fas fa-circle text-success f-10 m-r-5"></i>Completed</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="my-4">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div id="dashboardtastbar1"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="p-4 border rounded">
+                                                            <h1 class="display-4 d-inline-block font-weight-normal">16</h1>
+                                                            <p class="text-danger d-inline-block mb-0">4.9%<i class="mr-2 ml-1 feather icon-arrow-down"></i></p>
+                                                            <p class="text-uppercase">Overdue</p>
+                                                            <hr>
+                                                            <div class="media align-items-center">
+                                                                <h2 class="mb-0 font-weight-normal">7</h2>
+                                                                <div class="media-body ml-3">
+                                                                    Thursday was the day with the most tasks overdue
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-sm-6">
+                                                        <div id="dashboardtastbar2"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="p-4 border rounded">
+                                                            <h1 class="display-4 d-inline-block font-weight-normal">49</h1>
+                                                            <p class="text-success d-inline-block mb-0">5.2%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                            <p class="text-uppercase">Overdue</p>
+                                                            <hr>
+                                                            <div class="media align-items-center">
+                                                                <h2 class="mb-0 font-weight-normal">25</h2>
+                                                                <div class="media-body ml-3">
+                                                                    Monday was the day with the most tasks open
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-5">
+                                                    <div class="col-sm-6">
+                                                        <div id="dashboardtastbar3"></div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="p-4 border rounded">
+                                                            <h1 class="display-4 d-inline-block font-weight-normal">36</h1>
+                                                            <p class="text-success d-inline-block mb-0">21.7%<i class="mr-2 ml-1 feather icon-arrow-up"></i></p>
+                                                            <p class="text-uppercase">Overdue</p>
+                                                            <hr>
+                                                            <div class="media align-items-center">
+                                                                <h2 class="mb-0 font-weight-normal">19</h2>
+                                                                <div class="media-body ml-3">
+                                                                    Wednesday was the day with the most tasks completed
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="row align-items-center justify-content-between">
+                                                    <div class="col-auto mb-3">
+                                                        <h2 class="font-weight-normal mb-0">Tasks by Member</h2>
+                                                    </div>
+                                                    <div class="col-auto mb-3">
+                                                        <div class="form-group float-right mb-0">
+                                                            <div id="taskreportrange1" class="form-control">
+                                                                <i class="feather icon-calendar"></i>&nbsp;
+                                                                <span></span> <i class="feather icon-chevron-down"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table-responsive">
+                                                    <table class="table table-borderless post-table table-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>user name</th>
+                                                                <th>Tasks</th>
+                                                                <th class="w-50"></th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-2.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Luke S</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    32 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>10</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-3.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Rose Morgan</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    25 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>2</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 75%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-1.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Luke S</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    22 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>3</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 70%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-4.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Suke L</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    19 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>4</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 65%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-1.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Luke S</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    14 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>7</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-2.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Hannah Walsh</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    8 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>2</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 55%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-3.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Luke S</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    3 <span class="text-success"><i class="mr-1 ml-2 feather icon-arrow-up"></i>7</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <img src="assets/images/user/avatar-4.jpg" class="img-fluid wid-40 img-radius mr-3" alt="user images">
+                                                                        <div class="media-body">
+                                                                            <h6 class="mb-0 font-weight-normal">Susie Harvey</h6>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    2 <span class="text-danger"><i class="mr-1 ml-2 feather icon-arrow-down"></i>1</span>
+                                                                </td>
+                                                                <td>
+                                                                    <div class="progress">
+                                                                        <div class="progress-bar bg-warning" role="progressbar" style="width: 45%"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <h6 class="mb-4 text-uppercase text-body f-12">About</h6>
+                                        <p>Maecenas sed diam eget risus varius blandit sit amet non magna cras mattis consectetur purus sit amet fermentum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                        <div class="border bg-white rounded-sm p-2 mb-3">
+                                            <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-dark float-right text-uppercase">on track</span> Due Date 8/04/2019</h6>
+                                        </div>
+                                        <hr>
+                                        <h6 class="mb-3 text-uppercase text-body f-12">Owner</h6>
+                                        <div class="media mb-4">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Ashoka Tano</p>
+                                            </div>
+                                        </div>
+                                        <h6 class="mb-3 text-uppercase text-body f-12">Followers</h6>
+                                        <div class="mb-4">
+                                            <span class="avtar text-blue-2 bg-blue-1 mr-3 mb-3">DV</span>
+                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                                            <span class="avtar text-purple-2 bg-purple-1 mr-3 mb-3">CD</span>
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                                            <span class="avtar text-teal-2 bg-teal-1 mr-3 mb-3">HS</span>
+                                            <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                                            <span class="avtar text-orange-2 bg-orange-1 mr-3 mb-3">AS</span>
+                                            <span class="avtar text-red-2 bg-red-1 mr-3 mb-3">PA</span>
+                                            <button type="button" class="btn btn-icon icon-lg"><i class="feather icon-plus"></i></button>
+                                        </div>
+                                        <hr>
+                                        <h6 class="mb-4 text-uppercase text-body f-12">Activity</h6>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 3 min ago</p>
+                                                <p class="mt-1 mb-0">Created task <span class="text-primary">Nulla vitae elit libero a pharetra.</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 5 min ago</p>
+                                                <p class="mt-1 mb-0">Completed task <span class="text-primary">Cantapibus dolor at ace</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 6 min ago</p>
+                                                <p class="mt-1 mb-0">Invite <span class="text-primary">Ashoka T.</span> to <span class="text-primary">Revamp Design System</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 8 min ago</p>
+                                                <p class="mt-1 mb-0">Created task <span class="text-primary">Nulla vitae elit libero a pharetra.</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 10 min ago</p>
+                                                <p class="mt-1 mb-0">Completed task <span class="text-primary">Cantapibus dolor at ace</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="media align-items-center mb-4">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <h6 class="mb-0 d-inline-block">Luke S. </h6>
+                                                <p class="mb-0 d-inline-block"> 12 min ago</p>
+                                                <p class="mt-1 mb-0">Invite <span class="text-primary">Ashoka T.</span> to <span class="text-primary">Revamp Design System</span></p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="text-center">
+                                            <a href="#!" class="text-body">See all</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="List" role="tabpanel" aria-labelledby="List-tab">
+                                <div class="row">
+                                    <div class="col-sm-6 d-flex align-items-center mb-4">
+                                        <h5 class="d-inline-block font-weight-normal text-body mb-0">56 Tasks</h5>
+                                    </div>
+                                    <div class="col-sm-6 d-flex align-items-center justify-content-end mb-4">
+                                        <div class="btn-group btn-group-toggle btn-group-link">
+                                            <label class="btn active">
+                                                <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                            <label class="btn ">
+                                                <div class="dropdown mb-0 mr-2">
+                                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                                                        <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                                                        <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                                                        <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table id="projdettable" class="table table-hover table-center mb-0 ">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>task name</th>
+                                                                <th>project</th>
+                                                                <th>due date</th>
+                                                                <th>Priority</th>
+                                                                <th class="text-right">Status</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Updated payment modules based on Accessibility <br>assessment</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>8/04/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-5.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>7/25/2019</td>
+                                                                <td class="text-danger">High</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur sed <br>posuere consectetur est at lobortis</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td class="text-danger">High</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Aenean eu leo quam pellentesque ornare sem lacinia <br>quam venenatis vestibulum morbi leo risus, <br>porta acs...</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Maecenas sed diam eget risus varius blandit</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Updated payment modules based on Accessibility <br>assessment</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>8/04/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-5.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>7/25/2019</td>
+                                                                <td class="text-danger">High</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Aenean lacinia bibendum nulla sed consectetur sed <br>posuere consectetur est at lobortis</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td class="text-danger">High</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Aenean eu leo quam pellentesque ornare sem lacinia <br>quam venenatis vestibulum morbi.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="media align-items-center">
+                                                                        <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                        <div class="media-body ml-3">
+                                                                            <p class="mb-0">Maecenas sed diam eget risus varius blandit</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                                </td>
+                                                                <td>9/01/2019</td>
+                                                                <td>Low</td>
+                                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Tasks</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Timeline" role="tabpanel" aria-labelledby="Timeline-tab">
+                                <div class="row">
+                                    <div class="col-xl-2 col-md-12">
+                                        <div id='external-events' class="external-events">
+                                            <h4>Events</h4>
+                                            <div class='fc-event'>Pellentesque ornar</div>
+                                            <div class='fc-event'>My Event 2</div>
+                                            <div class='fc-event'>My Event 3</div>
+                                            <div class='fc-event'>My Event 4</div>
+                                            <div class='fc-event'>My Event 5</div>
+                                            <div class="form-group">
+                                                <div class="switch switch-primary d-inline m-r-10">
+                                                    <input type="checkbox" id="drop-remove">
+                                                    <label for="drop-remove" class="cr"></label>
+                                                </div>
+                                                <label>Remove Event</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-10 col-md-12">
+                                        <div id='calendar' class='calendar bg-white'></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Calendar" role="tabpanel" aria-labelledby="Calendar-tab"></div>
+                            <div class="tab-pane fade" id="Conversations" role="tabpanel" aria-labelledby="Conversations-tab">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="card">
+                                            <div class="card-header border-bottom">
+                                                <span class="text-body font-weight-normal h5">Start a new conversation</span>
+                                            </div>
+                                            <div class="card-body pt-3">
+                                                <textarea class="form-control border-0 shadow-none mb-3" rows="7">Create a new conversation by writing your message here...</textarea>
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-6">
+                                                        <a href="#!" class="text-body text-h-primary">@ Task/User</a>
+                                                        <a href="#!" class="text-body text-h-primary pl-2"><i class="feather icon-paperclip"></i> Add files</a>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="input-group">
+                                                            <select class="custom-select rounded">
+                                                                <option selected>Select project</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                            </select>
+                                                            <div class="input-group-append ml-3">
+                                                                <button class="btn btn-primary rounded" type="button">Send</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="media mb-3">
+                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            <i class="feather icon-heart-on text-danger"></i>
+                                                        </div>
+                                                        <h5 class="mb-1 d-inline-block font-weight-normal">Duis mollis est non commodo luctus nisi er porttitor ligula</h5>
+                                                        <p class="mb-3 d-inline-block">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="mb-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                        <img src="assets/images/uikit/img-msg-1.jpg" alt="images" class="img-fluid rounded m-r-10 m-b-10">
+                                                        <img src="assets/images/uikit/img-msg-2.jpg" alt="images" class="img-fluid rounded m-r-10 m-b-10">
+                                                    </div>
+                                                </div>
+                                                <div class="input-group search-form">
+                                                    <input type="text" class="form-control" placeholder="Write a reply...">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary">@</a></span>
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary"><i class="feather icon-paperclip"></i></a></span>
+                                                        <span class="input-group-text bg-transparent"><a href="#!" class="text-muted text-h-primary">Reply</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="media">
+                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            <div class="btn-group card-option">
+                                                                <button type="button" class="btn shadow-none ">
+                                                                    <i class="feather icon-heart-on text-danger"></i>
+                                                                </button>
+                                                                <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="feather icon-more-horizontal"></i>
+                                                                </button>
+                                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="mb-1 d-inline-block font-weight-normal">Duis mollis est non commodo luctus nisi er porttitor ligula</h5>
+                                                        <p class="mb-3 d-inline-block">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="mb-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                        <img src="assets/images/uikit/img-msg-1.jpg" alt="images" class="img-fluid rounded m-r-10 m-b-10">
+                                                    </div>
+                                                </div>
+                                                <hr class="my-4">
+                                                <div class="media mb-3">
+                                                    <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            3 <i class="feather icon-heart-on"></i>
+                                                        </div>
+                                                        <h6 class="mb-0 d-inline-block">Luke S.</h6>
+                                                        <p class="mb-0 d-inline-block"> • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="my-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="media mb-3">
+                                                    <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            <i class="feather icon-heart-on"></i>
+                                                        </div>
+                                                        <h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+                                                        <p class="mb-0 d-inline-block"> • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="my-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group search-form">
+                                                    <input type="text" class="form-control" placeholder="Write a reply...">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary">@</a></span>
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary"><i class="feather icon-paperclip"></i></a></span>
+                                                        <span class="input-group-text bg-transparent"><a href="#!" class="text-muted text-h-primary">Reply</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="media">
+                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            <div class="btn-group card-option">
+                                                                <button type="button" class="btn shadow-none ">
+                                                                    <i class="feather icon-heart-on text-danger"></i>
+                                                                </button>
+                                                                <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                    <i class="feather icon-more-horizontal"></i>
+                                                                </button>
+                                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                                    <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <h5 class="mb-1 d-inline-block font-weight-normal">Duis mollis est non commodo luctus nisi er porttitor ligula</h5>
+                                                        <p class="mb-3 d-inline-block">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="mb-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                        <div class="p-3 mb-3 border rounded">
+                                                            <div class="media align-items-center">
+                                                                <img src="assets/images/uikit/card-icon-3.svg" alt="images" class="img-fluid">
+                                                                <div class="media-body ml-3">
+                                                                    <h6 class="mb-1">Death Star original maps and blueprint.pdf</h6>
+                                                                    <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                                </div>
+                                                                <div class="btn-group card-option">
+                                                                    <button type="button" class="btn shadow-none ">
+                                                                        <i class="feather icon-download f-18"></i>
+                                                                    </button>
+                                                                    <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                        <i class="feather icon-more-horizontal"></i>
+                                                                    </button>
+                                                                    <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                                        <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                                        <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="p-3 border rounded">
+                                                            <div class="media align-items-center">
+                                                                <i class="feather icon-check-circle h2 mb-0"></i>
+                                                                <div class="media-body ml-3">
+                                                                    <h6 class="mb-1">Updated payment modules based on new Accessibilty assessment</h6>
+                                                                    <p class="mb-0">by Ashoka T. • Task </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr class="my-4">
+                                                <div class="media mb-3">
+                                                    <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <div class="float-right">
+                                                            3 <i class="feather icon-heart-on"></i>
+                                                        </div>
+                                                        <h6 class="mb-0 d-inline-block">Ashoka T.</h6>
+                                                        <p class="mb-0 d-inline-block"> • 06/20/2019 at 6:43 PM </p>
+                                                        <p class="my-3">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="input-group search-form">
+                                                    <input type="text" class="form-control" placeholder="Write a reply...">
+                                                    <div class="input-group-append">
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary">@</a></span>
+                                                        <span class="input-group-text bg-transparent pr-0"><a href="#!" class="text-muted text-h-primary"><i class="feather icon-paperclip"></i></a></span>
+                                                        <span class="input-group-text bg-transparent"><a href="#!" class="text-muted text-h-primary">Reply</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Files" role="tabpanel" aria-labelledby="Files-tab">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="assets/images/slider/img-slide-3.jpg" alt="Card IMAGES">
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-1.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.pdf</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="assets/images/slider/img-slide-2.jpg" alt="Card IMAGES">
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-2.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.mp4</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <img class="card-img-top" src="assets/images/slider/img-slide-1.jpg" alt="Card IMAGES">
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-1.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.mp4</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <div class="card-img-top d-flex align-item-center justify-content-center hei-150 bg-light">
+                                                <img src="assets/images/uikit/card-icon-3.svg" alt="images" class="img-fluid wid-40">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-3.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.pdf</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <div class="card-img-top d-flex align-item-center justify-content-center hei-150 bg-light">
+                                                <img src="assets/images/uikit/card-icon-1.svg" alt="images" class="img-fluid wid-40">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-1.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.pdf</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-4">
+                                        <div class="card">
+                                            <div class="card-img-top d-flex align-item-center justify-content-center hei-150 bg-light">
+                                                <img src="assets/images/uikit/card-icon-2.svg" alt="images" class="img-fluid wid-40">
+                                            </div>
+                                            <div class="card-header">
+                                                <div class="media">
+                                                    <img src="assets/images/uikit/card-icon-2.svg" alt="images" class="img-fluid">
+                                                    <div class="media-body ml-3">
+                                                        <h6 class="mb-2">Death Star original maps and blueprint.pdf</h6>
+                                                        <p class="mb-0">by Ashoka T. • 06/20/2019 at 6:43 PM </p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-header-right">
+                                                    <div class="btn-group card-option">
+                                                        <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="feather icon-more-horizontal"></i>
+                                                        </button>
+                                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="assets/js/plugins/moment.min.js"></script>
+<script src="assets/js/plugins/daterangepicker.js"></script>
+<!-- Full calendar js -->
+<script src="assets/js/plugins/moment.js"></script>
+<script src="assets/js/plugins/jquery-ui.min.js"></script>
+<script src="assets/js/plugins/fullcalendar.min.js"></script>
+<!-- datatable Js -->
+<script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script>
+    $(window).on('load', function() {
+        $('#projdettable').DataTable();
+        $('#external-events .fc-event').each(function() {
+            var tmp = $(this).html();
+            $(this).data('event', {
+                title: $(this).html(),
+                stick: true
+            });
+            $(this).draggable({
+                zIndex: 999,
+                revert: true,
+                revertDuration: 0
+            });
+        });
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'month,agendaWeek,agendaDay'
+            },
+            defaultDate: '2018-08-12',
+            editable: true,
+            droppable: true,
+            events: [{
+                title: 'All Day Event',
+                start: '2018-08-01',
+                borderColor: '#B3F4E1',
+                backgroundColor: '#B3F4E1',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                title: 'Long Event',
+                start: '2018-08-07',
+                end: '2018-08-10',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                description: 'This is a cool event',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-09T16:00:00',
+                borderColor: '#FFD89D',
+                backgroundColor: '#FFD89D',
+                textColor: '#171F46'
+            }, {
+                id: 999,
+                title: 'Repeating Event',
+                start: '2018-08-16T16:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Conference',
+                start: '2018-08-11',
+                end: '2018-08-13',
+                borderColor: '#A9ECA3',
+                backgroundColor: '#A9ECA3',
+                textColor: '#171F46'
+            }, {
+                title: 'Lunch',
+                start: '2018-08-12T12:00:00',
+                borderColor: '#FF9D9D',
+                backgroundColor: '#FF9D9D',
+                textColor: '#171F46'
+            }, {
+                title: 'Happy Hour',
+                start: '2018-08-12T17:30:00',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }, {
+                title: 'Birthday Party',
+                start: '2018-08-13T07:00:00',
+                borderColor: '#C3AEFF',
+                backgroundColor: '#C3AEFF',
+                textColor: '#171F46'
+            }, {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2018-08-28',
+                borderColor: '#A4E3FE',
+                backgroundColor: '#A4E3FE',
+                textColor: '#171F46'
+            }],
+            drop: function() {
+                if ($('#drop-remove').is(':checked')) {
+                    $(this).remove();
+                }
+            },
+        });
+    });
+    $(function() {
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        function cb(start, end) {
+            $('#taskreportrange1  span').html(start.format('MM - D - YYYY') + ' - ' + end.format('MM - D - YYYY'));
+        }
+        $('#taskreportrange1').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+        cb(start, end);
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#2DCA73', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [10, 12, 15, 10, 8]
+            }, {
+                name: 'PRODUCT B',
+                data: [18, 16, 13, 18, 20]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar3"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#FFB800', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [8, 10, 12, 15, 10]
+            }, {
+                name: 'PRODUCT B',
+                data: [20, 18, 16, 13, 18]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar2"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 220,
+                type: 'bar',
+                stacked: true,
+                toolbar: {
+                    show: false,
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: '30%',
+                    endingShape: 'rounded'
+                },
+            },
+            colors: ['#FF0B37', '#d7dfe9'],
+            series: [{
+                name: 'PRODUCT A',
+                data: [15, 10, 8, 10, 12]
+            }, {
+                name: 'PRODUCT B',
+                data: [13, 18, 20, 18, 16]
+            }],
+            dataLabels: {
+                enabled: false,
+            },
+            xaxis: {
+                categories: ['MON', 'Tue', 'Wed', 'Thu', 'Fri'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: false,
+            },
+            yaxis: {
+                show: false,
+            },
+            legend: {
+                show: false,
+            },
+            fill: {
+                opacity: 1
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#dashboardtastbar1"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                height: 200,
+                type: 'donut',
+                sparkline: {
+                    enabled: true
+                },
+            },
+            series: [44, 55, 41, 17, 15],
+            colors: ["#4680ff", "#0e9e4a", "#00acc1", "#ffa21d", "#ff5252"],
+            legend: {
+                show: false,
+            },
+            plotOptions: {
+                pie: {
+                    donut: {
+                        size: '85%',
+                        labels: {
+                            show: true,
+                            name: {
+                                show: true
+                            },
+                            value: {
+                                show: true
+                            }
+                        }
+                    }
+                }
+            },
+            dataLabels: {
+                enabled: false
+            },
+        }
+        var chart = new ApexCharts(document.querySelector("#taskfull-dashboard-chart1"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                },
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: "#D7DFE9",
+                        strokeWidth: '97%',
+                        margin: 5, // margin is in pixels
+                        shadow: {
+                            enabled: true,
+                            top: 2,
+                            left: 0,
+                            color: '#999',
+                            opacity: 1,
+                            blur: 2
+                        }
+                    },
+                    dataLabels: {
+                        value: {
+                            offsetY: -40,
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+            colors: ['#FFB800'],
+            fill: {
+                type: 'solid',
+            },
+            series: [65],
+            labels: ['open tasks'],
+        }
+        var chart = new ApexCharts(document.querySelector("#opentask-taskchart1"), options);
+        chart.render();
+    });
+    $(function() {
+        var options = {
+            chart: {
+                type: 'radialBar',
+                offsetY: -20,
+                sparkline: {
+                    enabled: true
+                },
+            },
+            plotOptions: {
+                radialBar: {
+                    startAngle: -90,
+                    endAngle: 90,
+                    track: {
+                        background: "#D7DFE9",
+                        strokeWidth: '97%',
+                        margin: 5, // margin is in pixels
+                        shadow: {
+                            enabled: true,
+                            top: 2,
+                            left: 0,
+                            color: '#999',
+                            opacity: 1,
+                            blur: 2
+                        }
+                    },
+                    dataLabels: {
+                        value: {
+                            offsetY: -40,
+                            fontSize: '22px'
+                        }
+                    }
+                }
+            },
+            colors: ['#ff0b37'],
+            fill: {
+                type: 'solid',
+            },
+            series: [65],
+            labels: ['overdue tasks'],
+        }
+        var chart = new ApexCharts(document.querySelector("#opentask-taskchart2"), options);
+        chart.render();
+    });
+    $(function() {
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        function cb(start, end) {
+            $('#dashboarddatepicker1 span').html(start.format('MM - D - YYYY') + ' - ' + end.format('MM - D - YYYY'));
+        }
+        $('#dashboarddatepicker1').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+        cb(start, end);
+    });
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

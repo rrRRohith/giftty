@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- select2 css -->
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    @@include('./layouts/head-bottom-link.html')
+    <!-- select2 Js -->
+    <script src="assets/js/plugins/select2.full.min.js"></script>
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Form Select",
+"subtitle": "Form Select is use to Select multiple items from data"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Select2 ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Single Select</h5>
+                        <hr>
+                        <p>The<code>select2</code> can take a regular select box like this...</p>
+                        <div class="datta-example">
+                            <select class="js-example-basic-single form-control">
+                                <optgroup label="Developer">
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                </optgroup>
+                                <optgroup label="Designer">
+                                    <option value="WY">Peter</option>
+                                    <option value="WY">Hanry Die</option>
+                                    <option value="WY">John Doe</option>
+                                </optgroup>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ Single Select ]
+                                    $(".js-example-basic-single").select2();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Multi Select</h5>
+                        <hr>
+                        <p>The select below is declared with the<code>multiple</code> attribute</p>
+                        <div class="datta-example">
+                            <select class="js-example-basic-multiple col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ Multi Select ]
+                                    $(".js-example-basic-multiple").select2();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>With Placeholder</h5>
+                        <hr>
+                        <p><code>select2</code> uses the <code>placeholder</code> attribute on multiple select boxes</p>
+                        <div class="datta-example">
+                            <select class="js-example-placeholder-multiple col-sm-12">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ With Placeholder ]
+                                    $(".js-example-placeholder-multiple").select2({
+                                        placeholder: "Select Your Name"
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Tagging Support</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-tags</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-tags col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ Tagging Support ]
+                                    $(".js-example-tags").select2({
+                                        tags: true
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Automatic Tokenization</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-tokenizer</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-tokenizer col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ Automatic Select ]
+                                    $(".js-example-tokenizer").select2({
+                                        tags: true,
+                                        tokenSeparators: [',', ' ']
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>RTL Support</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-rtl</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-rtl col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ RTL Support ]
+                                    $(".js-example-rtl").select2({
+                                        dir: "rtl"
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Limiting the Number of Selections</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-basic-multiple-limit</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-basic-multiple-limit col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ limiting selection ]
+                                    $(".js-example-basic-multiple-limit").select2({
+                                        maximumSelectionLength: 2
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Diacritics Support</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-diacritics</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-diacritics col-sm-12" multiple="multiple">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ diacritics select ]
+                                    $(".js-example-diacritics").select2();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Responsive Width</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-responsive</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-responsive col-sm-12" multiple="multiple" style="width:75%;">
+                                <option value="AL">Alabama</option>
+                                <option value="WY">Wyoming</option>
+                                <option value="WY">Coming</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ Responsive select ]
+                                    $(".js-example-responsive").select2();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Loading with Array</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-data-array</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-data-array col-sm-12"></select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ loading array ]
+                                    var data = [{
+                                        id: 0,
+                                        text: 'enhancement'
+                                    }, {
+                                        id: 1,
+                                        text: 'bug'
+                                    }, {
+                                        id: 2,
+                                        text: 'duplicate'
+                                    }, {
+                                        id: 3,
+                                        text: 'invalid'
+                                    }, {
+                                        id: 4,
+                                        text: 'wontfix'
+                                    }];
+                                    $(".js-example-data-array").select2({
+                                        data: data
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Load Remote Data ( Ajax )</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-data-example-ajax</code>
+                        </p>
+                        <div class="datta-example">
+                            <select class="js-data-example-ajax col-sm-12">
+                                <option value="3620194" selected="selected">select2</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ loading data ]
+                                    function formatRepo(repo) {
+                                        if (repo.loading) return repo.text;
+
+                                        var markup = "<div class='select2-result-repository clearfix'>" +
+                                            "<div class='select2-result-repository__avatar'><img src='" + repo.owner.avatar_url + "' /></div>" +
+                                            "<div class='select2-result-repository__meta'>" +
+                                            "<div class='select2-result-repository__title'>" + repo.full_name + "</div>";
+
+                                        if (repo.description) {
+                                            markup += "<div class='select2-result-repository__description'>" + repo.description + "</div>";
+                                        }
+
+                                        markup += "<div class='select2-result-repository__statistics'>" +
+                                            "<div class='select2-result-repository__forks'><i class='icofont icofont-flash'></i> " + repo.forks_count + " Forks</div>" +
+                                            "<div class='select2-result-repository__stargazers'><i class='icofont icofont-star'></i> " + repo.stargazers_count + " Stars</div>" +
+                                            "<div class='select2-result-repository__watchers'><i class='icofont icofont-eye-alt'></i> " + repo.watchers_count + " Watchers</div>" +
+                                            "</div>" +
+                                            "</div></div>";
+
+                                        return markup;
+                                    }
+
+                                    function formatRepoSelection(repo) {
+                                        return repo.full_name || repo.text;
+                                    }
+                                    $(".js-data-example-ajax").select2({
+                                        ajax: {
+                                            url: "https://api.github.com/search/repositories",
+                                            dataType: 'json',
+                                            delay: 250,
+                                            data: function(params) {
+                                                return {
+                                                    q: params.term, // search term
+                                                    page: params.page
+                                                };
+                                            },
+                                            processResults: function(data, params) {
+                                                params.page = params.page || 1;
+
+                                                return {
+                                                    results: data.items,
+                                                    pagination: {
+                                                        more: (params.page * 30) < data.total_count
+                                                    }
+                                                };
+                                            },
+                                            cache: true
+                                        },
+                                        escapeMarkup: function(markup) {
+                                            return markup;
+                                        }, // let our custom formatter work
+                                        minimumInputLength: 1,
+                                        templateResult: formatRepo, // omitted for brevity, see the source of this page
+                                        templateSelection: formatRepoSelection // omitted for brevity, see the source of this page
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5>Disabled Results</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-disabled-results</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-disabled-results col-sm-12">
+                                <option value="one">First</option>
+                                <option value="two" disabled="disabled">Second (disabled)
+                                </option>
+                                <option value="three">Third</option>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ disable result ]
+                                    $(".js-example-disabled-results").select2();
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mb-5">
+                        <h5 class="sub-title">Hiding the Search Box</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-basic-hide-search</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-basic-hide-search col-sm-12" multiple="multiple" style="width: 75%">
+                                <optgroup label="Developer">
+                                    <option value="AL">Smith</option>
+                                    <option value="WY">Peter</option>
+                                    <option value="WY">James</option>
+                                    <option value="WY">Hanry Die</option>
+                                    <option value="WY">John Doe</option>
+                                    <option value="WY">Harry Poter</option>
+                                </optgroup>
+                            </select>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ hide search ]
+                                    $(".js-example-basic-hide-search").select2({
+                                        minimumResultsForSearch: Infinity
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-xl-8 col-md-12 mb-5">
+                        <h5>Enable-Disable</h5>
+                        <hr>
+                        <p>The select below is declared with the class<code>.js-example-disabled</code></p>
+                        <div class="datta-example">
+                            <select class="js-example-disabled col-sm-8">
+                                <option value="AL">Smith</option>
+                                <option value="WY">Peter</option>
+                                <option value="WY">James</option>
+                                <option value="WY">Hanry Die</option>
+                                <option value="WY">John Doe</option>
+                                <option value="WY">Harry Poter</option>
+                            </select>
+                            <button class="btn  btn-success m-t-20 m-b-20 m-l-10   js-programmatic-enable">Enable</button>
+                            <button class="btn  btn-danger m-t-20 m-b-20 m-l-10   js-programmatic-disable">Disable</button>
+                            <script>
+                                $(document).ready(function() {
+                                    // [ enable disable ]
+                                    $(".js-example-disabled").select2({
+                                        disabled: false
+                                    });
+                                    $(".js-programmatic-enable").on("click", function() {
+                                        $(".js-example-disabled").prop("disabled", false);
+                                    });
+                                    $(".js-programmatic-disable").on("click", function() {
+                                        $(".js-example-disabled").prop("disabled", true);
+                                    });
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Select2 ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

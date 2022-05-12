@@ -1,0 +1,37 @@
+/**  =====================
+      Badges css start
+==========================  **/
+
+.badge {
+    font-size: 80%;
+    padding: 0.35em 1.3em;
+    &.badge-circular {
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        padding: 0.35em 0.6em;
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        display: inline-flex;
+    }
+}
+@each $color, $value in $theme-colors {
+    .badge-light-#{$color} {
+        background: transparentize($value,.8);
+        border-color: theme-color-level($color, $alert-border-level);
+        color: $value;
+    }
+
+    a.badge-light-#{$color} {
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+            background: $value;
+            border-color: $value;
+            color: theme-color-level($color, $alert-bg-level);
+        }
+    }
+}
+/**====== Badges css end ======**/

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Treva - Bootstrap Admin Template Documentation</title>
+    <!--[if lt IE 10]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta -->
+    <meta name="description" content="Treva Bootstrap Admin Template Documentation helper file." />
+    <meta name="author" content="Codedthemes" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- required CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/prism-coy.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li.pcoded-trigger>a {
+            background: transparent;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active {
+            background: transparent;
+            color: #000;
+            position: relative;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li.active>a,
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active>.pcoded-micon {
+            color: #000;
+        }
+
+        .pcoded-navbar .pcoded-inner-navbar>li>a.active:after {
+            content: "";
+            background-color: #0B69FF;
+            z-index: 1027;
+            position: absolute;
+            left: 0;
+            top: 0px;
+            width: 3px;
+            height: 100%;
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            background: #0B69FF;
+            box-shadow: none;
+        }
+
+        pre[class*=language-]>code {
+            border-left: 5px solid #0B69FF;
+        }
+
+        .nav-pills {
+            /* padding: 15px 25px; */
+        }
+
+        .nav-pills>li i {
+            display: inline-block;
+            font-size: 15px;
+            padding: 0px 0;
+        }
+
+        #gulp pre[class*=language-].line-numbers.line-numbers code {
+            padding-left: 1.5em;
+        }
+    </style>
+</head>
+
+<nav class="pcoded-navbar dashboard-nav menu-light menupos-fixed">
+    <div class="navbar-wrapper">
+        <div class="navbar-content scroll-div">
+            <ul class="nav pcoded-inner-navbar">
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Getting started</label>
+                </li>
+                <li class="nav-item"><a href="#home" class="nav-link active"><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Treva</span></a></li>
+                <li class="nav-item"><a href="gulp.html" class="nav-link"><span class="pcoded-micon"><i class="fab fa-gulp"></i></span><span class="pcoded-mtext">Gulp setup</span></a></li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Structure</label>
+                </li>
+                <li class="nav-item"><a href="#filestruct" class="nav-link"><span class="pcoded-micon"><i class="far fa-folder-open"></i></span><span class="pcoded-mtext">Directory Structure</span></a></li>
+                <li class="nav-item"><a href="#filestruct" class="nav-link"><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Page Structure</span></a></li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>layouts</label>
+                </li>
+                <li class="nav-item"><a href="#layouts" class="nav-link"><span class="pcoded-micon"><i class="feather icon-layout"></i></span><span class="pcoded-mtext">Layout</span></a></li>
+                <li class="nav-item pcoded-menu-caption">
+                    <label>Resources & References</label>
+                </li>
+                <li class="nav-item"><a href="#plugins" class="nav-link"><span class="pcoded-micon"><i class="fas fa-plug"></i></span><span class="pcoded-mtext">Plugins</span></a></li>
+                <li class="nav-item"><a href="#references" class="nav-link"><span class="pcoded-micon"><i class="fas fa-plug"></i></span><span class="pcoded-mtext">Extra References</span></a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link"><span class="pcoded-micon"><i class="feather icon-help-circle"></i></span><span class="pcoded-mtext">FAQ</span></a></li>
+                <li class="nav-item"><a href="#cl" class="nav-link"><span class="pcoded-micon"><i class="feather icon-book"></i></span><span class="pcoded-mtext">Change Log</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed">
+    <div class="m-header">
+        <a href="index.html">
+            <img class="img-fluid" src="assets/images/logo-dark.svg" alt="Treva Logo" />
+        </a>
+    </div>
+    <a class="mobile-menu" id="mobile-header" href="#!">
+        <i class="feather icon-more-horizontal"></i>
+    </a>
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav mr-auto">
+            <li><a href="#!" class="full-screen" onclick="javascript:toggleFullScreen()"><i class="feather icon-maximize"></i></a></li>
+        </ul>
+    </div>
+</header>
+<div class="pcoded-main-container" id="home">
+    <div class="pcoded-wrapper">
+        <div class="pcoded-content">
+            <div class="pcoded-inner-content">
+                <div class="main-body">
+                    <div class="page-wrapper">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5>Treva - Documentation</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Helper Documentation of Treva UIkit.</p>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="d-inline">Version : </h6>
+                                                </td>
+                                                <td><a href="#cl">v1.0</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="d-inline">Last Update : </h6>
+                                                </td>
+                                                <td>16-12-2019</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="d-inline">Author : </h6>
+                                                </td>
+                                                <td><a href="https://codedthemes.com/" target="_blank">Codedthemes</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <h6 class="d-inline">Support : </h6>
+                                                </td>
+                                                <td><a href="https://codedthemes.support-hub.io/" target="_blank">https://codedthemes.support-hub.io/</a></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card" id="filestruct">
+                                    <div class="card-header">
+                                        <h5>Structure</h5>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>Following is default directory structure along with page structure. That helps you understanding the entire Treva template structure.</p>
+                                        <ul class="nav nav-pills mb-0" id="pills-tab-struct" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active show" id="pills-filestruct-tab" data-toggle="pill" href="#pills-filestruct" role="tab">Directory Structure</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-pagestruct-tab" data-toggle="pill" href="#pills-page-struct" role="tab">Page Structure</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content mb-0 pt-2" id="pills-tabContent-struct">
+                                            <div class="tab-pane active show" id="pills-filestruct" role="tabpanel" aria-labelledby="pills-filestruct-tab">
+                                                <pre>
+<code class="language-markup">
+    src/
+    ├── assets/
+    │   ├── fonts/
+    │   ├── images/
+    │   ├── js/
+    │   ├── json/
+    │   ├── scss/
+    ├── html/
+    │   ├── index.html
+    ├── .babelrc
+    ├── .browserslistrc
+    ├── gulpfile.js
+    ├── package.json
+    ├── package-lock.json
+	├── README.MD
+
+</code>
+                                                </pre>
+                                            </div>
+                                            <div class="tab-pane" id="pills-page-struct" role="tabpanel" aria-labelledby="pills-pagestruct-tab">
+                                                <pre>
+<code class="language-markup">
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+
+    &lt;head&gt;
+        &lt;title&gt;Treva - UIKit&lt;/title&gt;
+        &lt;!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries --&gt;
+        &lt;!-- WARNING: Respond.js doesn't work if you view the page via file:// --&gt;
+        &lt;!--[if lt IE 11]&gt;
+        	&lt;script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"&gt;&lt;/script&gt;
+        	&lt;script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"&gt;&lt;/script&gt;
+        	&lt;![endif]--&gt;
+        &lt;!-- Meta --&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;meta name="description" content="" /&gt;
+        &lt;meta name="keywords" content=""&gt;
+        &lt;meta name="author" content="" /&gt;
+
+        &lt;!-- Favicon icon --&gt;
+        &lt;link rel="icon" href="assets/images/favicon.png" type="image/x-icon"&gt;
+
+        &lt;!-- vendor css --&gt;
+        &lt;link rel="stylesheet" href="assets/css/style.css"&gt;
+        &lt;script src="assets/js/vendor-all.min.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+
+    &lt;body class=""&gt;
+
+        &lt;!-- [ Pre-loader ] start --&gt;
+        &lt;div class="loader-bg"&gt;
+        &lt;/div&gt;
+        &lt;!-- [ Pre-loader ] End --&gt;
+
+        &lt;!-- [ navigation menu ] start --&gt;
+        &lt;nav class="pcoded-navbar dashboard-nav menu-light menupos-fixed "&gt;
+        &lt;/nav&gt;
+        &lt;!-- [ navigation menu ] end --&gt;
+
+        &lt;!-- [ Header ] start --&gt;
+        &lt;header class="navbar pcoded-header navbar-expand-lg navbar-light headerpos-fixed"&gt;
+        &lt;/header&gt;
+        &lt;!-- [ Header ] end --&gt;
+
+        &lt;!-- [ Main Content ] start --&gt;
+        &lt;div class="pcoded-main-container"&gt;
+            &lt;div class="pcoded-content container"&gt;
+                &lt;!-- [ Main Content ] start --&gt;
+                &lt;div class="row"&gt;
+                    &lt;!-- [ Dashboard ] start --&gt;
+
+                    &lt;!-- ============================== --&gt;
+                    &lt;!-- ===  Your Content put hear === --&gt;
+                    &lt;!-- ============================== --&gt;
+
+                    &lt;!-- [ Dashboard ] end --&gt;
+                &lt;/div&gt;
+                &lt;!-- [ Main Content ] end --&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Warning Section start --&gt;
+        &lt;!-- Older IE warning message --&gt;
+        &lt;!--[if lt IE 11]&gt;
+            &lt;div class="ie-warning"&gt;
+            &lt;/div&gt;
+        &lt;![endif]--&gt;
+        &lt;!-- Warning Section Ends --&gt;
+
+        &lt;!-- Required Js --&gt;
+        &lt;script src="assets/js/plugins/bootstrap.min.js"&gt;&lt;/script&gt;
+        &lt;script src="assets/js/pcoded.min.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+
+</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card " id="layouts">
+                                    <div class="card-header">
+                                        <h5>Layouts</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <p>This Section explains everything about <code> Page Layouts</code> with its extra available options. Copy code snippet for each options carefully. </p>
+                                        <ul class="nav nav-pills mb-0 mt-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="pills-vertical-tab" data-toggle="pill" href="#pills-vertical" role="tab" aria-controls="pills-vertical" aria-selected="true">Vertical</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="pills-horizontal-tab" data-toggle="pill" href="#pills-horizontal" role="tab" aria-controls="pills-horizontal" aria-selected="false">Horizontal</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content mb-0 pt-2" id="pills-tabContent">
+                                            <div class="tab-pane show active" id="pills-vertical" role="tabpanel" aria-labelledby="pills-vertical-tab">
+                                                <p>This snippet contains HTML Markup to create vertical layout.</p>
+                                                <pre>
+<code class="language-markup">
+    &lt;!-- [ navigation menu ] start --&gt;
+    &lt;nav class="pcoded-navbar menupos-fixed"&gt;
+    	&lt;div class="navbar-wrapper"&gt;
+    		&lt;div class="navbar-content scroll-div"&gt;
+    			&lt;ul class="nav pcoded-inner-navbar"&gt;
+    				&lt;li class="nav-item pcoded-menu-caption"&gt;&lt;label&gt;Menu Title&lt;/label&gt;&lt;/li&gt;
+    				&lt;li class="nav-item"&gt;&lt;a href="#!" class="nav-link "&gt;&lt;span class="pcoded-micon"&gt;&lt;i class="feather icon-menu"&gt;&lt;/i&gt;&lt;/span&gt;&lt;span class="pcoded-mtext"&gt;Single Link&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    				&lt;li class="nav-item pcoded-hasmenu"&gt;
+    					&lt;a href="#!" class="nav-link "&gt;&lt;span class="pcoded-micon"&gt;&lt;i class="feather icon-sidebar"&gt;&lt;/i&gt;&lt;/span&gt;&lt;span class="pcoded-mtext"&gt;Menu Levels 1.1&lt;/span&gt;&lt;/a&gt;
+    					&lt;ul class="pcoded-submenu"&gt;
+    						&lt;li class="pcoded-hasmenu"&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.1&lt;/a&gt;
+    							&lt;ul class="pcoded-submenu"&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.1&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.2&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.3&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.4&lt;/a&gt;&lt;/li&gt;
+    							&lt;/ul&gt;
+    						&lt;/li&gt;
+    						&lt;li class="pcoded-hasmenu"&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.2&lt;/a&gt;
+    							&lt;ul class="pcoded-submenu"&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.1&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.2&lt;/a&gt;&lt;/li&gt;
+    							&lt;/ul&gt;
+    						&lt;/li&gt;
+    						&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.3&lt;/a&gt;&lt;/li&gt;
+    						&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.4&lt;/a&gt;&lt;/li&gt;
+    					&lt;/ul&gt;
+    				&lt;/li&gt;
+    			&lt;/ul&gt;
+    		&lt;/div&gt;
+    	&lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- [ navigation menu ] end --&gt;
+
+</code>
+                                                </pre>
+                                            </div>
+                                            <div class="tab-pane" id="pills-horizontal" role="tabpanel" aria-labelledby="pills-horizontal-tab">
+                                                <p>This snippet contains HTML Markup to create horizontal layout.</p>
+                                                <pre>
+<code class="language-markup">
+    &lt;!-- [ navigation menu ] start --&gt;
+    &lt;nav class="pcoded-navbar theme-horizontal"&gt;
+    	&lt;div class="navbar-wrapper"&gt;
+    		&lt;div class="navbar-content sidenav-horizontal" id="layout-sidenav"&gt;
+    			&lt;ul class="nav pcoded-inner-navbar sidenav-inner"&gt;
+    				&lt;li class="nav-item pcoded-menu-caption"&gt;&lt;label&gt;Menu Title&lt;/label&gt;&lt;/li&gt;
+    				&lt;li class="nav-item"&gt;&lt;a href="#!" class="nav-link "&gt;&lt;span class="pcoded-micon"&gt;&lt;i class="feather icon-menu"&gt;&lt;/i&gt;&lt;/span&gt;&lt;span class="pcoded-mtext"&gt;Single Link&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    				&lt;li class="nav-item pcoded-hasmenu"&gt;
+    					&lt;a href="#!" class="nav-link "&gt;&lt;span class="pcoded-micon"&gt;&lt;i class="feather icon-sidebar"&gt;&lt;/i&gt;&lt;/span&gt;&lt;span class="pcoded-mtext"&gt;Menu Levels 1.1&lt;/span&gt;&lt;/a&gt;
+    					&lt;ul class="pcoded-submenu"&gt;
+    						&lt;li class="pcoded-hasmenu"&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.1&lt;/a&gt;
+    							&lt;ul class="pcoded-submenu"&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.1&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.2&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.3&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.4&lt;/a&gt;&lt;/li&gt;
+    							&lt;/ul&gt;
+    						&lt;/li&gt;
+    						&lt;li class="pcoded-hasmenu"&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.2&lt;/a&gt;
+    							&lt;ul class="pcoded-submenu"&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.1&lt;/a&gt;&lt;/li&gt;
+    								&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 3.2&lt;/a&gt;&lt;/li&gt;
+    							&lt;/ul&gt;
+    						&lt;/li&gt;
+    						&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.3&lt;/a&gt;&lt;/li&gt;
+    						&lt;li class=""&gt;&lt;a href="#!" class=""&gt;Menu Levels 2.4&lt;/a&gt;&lt;/li&gt;
+    					&lt;/ul&gt;
+    				&lt;/li&gt;
+    			&lt;/ul&gt;
+    		&lt;/div&gt;
+    	&lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- [ navigation menu ] end --&gt;
+
+    // ***************************************************************
+    //  Add Below Line of code at bottom of page when body tag in over
+    // ***************************************************************
+    &lt;script src="assets/js/horizontal-menu.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript"&gt;
+          //Collapse menu
+          (function() {
+              if ($('#layout-sidenav').hasClass('sidenav-horizontal') || window.layoutHelpers.isSmallScreen()) {
+                  return;
+              }
+              try {
+                  window.layoutHelpers.setCollapsed(
+                      localStorage.getItem('layoutCollapsed') === 'true',
+                      false
+                  );
+              } catch (e) {}
+          })();
+          $(function() {
+              // Initialize sidenav
+              $('#layout-sidenav').each(function() {
+                  new SideNav(this, {
+                      orientation: $(this).hasClass('sidenav-horizontal') ? 'horizontal' : 'vertical'
+                  });
+              });
+
+              // Initialize sidenav togglers
+              $('body').on('click', '.layout-sidenav-toggle', function(e) {
+                  e.preventDefault();
+                  window.layoutHelpers.toggleCollapsed();
+                  if (!window.layoutHelpers.isSmallScreen()) {
+                      try {
+                          localStorage.setItem('layoutCollapsed', String(window.layoutHelpers.isCollapsed()));
+                      } catch (e) {}
+                  }
+              });
+          });
+          $(document).ready(function() {
+              $("#pcoded").pcodedmenu({
+                  themelayout: 'horizontal',
+                  MenuTrigger: 'hover',
+                  SubMenuTrigger: 'hover',
+              });
+          });
+      &lt;/script&gt;
+
+</code>
+                                                </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card" id="plugins">
+                                    <div class="card-header">
+                                        <h5>Plugins</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped">
+                                                <thead class="header-table">
+                                                    <tr>
+                                                        <th>Plugins Name</th>
+                                                        <th>Plugins page use</th>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Bootstrap</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/index.html" target="_blank">All Page</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://getbootstrap.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Apexcharts</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/adm-dashboard.html" target="_blank">adm-dashboard.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://apexcharts.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Calender</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/adm-projects-details.html" target="_blank">adm-projects-details.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://fullcalendar.io/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Color-Picker</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-f-picker.html" target="_blank">bc-f-picker.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://farbelous.io/bootstrap-colorpicker/tutorial-Basics.html" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Clipboard</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-alerts.html" target="_blank">All page [ comaponant ]</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://clipboardjs.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Ekko-lightbox</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-lightbox.html" target="_blank">ac-lightbox.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://ashleydw.github.io/lightbox/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Data-Table</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/tbl-datatable.html" target="_blank">tbl-datatable.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://datatables.net/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Date Picker</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-datepickers.html" target="_blank">bc-datepickers.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://www.daterangepicker.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>File-Upload</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-uploadareas.html" target="_blank">bc-uploadareas.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://jeremyfagis.github.io/dropify/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form-Mask</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-f-masking.html" target="_blank">bc-f-masking.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://igorescobar.github.io/jQuery-Mask-Plugin/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Form-validation</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-f-validation.html" target="_blank">bc-f-validation.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://jqueryvalidation.org/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Forms Wizard</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-f-wizard.html" target="_blank">bc-f-wizard.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://github.com/techlab/SmartWizard" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>JQuery</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/index.html" target="_blank">All Page</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://jquery.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Syntax Highlighter</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-syn-highlighter.html" target="_blank">ac-syn-highlighter.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://prismjs.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Light-Box2</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-lightbox.html" target="_blank">ac-lightbox.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://lokeshdhakar.com/projects/lightbox2/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Notification</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-notification.html" target="_blank">ac-notification.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="http://bootstrap-notify.remabledesigns.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Pnotify</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-pnotify.html" target="_blank">ac-pnotify.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://sciactive.com/pnotify/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Select2</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/bc-f-select.html" target="_blank">bc-f-select.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://select2.github.io/examples.html" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Scroll js</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/index.html" target="_blank">All Page ( dashboard )</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://www.npmjs.com/package/perfect-scrollbar" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Sweet Alert</td>
+                                                        <td>
+                                                            <a href="http://html.codedthemes.com/treva/bootstrap/ac-sweetalert.html" target="_blank">ac-sweetalert.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://sweetalert.js.org/guides/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Extra References -->
+                            <div class="col-sm-12">
+                                <div class="card" id="references">
+                                    <div class="card-header">
+                                        <h5>Extra Assets References</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <h6>Used Font</h6>
+                                            <table class="table table-bordered table-striped">
+                                                <thead class="header-table">
+                                                    <tr>
+                                                        <th>Font</th>
+                                                        <th>Description</th>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Google Font</td>
+                                                        <td>Rubik</td>
+                                                        <td>
+                                                            <a href="https://fonts.google.com/specimen/Rubik" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h6 class="mt-4">Font Icons</h6>
+                                            <table class="table table-bordered table-striped">
+                                                <thead class="header-table">
+                                                    <tr>
+                                                        <th>Font Icon</th>
+                                                        <th>Description</th>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Feather Icon</td>
+                                                        <td>
+                                                            i.e. default font icon <a href="http://html.Codedthemes.net/Treva/bootstrap/default/icon-feather.html" target="_blank">icon-feather.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://feathericons.com/" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Font Awesome Icon</td>
+                                                        <td>
+                                                            <a href="http://html.Codedthemes.net/Treva/bootstrap/default/icon-fontawsome.html" target="_blank">icon-fontawsome.html</a>
+                                                        </td>
+                                                        <td>
+                                                            <a href="https://fontawesome.com" target="_blank">View Resource</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <h6 class="mt-4">Images reference</h6>
+                                            <table class="table table-bordered table-striped">
+                                                <thead class="header-table">
+                                                    <tr>
+                                                        <th>Link</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://iconfinder.com/" target="_blank">Icon Finder</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://unsplash.com/" target="_blank">Unsplash Images</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://elements.envato.com/" target="_blank">Elements Photos (i.e. not included in package)</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card" id="faq">
+                                    <div class="card-header">
+                                        <h5>FAQ</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <a href="#!">
+                                            <h5 data-toggle="collapse" data-target="#f1" aria-controls="f1">What is <b> Treva</b>?</h5>
+                                        </a>
+                                        <div class="expand" id="f1">
+                                            <p class="mb-0">Treva is premium dashboard template comes with tons of layout options, widgets, ready to use pages which completely suitable for any complex project.</p>
+                                        </div>
+                                        <hr>
+                                        <a href="#!">
+                                            <h5 data-toggle="collapse" data-target="#f2" aria-controls="f2">Why <b>choose</b> Treva?</h5>
+                                        </a>
+                                        <div class="collapse" id="f2">
+                                            <p class="mb-0">Treva is made by Codedthemes's experience coders and designers. Well tested bug free code, easy to use flexible structure makes Treva a really differ to other templates. We almost cover
+                                                every possible plugins, components which helps you start immediately on your project.</p>
+                                        </div>
+                                        <hr>
+                                        <a href="#!">
+                                            <h5 data-toggle="collapse" data-target="#f4" aria-controls="f4">What about Item <b>Support</b>?</h5>
+                                        </a>
+                                        <div class="collapse" id="f4">
+                                            <p class="mb-0">6 month item support for any bugs, design issue in current version of template. We are not provides support for any custom work implementation.</p>
+                                        </div>
+                                        <hr>
+                                        <a href="#!">
+                                            <h5 data-toggle="collapse" data-target="#f5" aria-controls="f5">What is Support <b>Turnaround time?</b></h5>
+                                        </a>
+                                        <div class="collapse" id="f5">
+                                            <p class="mb-0">When you comment or submit the ticket for support. Our team takes it seriously and respond it within a Half or Full day.</p>
+                                        </div>
+                                        <hr>
+                                        <a href="#!">
+                                            <h5 data-toggle="collapse" data-target="#f6" aria-controls="f5">Browser <b>Support?</b></h5>
+                                        </a>
+                                        <div class="collapse" id="f6">
+                                            <p class="mb-0">Well tested on IE=>11, Edge, Chrome, Mozilla, Safari, Opera</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="card" id="cl">
+                                    <div class="card-header">
+                                        <h5>Change Log</h5>
+                                        <div class="card-header-right">
+                                            <div class="btn-group card-option">
+                                                <button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true">
+                                                    <i class="feather icon-more-horizontal"></i>
+                                                </button>
+                                                <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                                    <li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i>Collapse</span><span style="display:none"><i class="feather icon-plus"></i> Expand</span></a></li>
+                                                    <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i>Remove</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <pre>
+<code class="language-markup">
+    v1.0
+	-----------
+	16-12-2019
+	-----------
+
+	- Initial release
+	- PSD, XD, SKETCH, Starter/Full version folders included in download package.
+
+</code>
+                                        </pre>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- required JS -->
+<script src="assets/js/vendor-all.min.js"></script>
+<script src="assets/js/plugins/bootstrap.min.js"></script>
+<script src="assets/js/pcoded.min.js"></script>
+<script src="assets/js/plugins/prism.js"></script>
+
+<!-- custom JS -->
+<script type="text/javascript">
+    $('body').scrollspy({
+        target: ".pcoded-inner-navbar"
+    });
+    $('body').scroll(function() {
+        $('.nav-item').removeClass('pcoded-trigger');
+    });
+    $(".pcoded-inner-navbar a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: ($(hash).offset().top)
+            }, 1500, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+</script>
+
+</body>
+
+</html>

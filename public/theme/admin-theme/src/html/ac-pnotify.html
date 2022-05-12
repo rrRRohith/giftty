@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- pnotify-custom css -->
+    <link rel="stylesheet" href="assets/css/plugins/PNotifyBrightTheme.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Notification",
+"subtitle": "Notification is use to display alert message on screen"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row btn-page">
+            <div class="col-sm-12">
+                <!-- [ notification ] start -->
+                <h3 class="mb-4 font-weight-bold">Notification Alert</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>warning Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-warning btn-sm" id="pnotify-default"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-warning</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Primary Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-primary"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-default</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Success Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-success btn-sm" id="pnotify-success"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-success</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Info Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-info btn-sm" id="pnotify-info"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-info</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Danger Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-danger btn-sm" id="pnotify-danger"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-danger</code> to use this style notification</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Desktop Notifications</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Desktop Notice</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-desktop-notice"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-desktop-notice</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Success Notification</td>
+                                <td>
+                                    <button type="button" class="btn  btn-success btn-sm" id="pnotify-desktop-success"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-desktop-success</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Info Notification</td>
+                                <td>
+                                    <button type="button" class="btn  btn-info btn-sm" id="pnotify-desktop-info"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-desktop-info</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Danger Notification</td>
+                                <td>
+                                    <button type="button" class="btn  btn-danger btn-sm" id="pnotify-desktop-danger"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-desktop-danger</code> to use this style notification</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Notification Position</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Top Left</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-top-left"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-top-left</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Bottom Left</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-bottom-left"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-bottom-left</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Bottom Right</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-bottom-right"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-bottom-right</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Left</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-custom-left"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-custom-left</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Right</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-custom-right"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-custom-right</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Top</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-custom-top"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-custom-top</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Bottom</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-stack-custom-bottom"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-stack-custom-bottom</code> to use this style notification</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Notification Option</h3>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>No Title</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-no-title"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-no-title</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Rich Title</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-rich"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-rich</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Click to Close</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-click"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-click</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Custom Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-buttons"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-buttons</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Callback Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-callbacks"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-callbacks</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Progress Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-progress"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-progress</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Dynamic progress Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-dynamic"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-dynamic</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Multiline Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-multiline"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-multiline</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Prompt Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-prompt"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-prompt</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Confirm Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-confirm"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-confirm</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Stickey Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-sticky"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-sticky</code> to use this style notification</td>
+                            </tr>
+                            <tr>
+                                <td>Permenant Button</td>
+                                <td>
+                                    <button type="button" class="btn  btn-primary btn-sm" id="pnotify-permanent-buttons"><i class="feather icon-bell"></i> Click here!</button>
+                                </td>
+                                <td>Use id <code>pnotify-permanent-buttons</code> to use this style notification</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- [ notification ] end -->
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- pnotify Js -->
+<script src="assets/js/plugins/PNotify.js"></script>
+<script src="assets/js/plugins/PNotifyButtons.js"></script>
+<script src="assets/js/plugins/PNotifyCallbacks.js"></script>
+<script src="assets/js/plugins/PNotifyDesktop.js"></script>
+<script src="assets/js/plugins/PNotifyConfirm.js"></script>
+<script src="assets/js/pages/notify-event.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

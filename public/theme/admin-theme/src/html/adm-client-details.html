@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <!-- [ breadcrumb ] start -->
+                <div class="page-header">
+                    <div class="page-block">
+                        <div class="row align-items-center">
+                            <div class="col-md-12">
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#!">Clients</a></li>
+                                    <li class="breadcrumb-item"><a href="#!">Apple, Inc.</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- [ breadcrumb ] end -->
+                <div class="row justify-content-between">
+                    <div class="col-sm-5 mb-4">
+                        <div class="media mb-4">
+                            <span class="avtar avtar-icon avtar-square avtar-l"><img src="assets/images/uikit/logo-apple.svg" alt="images" class="img-fluid"></span>
+                            <div class="media-body ml-3 align-self-center">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none ">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <h1 class="mb-1 font-weight-normal">Apple, Inc.</h1>
+                                <p class="mb-0">Technology</p>
+                            </div>
+                        </div>
+                        <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui. </p>
+                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                        <div class="media">
+                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                            <div class="media-body ml-3 align-self-center">
+                                <p class="mb-0 text-truncate">Tobias B.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 mb-4">
+                        <h6 class="text-body text-uppercase f-12">Members</h6>
+                        <span class="avtar text-blue-2 bg-blue-1 mr-3 mb-3">DV</span>
+                        <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <span class="avtar text-yellow-2 bg-yellow-1 mr-3 mb-3">LO</span>
+                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <span class="avtar text-purple-2 bg-purple-1 mr-3 mb-3">CD</span>
+                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <span class="avtar text-teal-2 bg-teal-1 mr-3 mb-3">HS</span>
+                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                        <span class="avtar text-orange-2 bg-orange-1 mr-3 mb-3">AS</span>
+                        <span class="avtar text-red-2 bg-red-1 mr-3 mb-3">PA</span>
+                        <button type="button" class="btn btn-icon icon-lg"><i class="feather icon-plus"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6 d-flex align-items-center mb-4">
+                                <h2 class="d-inline-block mb-0">Client’s Projects</h2>
+                            </div>
+                            <div class="col-sm-6 d-flex align-items-center justify-content-end mb-4">
+                                <div class="btn-group btn-group-toggle btn-group-link">
+                                    <label class="btn">
+                                        <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                    <label class="btn ">
+                                        <div class="dropdown mb-0 mr-2">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</a>
+                                            <div class="dropdown-menu dropdown-menu-right">
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                                                <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                    <table id="clientdttable" class="table table-center mb-0 ">
+                                        <thead>
+                                            <tr>
+                                                <th>Project name</th>
+                                                <th>Team</th>
+                                                <th>due date</th>
+                                                <th>Open Tasks</th>
+                                                <th>Priority</th>
+                                                <th class="text-right">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Engineering</td>
+                                                <td>9/01/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Product Design</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-danger">off track</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Product Design</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-dark">ON track</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Marketing</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td>Low</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-light-dark">not started</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="media">
+                                                        <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                        <div class="media-body ml-3 align-self-center">
+                                                            <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>Marketing</td>
+                                                <td>8/04/2019</td>
+                                                <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                                <td class="text-danger">High</td>
+                                                <td class="text-right"><span class="badge badge-pill badge-dark">ON track</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Projects</a>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<!-- datatable Js -->
+<script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#clientdttable').DataTable();
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

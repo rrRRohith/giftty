@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+
+<body>
+    <div class="auth-wrapper align-items-stretch bg-white">
+        <div class="">
+            <div class="auth-side-form">
+                <div class="auth-content">
+                    <div class="text-center">
+                        <img src="assets/images/logo-dark.svg" alt="" class="img-fluid mb-5">
+                        <h1 class="f-w-400">Get started with your account</h1>
+                    </div>
+                    <form class="my-5">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>full name</label>
+                                    <input type="text" class="form-control" placeholder="Luke S">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Email address</label>
+                                    <input type="email" class="form-control" placeholder="Ex. luke@jacademy.org">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>Repeat Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <p><small>By signing up, I agree to the Treva Privacy Policy and Terms of Service.</small></p>
+                                </div>
+                                <div class="col-auto text-right">
+                                    <button class="btn btn-primary btn-block mb-3">Sign up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="text-center">
+                        <p class="mt-4">Already have an account? <a href="auth-signin-img-side.html" class="f-w-400">Log in</a></p>
+                    </div>
+                </div>
+                <div class="footer-cont text-center">
+                    <h6 class="mb-0 text-muted">©2001–2019 All Rights Reserved. Treva®</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('./layouts/footer.html')
+    @@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

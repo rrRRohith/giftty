@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    @@include('./layouts/head-bottom-link.html')
+    <script src="assets/js/plugins/select2.full.min.js"></script>
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Selects",
+"subtitle": "Select gives the ability to make a single or multiple selections from different options."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Selects ] start -->
+            <div class="col-sm-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="mb-4 font-weight-bold">REGULAR</h3>
+                        <h5>Default</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select project</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>LABEL</label>
+                                    <select class="form-control">
+                                        <option>Select project</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ACTIVE</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                        <option>Select project</option>
+                                        <option selected>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>LABEL</label>
+                                    <select class="form-control">
+                                        <option>Select project</option>
+                                        <option selected>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">SUCCESS</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <select class="form-control">
+                                            <option>Select project</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label>LABEL</label>
+                                        <select class="form-control">
+                                            <option>Select project</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">ERROR</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <select class="form-control" required>
+                                            <option value="">Select project</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-sm-6">
+                                <form class="was-validated">
+                                    <div class="form-group">
+                                        <label>LABEL</label>
+                                        <select class="form-control" required>
+                                            <option value="">Select project</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                        <div class="invalid-feedback">Error message</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <h5 class="mt-4">DISABLED</h5>
+                        <div class="row align-items-end">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <select class="form-control" disabled>
+                                        <option>Select project</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label>LABEL</label>
+                                    <select class="form-control" disabled>
+                                        <option>Select project</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Multi-Select</h3>
+                        <div class="datta-example">
+                            <div class="row align-items-end">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <select class="form-control" id="mlt-select" multiple="multiple">
+                                            <option value="AL">Select team</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label>LABEL</label>
+                                        <select class="form-control" id="mlt-checked-select" multiple="multiple">
+                                            <option value="AL">Select team</option>
+                                            <option value="WY" selected>Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY" selected>Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $("#mlt-select").select2();
+                                $("#mlt-checked-select").select2();
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="datta-example">
+                            <h3 class="mb-3">Custom Select</h3>
+                            <div class="row">
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-primary" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-secondary" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-success" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-danger" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-warning" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-info" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-dark" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="mt-4">Without color</h3>
+                            <div class="row">
+                                <div class="col-auto mb-3">
+                                    <div class="pct-select select-nocolor" style="width:200px;">
+                                        <select>
+                                            <option value="0">Select car:</option>
+                                            <option value="1">Audi</option>
+                                            <option value="4">Ford</option>
+                                            <option value="5">Honda</option>
+                                            <option value="6">Jaguar</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                var x, i, j, selElmnt, a, b, c;
+                                x = document.getElementsByClassName("pct-select");
+                                for (i = 0; i < x.length; i++) {
+                                    selElmnt = x[i].getElementsByTagName("select")[0];
+                                    a = document.createElement("DIV");
+                                    a.setAttribute("class", "select-selected");
+                                    a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                                    x[i].appendChild(a);
+                                    b = document.createElement("DIV");
+                                    b.setAttribute("class", "select-items select-hide");
+                                    for (j = 1; j < selElmnt.length; j++) {
+                                        c = document.createElement("DIV");
+                                        c.innerHTML = selElmnt.options[j].innerHTML;
+                                        c.addEventListener("click", function(e) {
+                                            var y, i, k, s, h;
+                                            s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                                            h = this.parentNode.previousSibling;
+                                            for (i = 0; i < s.length; i++) {
+                                                if (s.options[i].innerHTML == this.innerHTML) {
+                                                    s.selectedIndex = i;
+                                                    h.innerHTML = this.innerHTML;
+                                                    y = this.parentNode.getElementsByClassName("same-as-selected");
+                                                    for (k = 0; k < y.length; k++) {
+                                                        y[k].removeAttribute("class");
+                                                    }
+                                                    this.setAttribute("class", "same-as-selected");
+                                                    break;
+                                                }
+                                            }
+                                            h.click();
+                                        });
+                                        b.appendChild(c);
+                                    }
+                                    x[i].appendChild(b);
+                                    a.addEventListener("click", function(e) {
+                                        e.stopPropagation();
+                                        closeAllSelect(this);
+                                        this.nextSibling.classList.toggle("select-hide");
+                                        this.classList.toggle("select-arrow-active");
+                                    });
+                                }
+
+                                function closeAllSelect(elmnt) {
+                                    var x, y, i, arrNo = [];
+                                    x = document.getElementsByClassName("select-items");
+                                    y = document.getElementsByClassName("select-selected");
+                                    for (i = 0; i < y.length; i++) {
+                                        if (elmnt == y[i]) {
+                                            arrNo.push(i)
+                                        } else {
+                                            y[i].classList.remove("select-arrow-active");
+                                        }
+                                    }
+                                    for (i = 0; i < x.length; i++) {
+                                        if (arrNo.indexOf(i)) {
+                                            x[i].classList.add("select-hide");
+                                        }
+                                    }
+                                }
+                                document.addEventListener("click", closeAllSelect);
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="mb-3">Checkboxes</h3>
+                        <div class="datta-example">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckdef1" checked>
+                                <label class="custom-control-label" for="customCheckdef1">Check this custom checkbox</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckdef2">
+                                <label class="custom-control-label" for="customCheckdef2">Check this custom checkbox</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">indeterminate</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-checkbox ">
+                                <input type="checkbox" class="custom-control-input chk-indeterminate" id="customCheckind1">
+                                <label class="custom-control-label" for="customCheckind1">Check this custom checkbox</label>
+                            </div>
+                            <script>
+                                $('.chk-indeterminate').prop('indeterminate', true)
+                            </script>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Inline</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckinl1" checked>
+                                <label class="custom-control-label" for="customCheckinl1">Inline 1</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckinl2">
+                                <label class="custom-control-label" for="customCheckinl2">Inline 2</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckinl3">
+                                <label class="custom-control-label" for="customCheckinl3">Inline 3</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Disabled</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckdis1" disabled checked>
+                                <label class="custom-control-label" for="customCheckdis1">Check this custom checkbox</label>
+                            </div>
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckdis2" disabled>
+                                <label class="custom-control-label" for="customCheckdis2">Check this custom checkbox</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Multiple Colors</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customCheckc1" checked>
+                                <label class="custom-control-label" for="customCheckc1">primary</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-secondary" id="customCheckc2" checked>
+                                <label class="custom-control-label" for="customCheckc2">secondary</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-success" id="customCheckc3" checked>
+                                <label class="custom-control-label" for="customCheckc3">success</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-danger" id="customCheckc4" checked>
+                                <label class="custom-control-label" for="customCheckc4">danger</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-warning" id="customCheckc5" checked>
+                                <label class="custom-control-label" for="customCheckc5">warning</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-info" id="customCheckc6" checked>
+                                <label class="custom-control-label" for="customCheckc6">info</label>
+                            </div>
+                            <div class="custom-control custom-checkbox custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-dark" id="customCheckc7" checked>
+                                <label class="custom-control-label" for="customCheckc7">dark</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Validation</h6>
+                        <div class="datta-example">
+                            <form class="was-validated">
+                                <div class="custom-control custom-checkbox mb-3">
+                                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                    <label class="custom-control-label" for="customControlValidation1">Check this custom checkbox</label>
+                                    <div class="invalid-feedback">Example invalid feedback text</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="mb-3">Radios</h3>
+                        <div class="datta-example">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Inline</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline1">Toggle this custom radio</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label" for="customRadioInline2">Or toggle this other custom radio</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Disabled</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadiodisb1" name="customRadiodis" class="custom-control-input" disabled checked>
+                                <label class="custom-control-label" for="customRadiodisb1">Toggle this custom radio</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input type="radio" id="customRadiodisb2" name="customRadiodis" class="custom-control-input" disabled>
+                                <label class="custom-control-label" for="customRadiodisb2">Or toggle this other custom radio</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Multiple Colors</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr1" name="customRadiocolor" class="custom-control-input input-primary" checked>
+                                <label class="custom-control-label" for="customRadioclr1">primary</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr2" name="customRadiocolor" class="custom-control-input input-secondary">
+                                <label class="custom-control-label" for="customRadioclr2">secondary</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr3" name="customRadiocolor" class="custom-control-input input-success">
+                                <label class="custom-control-label" for="customRadioclr3">success</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr4" name="customRadiocolor" class="custom-control-input input-danger">
+                                <label class="custom-control-label" for="customRadioclr4">danger</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr5" name="customRadiocolor" class="custom-control-input input-warning">
+                                <label class="custom-control-label" for="customRadioclr5">warning</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr6" name="customRadiocolor" class="custom-control-input input-info">
+                                <label class="custom-control-label" for="customRadioclr6">info</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioclr7" name="customRadiocolor" class="custom-control-input input-dark">
+                                <label class="custom-control-label" for="customRadioclr7">dark</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Validation</h6>
+                        <div class="datta-example">
+                            <form class="was-validated">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                                    <label class="custom-control-label" for="customControlValidation2">Toggle this custom radio</label>
+                                </div>
+                                <div class="custom-control custom-radio mb-3">
+                                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                                    <label class="custom-control-label" for="customControlValidation3">Or toggle this other custom radio</label>
+                                    <div class="invalid-feedback">More example invalid feedback text</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="mb-3">Switches</h3>
+                        <div class="datta-example">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customswitch1" checked>
+                                <label class="custom-control-label" for="customswitch1">Check this custom Switches</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customswitch2">
+                                <label class="custom-control-label" for="customswitch2">Check this custom Switches</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Inline</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customswitchinln1" checked>
+                                <label class="custom-control-label" for="customswitchinln1">Inline 1</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customswitchinln2">
+                                <label class="custom-control-label" for="customswitchinln2">Inline 2</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input" id="customswitchinln3">
+                                <label class="custom-control-label" for="customswitchinln3">Inline 3</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Disabled</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customswitchdib1" disabled checked>
+                                <label class="custom-control-label" for="customswitchdib1">Check this custom Switches</label>
+                            </div>
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customswitchdib2" disabled>
+                                <label class="custom-control-label" for="customswitchdib2">Check this custom Switches</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Multiple Colors</h6>
+                        <div class="datta-example">
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-primary" id="customswitchclr1" checked>
+                                <label class="custom-control-label" for="customswitchclr1">primary</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-secondary" id="customswitchclr2" checked>
+                                <label class="custom-control-label" for="customswitchclr2">secondary</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-success" id="customswitchclr3" checked>
+                                <label class="custom-control-label" for="customswitchclr3">success</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-danger" id="customswitchclr4" checked>
+                                <label class="custom-control-label" for="customswitchclr4">danger</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-warning" id="customswitchclr5" checked>
+                                <label class="custom-control-label" for="customswitchclr5">warning</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-info" id="customswitchclr6" checked>
+                                <label class="custom-control-label" for="customswitchclr6">info</label>
+                            </div>
+                            <div class="custom-control custom-switch custom-control-inline">
+                                <input type="checkbox" class="custom-control-input input-dark" id="customswitchclr7" checked>
+                                <label class="custom-control-label" for="customswitchclr7">dark</label>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6 class="mt-3">Validation</h6>
+                        <div class="datta-example">
+                            <form class="was-validated">
+                                <div class="custom-control custom-switch">
+                                    <input type="checkbox" class="custom-control-input" id="customswitcherr1" required>
+                                    <label class="custom-control-label" for="customswitcherr1">primary</label>
+                                    <div class="invalid-feedback">More example invalid feedback text</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="mb-3">Range</h3>
+                        <div class="datta-example">
+                            <label for="customRange1">Example range</label>
+                            <input type="range" class="custom-range" id="customRange1">
+                            <label for="customRange2">Example range</label>
+                            <input type="range" class="custom-range" min="0" max="5" id="customRange2">
+                            <label for="customRange3">Example range</label>
+                            <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Selects ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

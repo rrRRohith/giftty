@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Accordions",
+"subtitle": "Accordions store large content in a small space through progressive disclosure that can be expanded or collapsed."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Accordions ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">DEFAULT</h3>
+                <h5 class="mb-4 mt-5">Close</h5>
+                <div class="datta-example">
+                    <div class="border-bottom py-3">
+                        <a class="acc-link collapsed" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cum sociis natoque penatibus et magnis dis parturient montes <i
+                                class="feather icon-chevron-up acc-icon"></i></a>
+                        <div class="collapse mt-2" id="collapseExample">
+                            <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                                proident.</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mb-4 mt-5">Open</h5>
+                <div class="datta-example">
+                    <div class="border-bottom py-3">
+                        <a class="acc-link " data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Cum sociis natoque penatibus et magnis dis parturient montes <i
+                                class="feather icon-chevron-up acc-icon"></i></a>
+                        <div class="collapse mt-2 show" id="multiCollapseExample1">
+                            <p class="mb-0">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.</p>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="mb-4 mt-5">GROUP</h5>
+                <div class="datta-example">
+                    <div class="accordion rounded bg-light p-4" id="accordionExample">
+                        <div class="border-bottom py-3">
+                            <div id="headingOne">
+                                <h5 class="mb-0"><a href="#!" class="acc-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Cum sociis natoque penatibus et magnis dis parturient montes <i
+                                            class="feather icon-chevron-up acc-icon"></i></a>
+                                </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse mt-2 show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                sustainable VHS.
+                            </div>
+                        </div>
+                        <div class="border-bottom py-3">
+                            <div id="headingTwo">
+                                <h5 class="mb-0"><a href="#!" class="acc-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+                                        dolor
+                                        auctor <i class="feather icon-chevron-up acc-icon"></i></a></h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse mt-2" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                sustainable VHS.
+                            </div>
+                        </div>
+                        <div class="border-bottom py-3">
+                            <div id="headingThree">
+                                <h5 class="mb-0"><a href="#!" class="acc-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Pellentesque ornare sem lacinia quam venenatis. <i
+                                            class="feather icon-chevron-up acc-icon"></i></a></h5>
+                            </div>
+                            <div id="collapseThree" class="collapse mt-2" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                sustainable VHS.
+                            </div>
+                        </div>
+                        <div class="border-bottom py-3">
+                            <div id="headingfour">
+                                <h5 class="mb-0"><a href="#!" class="acc-link collapsed" data-toggle="collapse" data-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">Sem lacinia quam venenatis vestibulum dapibus ac facilisis
+                                        in
+                                        egestas eget <i class="feather icon-chevron-up acc-icon"></i></a></h5>
+                            </div>
+                            <div id="collapsefour" class="collapse mt-2" aria-labelledby="headingfour" data-parent="#accordionExample">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore
+                                sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Accordions ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

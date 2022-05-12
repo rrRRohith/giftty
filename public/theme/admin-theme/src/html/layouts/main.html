@@ -1,0 +1,39 @@
+<body class="@@bodyclass">
+	<!-- [ Pre-loader ] start -->
+	<div class="loader-bg">
+		<div class="loader-track">
+			<div class="loader-fill"></div>
+		</div>
+	</div>
+	<!-- [ Pre-loader ] End -->
+	<!-- [ navbar ] start -->
+	<nav  class="navbar pcoded-header navbar-expand-lg navbar-light header-purple @@headerclass">
+		<div class="container">
+			<div class="m-header">
+				<a href="index.html" class="b-brand">
+					<!-- ========   change your logo hear   ============ -->
+					<img src="assets/images/logo.svg" alt="" class="logo">
+				</a>
+				<a href="#!" class="mob-toggler">
+					<i class="feather icon-more-vertical"></i>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse">
+				@@include('./header-list.html')
+			</div>
+		</div>
+	</nav >
+	<!-- [ navbar ] end -->
+	@@if(header=="true"){
+	<!-- [ navbar ] start -->
+	<header  class=" @@headerclass bg-purple meta-header">
+		<div class="container">
+			<div class="col-sm-12">
+				<h6 class="text-uppercase text-white">@@category</h6>
+				<h1 class="text-white">@@title</h1>
+				<p class="mb-0 text-white">@@subtitle</p>
+			</div>
+		</div>
+	</header >
+	<!-- [ navbar ] end -->
+	}

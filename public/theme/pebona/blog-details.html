@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Pebona - eCommerce HTML5 Bootstrap 4 Template</title>
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+
+    <!-- CSS files
+    ============================================ -->
+
+    <!-- Boostrap stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css">
+
+    <!-- Plugins stylesheet -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Master stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- modernizr JS
+    ============================================ -->
+    <script src="assets/js/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <!--[if lt IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Start of Whole Site Wrapper with mobile menu support -->
+    <div id="whole" class="whole-site-wrapper color-scheme-one">
+
+        <!-- Start of Header -->
+        <header class="header bgc-white header-type-1">
+            <div class="top-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 order-2 col-sm-12 order-sm-2 col-md-8 order-md-1 align-self-center">
+                            <p>Mid-season sale up to 20% OFF. Use code "SALEOFF20"</p>
+                        </div>
+                        <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2">
+                            <ul class="list-inline">
+                                <li class="currency list-inline-item">
+                                    <div class="btn-group">
+                                        <button class="btn-link dropdown-toggle"> USD $<i class="fa fa-angle-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                               <li><a href="#">Euro €</a></li>
+                                               <li><a href="#" class="current">USD $</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="language list-inline-item">
+                                    <div class="btn-group">
+                                        <button class="btn-link dropdown-toggle">English <i class="fa fa-angle-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                               <li><a href="#" class="current"><img src="assets/images/icons/en-gb.png" alt="Icons"> English</a></li>
+                                               <li><a href="#"><img src="assets/images/icons/fr-fr.png" alt="Icons"> Français</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of top-bar -->
+
+            <div class="header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-6 order-2 col-sm-6 order-sm-2 col-md-4 order-md-1 col-lg-3">
+                            <div class="header-search-area">
+                                <form action="#">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search entire store here ...">
+                                        <div class="input-group-append">
+                                            <button class="header-search-btn" type="submit"><i class="pe-7s-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-12 order-1 col-sm-12 order-sm-1 col-md-4 order-md-2 col-lg-6">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/images/logo.png" alt="Logo" class="img-fluid"></a>
+                            </div>
+                        </div>
+                        <div class="col-6 order-3 col-sm-6 col-md-4 col-lg-3">
+                            <div class="header-cart-area">
+                                <div class="header-cart">
+                                    <div class="btn-group">
+                                        <button class="btn-link dropdown-toggle icon-cart">
+                                            <i class="pe-7s-shopbag"></i>
+                                            <span class="count-style">2</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <div class="shopping-cart-content">
+                                                <ul class="list-unstyled">
+                                                    <li class="single-cart-item media">
+                                                        <div class="shopping-cart-img mr-4">
+                                                            <a href="#">
+                                                                <img class="img-fluid" alt="Cart Item" src="assets/images/cart/cart-1.jpg">
+                                                                <span class="product-quantity">1x</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="shopping-cart-title media-body">
+                                                            <h4><a href="#">Rival Field Messenger</a></h4>
+                                                            <p class="cart-price">$120.00</p>
+                                                            <div class="product-attr">
+                                                                <span>Size: S</span>
+                                                                <span>Color: Black</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="shopping-cart-delete">
+                                                            <a href="#"><i class="ion ion-md-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                    <li class="single-cart-item media">
+                                                        <div class="shopping-cart-img mr-4">
+                                                            <a href="#">
+                                                                <img class="img-fluid" alt="Cart Item" src="assets/images/cart/cart-2.jpg">
+                                                                <span class="product-quantity">2x</span>
+                                                            </a>
+                                                        </div>
+                                                        <div class="shopping-cart-title media-body">
+                                                            <h4><a href="#">Fusion Backpack</a></h4>
+                                                            <p class="cart-price">$200.00</p>
+                                                            <div class="product-attr">
+                                                                <span>Color: White</span>
+                                                                <span>Accessories: Yes</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="shopping-cart-delete">
+                                                            <a href="#"><i class="ion ion-md-close"></i></a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <div class="shopping-cart-total">
+                                                    <h4>Sub-Total : <span>$320.00</span></h4>
+                                                    <h4>Total : <span>$320.00</span></h4>
+                                                </div>
+                                                <div class="shopping-cart-btn">
+                                                    <a class="default-btn" href="cart.html">view cart</a>
+                                                    <a class="default-btn" href="checkout.html">checkout</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="list-inline">
+                                    <li class="top-links list-inline-item">
+                                        <div class="btn-group">
+                                            <button class="btn-link dropdown-toggle"><i class="pe-7s-config"></i></button>
+                                            <div class="dropdown-menu">
+                                                <ul>
+                                                   <li><a href="register.html">Register</a></li>
+                                                   <li><a href="login.html">Login</a></li>
+                                                   <li><a href="my-account.html">My Account</a></li>
+                                                   <li><a href="wishlist.html">Wishlist</a></li>
+                                                   <li><a href="checkout.html">Checkout</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> <!-- end of header-cart-area -->
+                        </div>
+                    </div>
+                </div> <!-- end of container -->
+            </div> <!-- end of header-top -->
+
+
+
+            <!-- Start of Main and Mobile Navigation -->
+            <div class="main-nav-area bgc-white">
+                <div class="container">
+                    <nav id="main_nav" class="stellarnav">
+                        <ul>
+                            <li><a href="index.html"><span>Home</span></a>
+                                <ul>
+                                    <li><a href="index.html">Home Page 1</a></li>
+                                    <li><a href="index-2.html">Home Page 2</a></li>
+                                    <li><a href="index-3.html">Home Page 3</a></li>
+                                    <li><a href="index-4.html">Home Page 4</a></li>
+                                    <li><a href="index-5.html">Home Page 5</a></li>
+                                </ul>
+                            </li>
+                            <li class="mega" data-columns="4"><a href="shop-grid.html"><span>Shop</span></a>
+                                <ul class="mega-container">
+                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 01</h3></a>
+                                        <ul>
+                                            <li><a href="shop-grid.html">Shop Grid</a></li>
+                                            <li><a href="shop-list.html">Shop List</a></li>
+                                            <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 02</h3></a>
+                                        <ul>
+                                            <li><a href="shop-fullwidth.html">Shop Full Width</a></li>
+                                            <li><a href="single-product.html">Single Product Page</a></li>
+                                            <li><a href="compare.html">Product Compare</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" class="mega-menu-title"><h3>Shop pages 03</h3></a>
+                                        <ul>
+                                            <li><a href="cart.html">Cart Page</a><li>
+                                            <li><a href="checkout.html">Checkout Page</a></li>
+                                            <li><a href="wishlist.html">Wishlist Page</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="last"><a href="#" class="mega-menu-title"><h3>Shop pages 04</h3></a>
+                                        <ul>
+                                            <li><a href="my-account.html">My Account</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="fullwidth-banner">
+                                        <a href="#"><img src="assets/images/banners/menu-banner.jpg" alt="Menu Banner"></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="blog.html"><span>Blog Pages</span></a>
+                                <ul>
+                                    <li><a href="blog.html">Blog Full Width</a></li>
+                                    <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
+                                    <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
+                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="faqs.html"><span>Utility Pages</span></a>
+                                <ul>
+                                    <li><a href="faqs.html">FAQs Page</a></li>
+                                    <li><a href="404.html">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="about.html"><span>About Us</span></a></li>
+                            <li><a href="contact.html"><span>Contact Us</span></a></li>
+                        </ul>
+                    </nav>
+                </div> <!-- end of container -->
+            </div>
+            <!-- End of Main and Mobile Navigation -->
+        </header>
+        <!-- End of Header -->
+
+        <div class="fixed-header-space"></div> <!-- empty placeholder div for Fixed Menu bar height-->
+
+        <!-- Start of Breadcrumbs -->
+        <div class="breadcrumb-section bgc-offset mb-full">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12">
+                        <nav class="breadcrumb">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <a class="breadcrumb-item" href="blog.html">Blog</a>
+                            <span class="breadcrumb-item active">Blog Details</span>
+                        </nav>
+                    </div>
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div>
+        <!-- End of Breadcrumbs -->
+
+        <!-- Start of Main Content Wrapper -->
+        <div id="content" class="main-content-wrapper">
+            
+            <!-- Start of Blog Posts Section -->
+            <div class="blog-posts-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-9">
+                            <main id="primary" class="site-main">
+                                <div class="single-post-wrapper">
+                                   <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+											<article class="blog-post post-entry">
+												<div class="single-post">
+													<div class="content-wrapper">
+	                                                    <div class="post-media image-popup">
+                                                            <figure>
+                                                                <a href="assets/images/blog/blog-single-large.jpg" data-size="1920x930">
+                                                                    <img src="assets/images/blog/blog-single.jpg" alt="Blog Details">
+                                                                    <div class="image-overlay"><i class="ion ion-ios-add"></i></div>
+                                                                </a>
+                                                                <figcaption class="visually-hidden">
+                                                                    <span>Blog Details</span>
+                                                                </figcaption>
+                                                            </figure>
+	                                                    </div>
+	                                                    <div class="post-content">
+                                                            <h3 class="post-title">Top 10 buying tips to follow in 2018</h3>
+                                                            <div class="post-meta">
+                                                                <p>
+                                                                    <span>By 
+                                                                        <span class="single-meta">
+                                                                            <a href="#">Pebona Themes</a>
+                                                                        </span>
+                                                                    </span> 
+                                                                    <span class="post-categories">In 
+                                                                        <span class="single-meta">
+                                                                            <a href="#">Tips, </a>
+                                                                            <a href="#">Shopping</a>
+                                                                        </span>
+                                                                    </span> 
+                                                                    <span>Posted on 
+                                                                        <span class="single-meta">
+                                                                            <a href="#">Aug 14, 2018</a>
+                                                                        </span>
+                                                                    </span>
+                                                                </p>
+                                                            </div>
+                                                            <div class="post-description">
+                                                                <div class="post-details">
+                                                                    <p>There boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt  obtain pain of itself, because it is pain, but because occasionally <a href="#">circumstances occur</a> in which toil and pain can procure him some great pleasure  obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt  obtain pain of itself, because it is pain.</p>
+
+                                                                    <p>Someone boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt obtain pain of itself, because it is pain, but <a href="#">because occasionally circumstances occur</a> in which toil and pain can procure him some great pleasure obtain.</p>
+
+                                                                    <div class="row align-items-center my-4 my-sm-5">
+                                                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 mb-4 mb-sm-4 mb-md-0">
+                                                                            <img src="assets/images/blog/blog-inner-1.jpg" alt="Post Inner Image">
+                                                                        </div>
+                                                                         <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                                                                            <img src="assets/images/blog/blog-inner-2.jpg" alt="Post Inner Image">
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <p>Someone boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt  obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure obtain corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi tempora incidunt  obtain pain of itself, because it is pain</p>
+
+                                                                    <blockquote class="blockquote">
+                                                                        <p>"While most companies strive to deliver seamless and issue-free customer service, what they often fail to understand is just how significantly their processes good and bad can impact their overall service delivery and, ultimately, how their customers view them."</p>
+                                                                        <footer class="blockquote-footer">Devid Chory</footer>
+                                                                    </blockquote>
+
+                                                                    <p>There boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non similique sunt in culpa modi <a href="#">tempora incidunt obtain</a> pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure someone boluptatum deleniti atque corrupti sdolores et quas molestias cepturi sint  eca itate non </p>
+                                                                </div>
+                                                            </div>
+	                                                    </div>
+	                                                    <div class="post-footer">
+                                                            <div class="d-md-flex justify-content-sm-between">
+                                                                <div class="tags align-self-center">
+                                                                    <p>Tags:</p>
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><a href="#">design,</a></li>
+                                                                        <li class="list-inline-item"><a href="#">development,</a></li>
+                                                                        <li class="list-inline-item"><a href="#">sketch</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="post-share">
+                                                                    <p>Share:</p>
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item"><a href="#" class="bg-facebook"><i class="fa fa-facebook"></i></a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="bg-twitter"><i class="fa fa-twitter"></i></a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="bg-gplus"><i class="fa fa-google-plus"></i></a></li>
+                                                                        <li class="list-inline-item"><a href="#" class="bg-pinterest"><i class="fa fa-pinterest"></i></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+	                                                    </div>
+	                                                </div>
+	                                            </div> <!-- end of blog-grid -->
+											</article> <!-- end of blog-post -->
+
+                                            <div class="author-box">
+                                                <div class="media">
+                                                    <div class="author-image mb-4 mb-sm-4 mb-md-0 mr-md-4">
+                                                        <img src="assets/images/testimonial/testimonial-2.jpg" alt="blog-comment">
+                                                    </div>
+                                                    <div class="author-description media-body">
+                                                        <h6>Author: <a href="#">Stuart Smith</a></h6>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus harum, est fuga veritatis esse dignissimos optio sunt obcaecati sit quos. Maiores tempora harum fugit voluptates?</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- end of author-box -->
+
+                                            <div class="post-pagination">
+                                                <ul class="pagination">
+                                                    <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous</a></li>
+                                                    <li class="ml-auto"><a href="#">Next<i class="fa fa-long-arrow-right"></i></a></li>
+                                                </ul>
+                                            </div> <!-- end of post-pagination -->
+
+                                            <div id="comments" class="comments-area">
+                                                <h3>This post has 4 Comments</h3>
+                                                <ol class="comment-list list-unstyled">
+                                                    <li class="comment-single media">
+                                                        <div class="comment-author-thumb mr-3 mr-sm-4">
+                                                            <img src="assets/images/testimonial/testimonial-1.jpg" alt="Comment Author">
+                                                        </div>
+                                                        <div class="comment-content media-body">
+                                                            <div class="comment-meta d-flex justify-content-between align-items-top">
+                                                                <div class="comment-title">
+                                                                    <h6>Alva Ano</h6>
+                                                                    <span><span class="comment-date">July 14, 2018</span> at <span class="comment-time">11:27 am</span></span>
+                                                                </div>
+                                                                <div class="comment-reply">
+                                                                    <a href=""><span>Reply</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <p>Efficiently drive robust niche markets and premium technologies. Distinctively maintain client-centric outsourcing.</p>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="comment-single media flex-wrap">
+                                                        <div class="comment-author-thumb mr-3 mr-sm-4">
+                                                            <img src="assets/images/testimonial/testimonial-3.jpg" alt="Comment Author">
+                                                        </div>
+                                                        <div class="comment-content media-body">
+                                                            <div class="comment-meta d-flex justify-content-between align-items-top">
+                                                                <div class="comment-title">
+                                                                    <h6>Amber Laha</h6>
+                                                                    <span><span class="comment-date">Jun 27, 2018</span> at <span class="comment-time">06:07 pm</span></span>
+                                                                </div>
+                                                                <div class="comment-reply">
+                                                                    <a href=""><span>Reply</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <p>Credibly enhance cross-platform results through fully tested architectures. Dynamically recaptiualize unique models.</p>
+                                                        </div>
+
+                                                        <ol class="comment-list nested">
+                                                            <li class="comment-single media">
+                                                                <div class="comment-author-thumb mr-3 mr-sm-4">
+                                                                    <img src="assets/images/testimonial/testimonial-4.jpg" alt="Comment Author">
+                                                                </div>
+                                                                <div class="comment-content media-body">
+                                                                    <div class="comment-meta d-flex justify-content-between align-items-top">
+                                                                        <div class="comment-title">
+                                                                            <h6>Dewey Tetzlaff</h6>
+                                                                            <span><span class="comment-date">Jun 29, 2018</span> at <span class="comment-time">05:56 pm</span></span>
+                                                                        </div>
+                                                                        <div class="comment-reply">
+                                                                            <a href=""><span>Reply</span></a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p>Synergistically promote business leadership skills without optimal value. Holisticly incentivize technically sound.</p>
+                                                                </div>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+
+                                                    <li class="comment-single media">
+                                                        <div class="comment-author-thumb mr-3 mr-sm-4">
+                                                            <img src="assets/images/testimonial/testimonial-5.jpg" alt="Comment Author">
+                                                        </div>
+                                                        <div class="comment-content media-body">
+                                                            <div class="comment-meta d-flex justify-content-between align-items-top">
+                                                                <div class="comment-title">
+                                                                    <h6>John Doe</h6>
+                                                                    <span><span class="comment-date">Apr 18, 2018</span> at <span class="comment-time">12:47 pm</span></span>
+                                                                </div>
+                                                                <div class="comment-reply">
+                                                                    <a href=""><span>Reply</span></a>
+                                                                </div>
+                                                            </div>
+                                                            <p>Proactively revolutionize wireless applications and impactful human capital. Progressively productize professional relationships.</p>
+                                                        </div>
+                                                    </li>
+                                                </ol> <!-- end of comment-list -->
+
+                                                <div class="comment-form">
+                                                    <h3>Leave a comment</h3>
+                                                    <form action="#" method="post" id="comment_form">
+                                                        <div class="row mb-3">
+                                                            <div class="form-group col-12 col-sm-12 col-md-12">
+                                                                <textarea id="comment" placeholder="Your Comment *" name="comment" class="form-control" required></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <div class="form-group col-12 col-sm-12 col-md-4">
+                                                                <input type="text" class="form-control" id="com-name" placeholder="Name *" required>
+                                                            </div>
+                                                            <div class="form-group col-12 col-sm-12 col-md-4">
+                                                                <input type="email" class="form-control" id="com-email" placeholder="Email *" required>
+                                                            </div>
+                                                            <div class="form-group col-12 col-sm-12 col-md-4">
+                                                                <input type="email" class="form-control" id="com-website" placeholder="Website" required>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row">
+                                                            <div class="form-group col-12 col-sm-12 col-md-12 mb0">
+                                                                <input name="submit" type="submit" id="submit_my_comment" class="btn btn-secondary" value="Submit Comment">
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <!-- end of form -->
+                                                </div> <!-- end of comment form -->
+                                            </div> <!-- end of comment-area -->
+                                        </div>
+                                    </div> <!-- end of row -->
+                                </div> <!-- end of single-post-wrapper -->
+                            </main> <!-- end of #primary -->
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-3">
+                            <aside id="secondary" class="widget-area">
+                                <div class="sidebar-widget search-widget">
+                                    <h2 class="widgettitle">Search</h2>
+                                    <div class="search-content">
+                                        <form action="#" class="input-group">
+                                            <input class="form-control" type="search" name="s" title="search" placeholder="Search...">
+                                            <input type="submit" class="btn btn-secondary" value="search">
+                                        </form>
+                                    </div>
+                                </div> <!-- end of sidebar-widget -->
+
+                                <div class="sidebar-widget recent-posts">
+                                    <h2 class="widgettitle">Recent Posts</h2>
+                                    <div class="recent-posts-widget-container">
+                                        <div class="element-carousel" data-visible-slide="1" data-visible-xl-slide="1" data-visible-lg-slide="1" data-visible-md-slide="1" data-visible-sm-slide="1" data-loop="true" data-autoplay-delay="7000">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-1.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Aypi non habent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">09 Aug</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-2.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Bypi non habent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">09 Aug</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-3.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Cabent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">21 Nov</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+                                                </div>
+
+                                                <div class="swiper-slide">
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-4.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Cabent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">09 Aug</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-5.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Aypi non habent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">09 Aug</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+
+                                                    <div class="posts-single media">
+                                                        <div class="post-thumbnail mr-4 mr-lg-3 mr-xl-4">
+                                                            <a href="#">
+                                                                <img src="assets/images/blog/blog-thumb-6.jpg" alt="Blog Image">
+                                                                <div class="overlay"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="post-content media-body">
+                                                            <div class="post-title">
+                                                                <h5><a href="blog-details.html">Bypi non habent claritatem insitam</a></h5>
+                                                            </div>
+                                                            <div class="post-date">21 Nov</div>
+                                                        </div>
+                                                    </div> <!-- end of posts-single -->
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-arrow prev fa fa-angle-left"></div>
+                                            <div class="swiper-arrow next fa fa-angle-right"></div>
+                                        </div> <!-- end of element-carousel -->
+                                    </div> <!-- end of recent-posts-widget -->
+                                </div> <!-- end of sidebar-widget -->
+
+                                <div class="sidebar-widget list-widget">
+                                    <h2 class="widgettitle">Categories</h2>
+                                    <div class="categories-widget">
+                                        <ul class="categorie-list">
+                                            <li><a href="#">creative<span>(20)</span></a></li>
+                                            <li><a href="#">corporate<span>(40)</span></a></li>
+                                            <li><a href="#">business<span>(22)</span></a></li>
+                                            <li><a href="#">consultancy<span>(15)</span></a></li>
+                                            <li><a href="#">technology<span>(18)</span></a></li>
+                                            <li><a href="#">general<span>(12)</span></a></li>
+                                        </ul>
+                                    </div> <!-- end of categories-widget -->
+                                </div> <!-- end of sidebar-widget -->
+
+                                <div class="sidebar-widget tag-cloud">
+                                    <h2 class="widgettitle">Tag Cloud</h2>
+                                    <div class="tags-widget">
+                                        <ul>
+                                            <li><a href="#">Ecommerce</a></li>
+                                            <li><a href="#">Creative</a></li>
+                                            <li><a href="#">Store</a></li>
+                                            <li><a href="#">Ideas</a></li>
+                                            <li><a href="#">Business</a></li>
+                                            <li><a href="#">Corporate</a></li>
+                                            <li><a href="#">Smart</a></li>
+                                        </ul>
+                                    </div>
+                                </div> <!-- end of sidebar-widget -->
+
+                                <div class="sidebar-widget instagram-widget">
+                                    <h2 class="widgettitle">Latest Instagram</h2>
+                                    <div class="instagram-area">
+                                        <div id="instagram_feed" class="image-popup"></div>
+                                        <p>Follow Us <a href="https://www.instagram.com/themeitems/" target="_blank">@Instagram</a>.</p>
+                                    </div>
+                                </div> <!-- end of sidebar-widget -->
+                            </aside> <!-- end of #secondary -->
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div>
+            <!-- End of Blog Posts Section -->
+        </div>
+        <!-- End of Main Content Wrapper -->
+
+        <!-- Start of Footer -->
+        <footer id="colophon" class="bgc-secondary pt-full">
+
+            <!-- Footer Widgets Area -->
+            <div class="footer-widgets-area">
+                <div class="container">
+                    <div class="footer-inner">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                                <aside class="widget-container">
+                                    <div class="widget-content">
+                                        <div class="footer-logo mb-half">
+                                            <img src="assets/images/footer-logo.png" alt="Footer Logo">
+                                        </div>
+                                        <p>We are a team of designers and developers that create high quality Magento, Prestashop, Opencart.</p>
+                                        <div class="footer-contact">
+                                            <p><span>Address:</span>6688Princess Road, London, Greater London BAS 23JK, UK</p>
+                                            <p><span>Phone:</span><a href="#">(012) 800 456 789-987</a></p>
+                                            <p><span>Email:</span><a href="#">support@example.com</a></p>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-3 col-lg-2 order-lg-2">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Products</h4>
+                                    <div class="widget-content">
+                                        <div class="widgetized-menu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">Prices drop</a></li>
+                                                <li><a href="#">New Products</a></li>
+                                                <li><a href="#">Best Sales</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Login</a></li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-4 col-lg-2 order-lg-3">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Our Company</h4>
+                                    <div class="widget-content">
+                                        <div class="widgetized-menu">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Site Map</a></li>
+                                                <li><a href="#">Stores</a></li>
+                                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                                <li><a href="#">My Account</a></li>
+                                            </ul>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+
+                            <div class="col-12 col-sm-12 col-md-6 order-md-2 col-lg-4 order-lg-4">
+                                <aside class="widget-container">
+                                    <h4 class="widgettitle">Sign up for our newsletter</h4>
+                                    <div class="widget-content">
+                                        <div class="newsletter-widget">
+                                            <p>You may unsubscribe at any moment. For that purpose, please find our contact info in the legal notice.</p>
+                                            <form class="mc-subscribe-form">
+                                                <div class="input-group">
+                                                    <input type="email" autocomplete="off" placeholder="Your Email Address" required>
+                                                    <button class="default-btn" type="submit">Sign Up</button>
+                                                </div>
+                                            </form> <!-- end of form -->
+
+                                            <div class="mailchimp-alerts">
+                                                <div class="mailchimp-submitting"></div>
+                                                <div class="mailchimp-success"></div>
+                                                <div class="mailchimp-error"></div>
+                                            </div><!-- end of mailchimp-alerts -->
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+
+                                <aside class="widget-container">
+                                    <div class="widget-content">
+                                        <div class="social-widget mt-half">
+                                            <div class="socials d-flex align-items-center justify-content-center justify-content-md-start">
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item"><a href="#" class="bg-facebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-twitter" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-gplus" title="Google Plus" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-pinterest" title="Pinterest" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-instagram" title="Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                                    <li class="list-inline-item"><a href="#" class="bg-linkedin" title="Linked In" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div> <!-- end of widget-content -->
+                                </aside> <!-- end of widget-container -->
+                            </div>
+                        </div> <!-- end of row -->
+                    </div> <!-- end of footer-inner -->
+                </div> <!-- end of container -->
+            </div> <!-- end of footer-widgets-area -->
+
+            <!-- Footer Copyright -->
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <p class="copyright-text">Copyright © 2018 <a href="#" rel="nofollow">Pebona Themes</a>. All Right Reserved.</p>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="footer-payment">
+                                <a href="#"><img src="assets/images/icons/payment.png" alt="Payment Icons"></a>
+                            </div>
+                        </div>
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </div> <!-- end of footer-copyright -->
+        </footer>
+        <!-- End of Footer -->
+
+        <!-- Start of Scroll to Top -->
+        <div id="to_top">
+            <i class="ion ion-ios-arrow-forward"></i>
+            <i class="ion ion-ios-arrow-forward"></i>
+        </div>
+        <!-- End of Scroll to Top -->
+    </div>
+    <!-- End of Whole Site Wrapper -->
+
+    <!-- Initializing Photoswipe -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Photoswipe -->
+
+
+    <!-- JS
+    ============================================ -->
+
+    <!-- jQuery JS -->
+    <script src="assets/js/jquery.1.12.4.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="assets/js/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="assets/js/plugins.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

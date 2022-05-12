@@ -1,0 +1,82 @@
+/**  =====================
+      button css start
+==========================  **/
+.btn-page {
+    .btn {
+        margin-right: 5px;
+        margin-bottom: 5px;
+    }
+
+    .btn-group,
+    .btn-group-vertical {
+        .btn {
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.btn.btn-icon {
+    border-radius: 50%;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $dark-color;
+    background: transparent;
+    border: 2px solid $theme-border;
+
+    &.icon-lg {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+    }
+
+    &.icon-sm {
+        width: 24px;
+        height: 24px;
+        font-size: 14px;
+    }
+
+    &:not(.disabled),
+    &:not(:disabled) {
+        &:hover {
+            border-color: $dark-color;
+        }
+
+        &.active,
+        &:active {
+            border-color: $success-color;
+            color: $success-color;
+            box-shadow: none;
+        }
+    }
+
+}
+
+.btn-group-link {
+    .btn {
+        cursor: pointer;
+
+        &.focus,
+        &:focus {
+            box-shadow: none;
+        }
+
+        &.active {
+            color: $dark-color;
+        }
+    }
+}
+.btn-group-toggle{
+    .btn-outline-light{
+        background: #fff;
+        cursor: pointer;      
+        &:not(:disabled):not(.disabled):active,
+        &:not(:disabled):not(.disabled).active{
+            background: rgba(215, 223, 233, 0.24);
+        }
+    }
+}

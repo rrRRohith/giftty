@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/responsive.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+    <!-- datatable Js -->
+    <script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/plugins/buttons.colVis.min.js"></script>
+    <script src="assets/js/plugins/buttons.print.min.js"></script>
+    <script src="assets/js/plugins/pdfmake.min.js"></script>
+    <script src="assets/js/plugins/vfs_fonts.js"></script>
+    <script src="assets/js/plugins/jszip.min.js"></script>
+    <script src="assets/js/plugins/dataTables.buttons.min.js"></script>
+    <script src="assets/js/plugins/buttons.html5.min.js"></script>
+    <script src="assets/js/plugins/buttons.bootstrap4.min.js"></script>
+    <script src="assets/js/plugins/dataTables.responsive.min.js"></script>
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Table [ Datatable ]",
+"subtitle": "Table [ Datatable ] gives the ability to display data in tabular format with more advance features."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Zero Configuration</h3>
+                <div class="row">
+                    <!-- Zero config table start -->
+                    <div class="col-sm-12 datta-example">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="simpletable" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Quinn Flynn</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr>
+
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                // [ Zero Configuration ]
+                                $('#simpletable').DataTable();
+                            });
+                        </script>
+                    </div>
+                    <!-- Zero config table end -->
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Scroll - Vertical</h3>
+                <div class="row">
+                    <!-- Scroll - Vertical table start -->
+                    <div class="col-sm-12 datta-example">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="scr-vrt-dt" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Quinn Flynn</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Herrod Chandler</td>
+                                                <td>Sales Assistant</td>
+                                                <td>San Francisco</td>
+                                                <td>59</td>
+                                                <td>2012/08/06</td>
+                                                <td>$137,500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Rhona Davidson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>Tokyo</td>
+                                                <td>55</td>
+                                                <td>2010/10/14</td>
+                                                <td>$327,900</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Colleen Hurst</td>
+                                                <td>Javascript Developer</td>
+                                                <td>San Francisco</td>
+                                                <td>39</td>
+                                                <td>2009/09/15</td>
+                                                <td>$205,500</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                // [ Scroll - Vertical ]
+                                $('#scr-vrt-dt').DataTable({
+                                    "scrollY": "290px",
+                                    "scrollCollapse": true,
+                                    "paging": false
+                                });
+                            });
+                        </script>
+                    </div>
+                    <!-- Scroll - Vertical table end -->
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Show/hide columns</h3>
+                <div class="row">
+                    <!-- Multi-Level Collections table start -->
+                    <div class="col-sm-12 datta-example">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="multilevel-btn" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                // [ Multi-Level collections ]
+                                $('#multilevel-btn').DataTable({
+                                    dom: 'Bfrtip',
+                                    buttons: [
+                                        'columnsToggle'
+                                    ]
+                                });
+                            });
+                        </script>
+                    </div>
+                    <!-- Multi-Level Collections table end -->
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Tabletools</h3>
+                <div class="row">
+                    <!-- Multi-Level Collections table start -->
+                    <div class="col-sm-12 datta-example">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="tbltool-btn" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett Winters</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Brielle Williamson</td>
+                                                <td>Integration Specialist</td>
+                                                <td>New York</td>
+                                                <td>61</td>
+                                                <td>2012/12/02</td>
+                                                <td>$372,000</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                // [ table button toolbar ]
+                                $('#tbltool-btn').DataTable({
+                                    dom: 'Bfrtip',
+                                    buttons: [{
+                                        extend: 'copyHtml5',
+                                        exportOptions: {
+                                            columns: [0, ':visible']
+                                        }
+                                    }, {
+                                        extend: 'pdfHtml5',
+                                    }, {
+                                        extend: 'excelHtml5',
+                                        exportOptions: {
+                                            columns: ':visible'
+                                        }
+                                    }, {
+                                        text: 'JSON',
+                                        action: function(e, dt, button, config) {
+                                            var data = dt.buttons.exportData();
+                                            $.fn.dataTable.fileSave(new Blob([JSON.stringify(data)]), 'Export.json');
+                                        }
+                                    }, 'csv', 'print']
+                                });
+                            });
+                        </script>
+                    </div>
+                    <!-- Multi-Level Collections table end -->
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Responsive</h3>
+                <div class="row">
+                    <!-- responsive table start -->
+                    <div class="col-sm-12 datta-example">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="dt-responsive table-responsive">
+                                    <table id="responsive-tbl" class="table table-striped nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>First name</th>
+                                                <th>Last name</th>
+                                                <th>Position</th>
+                                                <th>Office</th>
+                                                <th>Age</th>
+                                                <th>Start date</th>
+                                                <th>Salary</th>
+                                                <th>Extn.</th>
+                                                <th>E-mail</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tiger</td>
+                                                <td>Nixon</td>
+                                                <td>System Architect</td>
+                                                <td>Edinburgh</td>
+                                                <td>61</td>
+                                                <td>2011/04/25</td>
+                                                <td>$320,800</td>
+                                                <td>5421</td>
+                                                <td>t.nixon@datatables.net</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garrett</td>
+                                                <td>Winters</td>
+                                                <td>Chief Executive Officer (CEO)</td>
+                                                <td>Tokyo</td>
+                                                <td>63</td>
+                                                <td>2011/07/25</td>
+                                                <td>$170,750</td>
+                                                <td>8422</td>
+                                                <td>g.winters@datatables.net</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ashton</td>
+                                                <td>Cox</td>
+                                                <td>Junior Technical Author</td>
+                                                <td>San Francisco</td>
+                                                <td>66</td>
+                                                <td>2009/01/12</td>
+                                                <td>$86,000</td>
+                                                <td>1562</td>
+                                                <td>a.cox@datatables.net</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cedric</td>
+                                                <td>Kelly</td>
+                                                <td>Senior Javascript Developer</td>
+                                                <td>Edinburgh</td>
+                                                <td>22</td>
+                                                <td>2012/03/29</td>
+                                                <td>$433,060</td>
+                                                <td>6224</td>
+                                                <td>c.kelly@datatables.net</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Airi</td>
+                                                <td>Satou</td>
+                                                <td>Accountant</td>
+                                                <td>Tokyo</td>
+                                                <td>33</td>
+                                                <td>2008/11/28</td>
+                                                <td>$162,700</td>
+                                                <td>5407</td>
+                                                <td>a.satou@datatables.net</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            $(function() {
+                                // [ responsive toolbar ]
+                                $('#responsive-tbl').DataTable({
+                                    responsive: true,
+                                });
+                            });
+                        </script>
+                    </div>
+                    <!-- responsive table end -->
+                </div>
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

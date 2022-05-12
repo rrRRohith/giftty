@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/dropify.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Menus",
+"subtitle": "Menus display a list of actions to take. They're used for navigation or command."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Menus ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">DEFAULT</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2 mr-2">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Icons + Text</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                            <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                            <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                            <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Text Only</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Priority</a>
+                            <a class="dropdown-item" href="#!">Open Tasks</a>
+                            <a class="dropdown-item" href="#!">Due Date</a>
+                            <a class="dropdown-item" href="#!">Status</a>
+
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Basic Dropdown Button</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Split Dropdown Button</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-primary">Primary</button>
+                        <button type="button" class="btn  btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-secondary">Secondary</button>
+                        <button type="button" class="btn  btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-success">Success</button>
+                        <button type="button" class="btn  btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-danger">Danger</button>
+                        <button type="button" class="btn  btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-warning">Warning</button>
+                        <button type="button" class="btn  btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-info">Info</button>
+                        <button type="button" class="btn  btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Basic Outline Dropdown Button</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-success dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-danger dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-warning dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button class="btn  btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Split Outline Dropdown Button</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-primary">Primary</button>
+                        <button type="button" class="btn  btn-outline-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn  btn-outline-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-success">Success</button>
+                        <button type="button" class="btn  btn-outline-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-danger">Danger</button>
+                        <button type="button" class="btn  btn-outline-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-warning">Warning</button>
+                        <button type="button" class="btn  btn-outline-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                    <div class="btn-group mb-2 mr-2">
+                        <button type="button" class="btn  btn-outline-info">Info</button>
+                        <button type="button" class="btn  btn-outline-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Toggle Dropdown</span></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#!">Action</a>
+                            <a class="dropdown-item" href="#!">Another action</a>
+                            <a class="dropdown-item" href="#!">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#!">Separated link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Menus ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

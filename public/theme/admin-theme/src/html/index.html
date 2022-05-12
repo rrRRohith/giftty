@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+
+<body class="landing-page front">
+    <!-- [ Pre-loader ] start -->
+    <div class="loader-bg">
+        <div class="loader-track">
+            <div class="loader-fill"></div>
+        </div>
+    </div>
+    <!-- [ Pre-loader ] End -->
+    <!-- [ navbar ] start -->
+    <nav class="navbar pcoded-header navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="m-header">
+                <a href="index.html" class="b-brand">
+                    <!-- ========   change your logo hear   ============ -->
+                    <img src="assets/images/logo-dark.svg" alt="" class="logo">
+                </a>
+                <a href="#!" class="mob-toggler">
+                    <i class="feather icon-more-vertical"></i>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
+                        <div class="search-bar">
+                            <input type="text" class="form-control border-0 shadow-none" placeholder="Search here">
+                            <button type="button" class="close" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+                                Dashboard
+                            </a>
+                            <div class="dropdown-menu profile-notification dropdown-menu-right">
+                                <ul class="pro-body">
+                                    <li><a href="adm-dashboard.html" class="dropdown-item"><i class="fas fa-circle"></i> Dashboard</a></li>
+                                    <li><a href="adm-client-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Clients</a></li>
+                                    <li><a href="adm-teams-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Teams</a></li>
+                                    <li><a href="adm-users-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Users</a></li>
+                                    <li><a href="adm-projects-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Projects</a></li>
+                                    <li><a href="adm-integrations-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Integrations</a></li>
+                                    <li><a href="adm-files-card.html" class="dropdown-item"><i class="fas fa-circle"></i> Files</a></li>
+                                    <li><a href="adm-profile-edit.html" class="dropdown-item"><i class="fas fa-circle"></i> Profile</a></li>
+                                    <li><a href="adm-tasks.html" class="dropdown-item"><i class="fas fa-circle"></i> Tasks</a></li>
+                                    <li><a href="adm-invoice.html" class="dropdown-item"><i class="fas fa-circle"></i> Invoice</a></li>
+                                    <li><a href="adm-em-inbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Inbox</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown mega-menu">
+                            <a class="dropdown-toggle h-drop" href="#" data-toggle="dropdown">
+                                Components
+                            </a>
+                            <div class="dropdown-menu profile-notification dropdown-menu-right">
+                                <div class="row no-gutters">
+                                    <div class="col">
+                                        <h6 class="mega-title">Primitives</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-colors.html" class="dropdown-item"><i class="fas fa-circle"></i> Colors</a></li>
+                                            <li><a href="bc-typography.html" class="dropdown-item"><i class="fas fa-circle"></i> Typography</a></li>
+                                            <li><a href="bc-richtext.html" class="dropdown-item"><i class="fas fa-circle"></i> Rich Text</a></li>
+                                            <li><a href="bc-shadows.html" class="dropdown-item"><i class="fas fa-circle"></i> Elevation & Shadows</a></li>
+                                            <li><a href="bc-border.html" class="dropdown-item"><i class="fas fa-circle"></i> Shapes & Curves</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Landingpage</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="landingpage.html" class="dropdown-item"><i class="fas fa-circle"></i> Landingpage</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Table</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="tbl-bootstrap.html" class="dropdown-item"><i class="fas fa-circle"></i> Bootstrap</a></li>
+                                            <li><a href="tbl-datatable.html" class="dropdown-item"><i class="fas fa-circle"></i> Datatable</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">UI Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-alerts.html" class="dropdown-item"><i class="fas fa-circle"></i> Alerts</a></li>
+                                            <li><a href="bc-accordions.html" class="dropdown-item"><i class="fas fa-circle"></i> Accordions</a></li>
+                                            <li><a href="bc-avatars.html" class="dropdown-item"><i class="fas fa-circle"></i> Avatars</a></li>
+                                            <li><a href="bc-badges.html" class="dropdown-item"><i class="fas fa-circle"></i> Badges</a></li>
+                                            <li><a href="bc-breadcrumbs.html" class="dropdown-item"><i class="fas fa-circle"></i> Breadcrumbs</a></li>
+                                            <li><a href="bc-button.html" class="dropdown-item"><i class="fas fa-circle"></i> Button</a></li>
+                                            <li><a href="bc-button-group.html" class="dropdown-item"><i class="fas fa-circle"></i> Buttons Groups</a></li>
+                                            <li><a href="bc-cards.html" class="dropdown-item"><i class="fas fa-circle"></i> Cards</a></li>
+                                            <li><a href="bc-conversation.html" class="dropdown-item"><i class="fas fa-circle"></i> Conversation</a></li>
+                                            <li><a href="bc-datepickers.html" class="dropdown-item"><i class="fas fa-circle"></i> Date Pickers</a></li>
+                                            <li><a href="bc-icons.html" class="dropdown-item"><i class="fas fa-circle"></i> Icons</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">UI Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-menus.html" class="dropdown-item"><i class="fas fa-circle"></i> Menus</a></li>
+                                            <li><a href="bc-sliderscarousel.html" class="dropdown-item"><i class="fas fa-circle"></i> Media Sliders / Carousel</a></li>
+                                            <li><a href="bc-modals.html" class="dropdown-item"><i class="fas fa-circle"></i> Modals</a></li>
+                                            <li><a href="bc-pagination.html" class="dropdown-item"><i class="fas fa-circle"></i> Pagination</a></li>
+                                            <li><a href="bc-barsgraphs.html" class="dropdown-item"><i class="fas fa-circle"></i> Progress Bars & Graphs</a></li>
+                                            <li><a href="bc-searchbar.html" class="dropdown-item"><i class="fas fa-circle"></i> Search Bar</a></li>
+                                            <li><a href="bc-tabs.html" class="dropdown-item"><i class="fas fa-circle"></i> Tabs</a></li>
+                                            <li><a href="bc-toasts.html" class="dropdown-item"><i class="fas fa-circle"></i> Toasts</a></li>
+                                            <li><a href="bc-tooltips.html" class="dropdown-item"><i class="fas fa-circle"></i> Tooltips</a></li>
+                                            <li><a href="bc-uploadareas.html" class="dropdown-item"><i class="fas fa-circle"></i> Upload Areas</a></li>
+                                            <li><a href="bc-spinner.html" class="dropdown-item"><i class="fas fa-circle"></i> Spinner</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">Advance Components</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-advancedstats.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Stats</a></li>
+                                            <li><a href="bc-advancedcards.html" class="dropdown-item"><i class="fas fa-circle"></i> Advanced Cards</a></li>
+                                            <li><a href="ac-lightbox.html" class="dropdown-item"><i class="fas fa-circle"></i> Lightbox</a></li>
+                                            <li><a href="ac-notification.html" class="dropdown-item"><i class="fas fa-circle"></i> Notification</a></li>
+                                            <li><a href="ac-pnotify.html" class="dropdown-item"><i class="fas fa-circle"></i> Pnotify</a></li>
+                                            <li><a href="ac-rating.html" class="dropdown-item"><i class="fas fa-circle"></i> Rating</a></li>
+                                            <li><a href="bc-sidebarforms.html" class="dropdown-item"><i class="fas fa-circle"></i> Sidebar Forms</a></li>
+                                            <li><a href="ac-sweetalert.html" class="dropdown-item"><i class="fas fa-circle"></i> Sweetalert</a></li>
+                                            <li><a href="ac-syn-highlighter.html" class="dropdown-item"><i class="fas fa-circle"></i> Syntax Highlighter</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="mega-title">Forms</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="bc-inputs.html" class="dropdown-item"><i class="fas fa-circle"></i> Inputs</a></li>
+                                            <li><a href="bc-selects.html" class="dropdown-item"><i class="fas fa-circle"></i> Selects</a></li>
+                                            <li><a href="bc-f-validation.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Validation</a></li>
+                                            <li><a href="bc-f-masking.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Masking</a></li>
+                                            <li><a href="bc-f-wizard.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Wizard</a></li>
+                                            <li><a href="bc-f-picker.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Picker</a></li>
+                                            <li><a href="bc-f-select.html" class="dropdown-item"><i class="fas fa-circle"></i> Form Select</a></li>
+                                        </ul>
+                                        <h6 class="mega-title mt-1">Extension</h6>
+                                        <ul class="pro-body">
+                                            <li><a href="page-editor.html" class="dropdown-item"><i class="fas fa-circle"></i> Editor</a></li>
+                                            <li><a href="page-image-croper.html" class="dropdown-item"><i class="fas fa-circle"></i> Image Cropper</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- [ navbar ] end -->
+
+    <!-- [ navbar ] start -->
+    <header class="l-header meta-header bg-line">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6 col-sm-8">
+                    <div class="home-lead">
+                        <p class="">Responsive Bootstrap 4 Dashboard Template</p>
+                        <h2 class="font-weight-light my-4">Make your dashboard app more professional with this <strong>Super awesome</strong> and <strong>Premium quality</strong> Dashboard &amp; UIkit design template.</h2>
+                        <div class="">
+                            <a href="bc-colors.html" class="btn btn-primary px-md-4">Get Started</a>
+                            <a href="docs/index.html" class="btn btn-link px-md-4">Learn More</a>
+                        </div>
+                        <div class="d-inline-flex my-4">
+                            <div class="text-success"><i class="f-26 fab fa-bootstrap"></i></div>
+                            <div class="text-warning p-l-10"><i class="f-26 fab fa-html5"></i></div>
+                            <div class="text-primary p-l-10"><i class="f-26 fab fa-css3-alt"></i></div>
+                            <div class="text-danger p-l-10"><i class="f-26 fab fa-sass"></i></div>
+                            <div class="text-success p-l-10"><i class="f-26 fab fa-js"></i></div>
+                            <div class="text-danger p-l-10"><i class="f-26 fab fa-npm"></i></div>
+                            <div class="text-danger p-l-10"><i class="f-26 fab fa-gulp"></i></div>
+                        </div>
+                        <div class="tx-12 mg-t-40">
+                            <a href="docs.html" class="text-body text-h-primary">Doc<span class="d-none d-sm-inline">umentation</span><span class="d-sm-none">s</span></a>
+                            <a href="" class="text-body text-h-primary m-l-10">Changelog</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-8">
+                    <img src="assets/images/landing/home-moke.png" alt="" class="img-fluid moke-img">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- [ navbar ] end -->
+    <!-- [ demos ] start -->
+    <section id="layouts" class="layouts bg-dark">
+        <div class="container text-center">
+            <h2 class="text-white mt-4"><span>Awesome</span> layouts</h2>
+            <div class="row  justify-content-center">
+                <div class="col-md-6">
+                    <p class="mb-4">All live preview supports the LIVE CUSTOMIZER filter</p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="layouts-block">
+                        <img src="assets/images/landing/layout-v.jpg" alt="layout image" class="img-fluid">
+                        <div class="hover-data">
+                            <a href="http://html.codedthemes.com/treva/bootstrap/layout-vertical.html" target="_blank" class="btn btn-success"><i class="feather icon-monitor mr-2"></i>Live Preview</a>
+                        </div>
+                    </div>
+                    <p class="mb-1 mt-2"><small>Vertical</small></p>
+                    <h5 class="text-white">Vertical Layout</h5>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="layouts-block">
+                        <img src="assets/images/landing/layout-h.jpg" alt="layout image" class="img-fluid">
+                        <div class="hover-data">
+                            <a href="http://html.codedthemes.com/treva/bootstrap/layout-horizontal.html" target="_blank" class="btn btn-success"><i class="feather icon-monitor mr-2"></i>Live Preview</a>
+                        </div>
+                    </div>
+                    <p class="mb-1 mt-2"><small>horizontal</small></p>
+                    <h5 class="text-white">horizontal layout</h5>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="layouts-block">
+                        <img src="assets/images/landing/layout-l.jpg" alt="layout image" class="img-fluid">
+                        <div class="hover-data">
+                            <a href="http://html.codedthemes.com/treva/bootstrap/landingpage.html" target="_blank" class="btn btn-success"><i class="feather icon-monitor mr-2"></i>Live Preview</a>
+                        </div>
+                    </div>
+                    <p class="mb-1 mt-2"><small>Landing Page</small></p>
+                    <h5 class="text-white">Landing Page</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ demos ] end -->
+    <!-- [ Content ] start -->
+    <section class="price bg-line position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-center mb-5">
+                    <h6 class="text-uppercase mb-4">eyebrow</h6>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$36</h1>
+                            <!-- <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6> -->
+                            <h2 class="mt-5 font-weight-normal mb-4">Single License</h2>
+                            <p class="mb-4 px-md-4">you must purchase a single-license for Only one project or client.</p>
+                            <button class="btn btn-outline-secondary px-md-5">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center rec-price">
+                        <span class="rec-badge">recommended</span>
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$129</h1>
+                            <!-- <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6> -->
+                            <h2 class="mt-5 font-weight-normal mb-4">Multiple License</h2>
+                            <p class="mb-4 px-md-4">you must purchase a Multiple-license for Only 5 project or client.</p>
+                            <button class="btn btn-primary px-md-5">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-body p-5">
+                            <h1 class="display-4">$499</h1>
+                            <!-- <h6 class="text-body text-uppercase"> per month,<br> billed anually</h6> -->
+                            <h2 class="mt-5 font-weight-normal mb-4">Extended License</h2>
+                            <p class="mb-4 px-md-4">you must purchase a Multiple-license for Create Single SaSS based website.</p>
+                            <button class="btn btn-outline-secondary px-md-5">Contact Us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    <!-- [ Widget ] Start -->
+    <section class="widget d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div id="widget">
+                    <div class="w-imgs">
+                        <div class="tilter">
+                            <figure class="tilter__figure">
+                                <img src="assets/images/landing/widgets/bg.png" alt="images" />
+                                <span class="ato_two tilter__caption">
+                                    <img class="class-blur" src="assets/images/landing/widgets/w4.png" alt="images" />
+                                </span>
+                                <span class="ato_one tilter__deco tilter__deco--lines">
+                                    <img src="assets/images/landing/widgets/w5.png" alt="images" />
+                                    <img src="assets/images/landing/widgets/w6.png" alt="images" />
+                                    <img src="assets/images/landing/widgets/w1.png" alt="images" />
+                                    <span class="vc-row-wrap"> <img src="assets/images/landing/widgets/bg2.png" alt="images" /> </span>
+                                    <span class="vc-row-text"> <img src="assets/images/landing/widgets/w2.png" alt="images" /> </span>
+                                    <span class="vc-row-gallery"> <img src="assets/images/landing/widgets/w3.png" alt="images" /> </span>
+                                </span>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Widget ] Start -->
+    <!-- [ Content ] start -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 text-center text-md-left">
+                    <ul class="list-inline mb-5 ">
+                        <li class="list-inline-item"><img src="assets/images/logo-dark.svg" alt="" class="logo hei-20"></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">product</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">features</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!">pricing</a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a class="text-body text-h-primary ml-2" href="#!"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    <p>© 2019 Treva, Inc. All rights reserved.</p>
+                    <p>Proudly Design by <a href="#!" class="text-primary">Tarful</a> & Built by <a href="#!" class="text-primary">Codedthemes</a>.</p>
+                </div>
+                <div class="col-md-5 text-center text-md-right">
+                    <a href="#!"><img src="assets/images/landing/img-apple-dnld.svg" alt="" class="img-fluid"></a>
+                    <a href="#!"><img src="assets/images/landing/img-google-dnld.svg" alt="" class="img-fluid"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- [ Content ] end -->
+    @@include('./layouts/footer.html')
+    <script src="assets/js/pages/front.js"></script>
+    @@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

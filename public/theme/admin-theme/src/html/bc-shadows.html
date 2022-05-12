@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "PRIMITIVES",
+"title": "Elevation & Shadows",
+"subtitle": "Elevation is the relative distance between two surfaces along the z-axis. Elevation and shadows are based on use types."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Elevation & Shadows ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">No Shadow</h3>
+                        <p><code>class="shadow-none"</code></p>
+                        <span class="wid-150 hei-150 rounded mb-3 d-inline-block bg-white shadow-none"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Shadow 1</h3>
+                        <p><code>class="shadow-sm"</code></p>
+                        <span class="wid-150 hei-150 rounded mb-3 d-inline-block bg-white shadow-sm"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Shadow 2</h3>
+                        <p><code>class="shadow"</code></p>
+                        <span class="wid-150 hei-150 rounded mb-3 d-inline-block bg-white shadow"></span>
+                    </div>
+                    <div class="col-auto text-center">
+                        <h3 class="mb-4 font-weight-bold">Shadow 3</h3>
+                        <p><code>class="shadow-lg"</code></p>
+                        <span class="wid-150 hei-150 rounded mb-3 d-inline-block bg-white shadow-lg"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Elevation & Shadows ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

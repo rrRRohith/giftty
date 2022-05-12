@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- Rating css -->
+    <link rel="stylesheet" href="assets/css/plugins/bars-1to10.css">
+    <link rel="stylesheet" href="assets/css/plugins/bars-horizontal.css">
+    <link rel="stylesheet" href="assets/css/plugins/bars-movie.css">
+    <link rel="stylesheet" href="assets/css/plugins/bars-pill.css">
+    <link rel="stylesheet" href="assets/css/plugins/bars-reversed.css">
+    <link rel="stylesheet" href="assets/css/plugins/bars-square.css">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-stars.css">
+    <link rel="stylesheet" href="assets/css/plugins/css-stars.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Notification",
+"subtitle": "Notification is use to display alert message on screen"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ rating ] start -->
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <button class="btn  btn-primary rating-enable mb-4">Enable</button>
+                    <button class="btn  btn-primary rating-disable mb-4">Disable</button>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">1/10 Rating</h5>
+                <p>Use <code>id="example-1to10"</code> to see default rating</p>
+                <div class="box-body">
+                    <select id="example-1to10" name="rating" autocomplete="off">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7" selected="selected">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="current-rating"></span>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Movie Rating</h5>
+                <p>Use <code>id="example-movie"</code> to see movie rating</p>
+                <div class="box-body">
+                    <select id="example-movie" name="rating" autocomplete="off">
+                        <option value="Bad">Bad</option>
+                        <option value="Mediocre">Mediocre</option>
+                        <option value="Good" selected="selected">Good</option>
+                        <option value="Awesome">Awesome</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Square Rating</h5>
+                <p>Use <code>id="example-square"</code> to see square rating</p>
+                <div class="box-body">
+                    <select id="example-square" name="rating" autocomplete="off">
+                        <option value="" label="0"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Pill Rating</h5>
+                <p>Use <code>id="example-pill"</code> to see pill rating</p>
+                <div class="box-body">
+                    <select id="example-pill" name="rating" autocomplete="off">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Reverse Rating</h5>
+                <p>Use <code>id="example-reversed"</code> to see reverse rating</p>
+                <div class="box-body">
+                    <select id="example-reversed" name="rating" autocomplete="off">
+                        <option value="Strongly Agree">Strongly Agree</option>
+                        <option value="Agree">Agree</option>
+                        <option value="Neither Agree or Disagree" selected="selected">Neither Agree or Disagree</option>
+                        <option value="Disagree">Disagree</option>
+                        <option value="Strongly Disagree">Strongly Disagree</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Horizontal Rating</h5>
+                <p>Use <code>id="example-horizontal"</code> to see horizontal rating</p>
+                <div class="box-body">
+                    <select id="example-horizontal" name="rating" autocomplete="off">
+                        <option value="10">10</option>
+                        <option value="9">9</option>
+                        <option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+                        <option value="5">5</option>
+                        <option value="4">4</option>
+                        <option value="3">3</option>
+                        <option value="2">2</option>
+                        <option value="1" selected="selected">1</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Font Awesome Rating</h5>
+                <p>Use <code>id="example-fontawesome"</code> to see font awesome rating</p>
+                <div class="stars stars-example-fontawesome">
+                    <select id="example-fontawesome" name="rating" autocomplete="off">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">CSS Stars Rating</h5>
+                <p>Use <code>id="example-css"</code> to see css stars rating</p>
+                <div class="stars stars-example-css">
+                    <select id="example-css" class="rating-star" name="rating" autocomplete="off">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-6 col-md-6">
+                <h5 class="mt-5">Fractional Star Rating</h5>
+                <p>Use <code>id="example-fontawesome-o"</code> to see fractional star rating</p>
+                <div class="stars stars-example-fontawesome-o">
+                    <select id="example-fontawesome-o" name="rating" data-current-rating="5.6" autocomplete="off">
+                        <option value="" label="0"></option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <span class="title current-rating">Current rating: <span class="value"></span></span>
+                    <span class="title your-rating hidden">Your rating: <span class="value"></span>&nbsp;<a href="#!" class="clear-rating"><i class="icofont icofont-close-circled"></i></a></span>
+                </div>
+            </div>
+            <!-- [ rating ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- Rating Js -->
+<script src="assets/js/plugins/jquery.barrating.min.js"></script>
+<script src="assets/js/pages/ac-rating.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

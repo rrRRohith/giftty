@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Spinner",
+"subtitle": "Spinner is the relative with page or event loading"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ spinner ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Border spinner</h3>
+                <div class="datta-example">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Border spinner [ Colors ]</h3>
+                <div class="datta-example">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Growing spinner</h3>
+                <div class="datta-example">
+                    <div class="spinner-grow" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Growing spinner [ Colors ]</h3>
+                <div class="datta-example">
+                    <div class="spinner-grow text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-light" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Placement</h3>
+                <div class="d-block">
+                    <h6>Start</h6>
+                    <div class="datta-example">
+                        <div class="d-flex justify-content-start">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6>Center</h6>
+                    <div class="datta-example">
+                        <div class="d-flex justify-content-center">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6>End</h6>
+                    <div class="datta-example">
+                        <div class="d-flex justify-content-end">
+                            <div class="spinner-border" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Size</h3>
+                <div class="d-block">
+                    <h6>Small</h6>
+                    <div class="datta-example">
+                        <div class="spinner-border spinner-border-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow spinner-grow-sm" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <h6>Custom</h6>
+                    <div class="datta-example">
+                        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="sr-only">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Buttons</h3>
+                <div class="d-block">
+                    <div class="row">
+                        <div class=" col-sm-6">
+                            <div class="datta-example">
+                                <button class="btn  btn-primary m-2" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
+                                    <span class="sr-only">Loading...</span>
+                                </button>
+                                <button class="btn  btn-primary m-2" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status"></span>
+                                    Loading...
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="datta-example">
+                                <button class="btn  btn-primary m-2" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status"></span>
+                                    <span class="sr-only">Loading...</span>
+                                </button>
+                                <button class="btn  btn-primary m-2" type="button" disabled>
+                                    <span class="spinner-grow spinner-grow-sm" role="status"></span>
+                                    Loading...
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Event Buttons</h3>
+                <div class="datta-example">
+                    <button class="btn btn-primary event-btn m-2" type="button">
+                        <span class="spinner-border spinner-border-sm" role="status"></span>
+                        <span class="load-text">Loading...</span>
+                        <span class="btn-text">Submit</span>
+                    </button>
+                    <button class="btn btn-primary event-btn m-2" type="button">
+                        <span class="spinner-grow spinner-grow-sm" role="status"></span>
+                        <span class="load-text">Loading...</span>
+                        <span class="btn-text">Submit</span>
+                    </button>
+                </div>
+            </div>
+            <!-- [ spinner ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

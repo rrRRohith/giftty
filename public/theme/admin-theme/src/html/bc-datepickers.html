@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/daterangepicker.css">
+    @@include('./layouts/head-bottom-link.html')
+    <script src="assets/js/plugins/moment.min.js"></script>
+    <script src="assets/js/plugins/daterangepicker.js"></script>
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Date Pickers",
+"subtitle": "Date Pickers ares used to allow users to select a specific date"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Date Pickers ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">REGULAR</h3>
+                <h5 class="mt-4">Default</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <input type='text' class="form-control" id='datetimepicker1' />
+                    </div>
+                    <script>
+                        $(function() {
+                            $('#datetimepicker1').daterangepicker({
+                                singleDatePicker: true,
+                                showDropdowns: true,
+                            });
+                        });
+                    </script>
+                </div>
+                <h5 class="mt-4">Simple Date Range Picker With a Callback</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <input type="text" name="daterange" class="form-control" value="01/01/2018 - 01/15/2018" />
+                    </div>
+                    <script>
+                        $(function() {
+                            $('input[name="daterange"]').daterangepicker({
+                                opens: 'left'
+                            }, function(start, end, label) {});
+                        });
+                    </script>
+                </div>
+                <h5 class="mt-4">Date Range Picker With Times</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <input type="text" name="datetimes" class="form-control" />
+                    </div>
+                    <script>
+                        $(function() {
+                            $('input[name="datetimes"]').daterangepicker({
+                                timePicker: true,
+                                startDate: moment().startOf('hour'),
+                                endDate: moment().startOf('hour').add(32, 'hour'),
+                                locale: {
+                                    format: 'M/DD hh:mm A'
+                                }
+                            });
+                        });
+                    </script>
+                </div>
+                <h5 class="mt-4">Single Date Picker</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <input type="text" name="birthday" value="10/24/1984" class="form-control" />
+                    </div>
+                    <script>
+                        $(function() {
+                            $('input[name="birthday"]').daterangepicker({
+                                singleDatePicker: true,
+                                showDropdowns: true,
+                                minYear: 1901,
+                                maxYear: parseInt(moment().format('YYYY'), 10)
+                            }, function(start, end, label) {
+                                var years = moment().diff(start, 'years');
+                                alert("You are " + years + " years old!");
+                            });
+                        });
+                    </script>
+                </div>
+                <h5 class="mt-4">Predefined Date Ranges</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <div id="reportrange" class="form-control">
+                            <i class="feather icon-calendar"></i>&nbsp;
+                            <span></span> <i class="feather icon-chevron-down"></i>
+                        </div>
+                    </div>
+                    <script>
+                        $(function() {
+                            var start = moment().subtract(29, 'days');
+                            var end = moment();
+
+                            function cb(start, end) {
+                                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+                            }
+                            $('#reportrange').daterangepicker({
+                                startDate: start,
+                                endDate: end,
+                                ranges: {
+                                    'Today': [moment(), moment()],
+                                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                                }
+                            }, cb);
+                            cb(start, end);
+                        });
+                    </script>
+                </div>
+                <h5>Input Initially Empty</h5>
+                <div class="datta-example mb-4">
+                    <div class="form-group">
+                        <input type="text" name="datefilter" value="" class="form-control" />
+                    </div>
+                    <script>
+                        $(function() {
+                            $('input[name="datefilter"]').daterangepicker({
+                                autoUpdateInput: false,
+                                locale: {
+                                    cancelLabel: 'Clear'
+                                }
+                            });
+
+                            $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                                $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+                            });
+
+                            $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                                $(this).val('');
+                            });
+
+                        });
+                    </script>
+                </div>
+            </div>
+            <!-- [ Date Pickers ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

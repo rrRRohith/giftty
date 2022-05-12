@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-6 d-flex align-items-center mb-4">
+                        <h1 class="d-inline-block font-weight-normal mb-0">Projects</h1>
+                        <h6 class="d-inline-block mb-0 ml-4"><i class="feather icon-download"></i> Download list</h6>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center justify-content-end mb-4">
+                        <div class="btn-group btn-group-toggle btn-group-link">
+                            <label class="btn active">
+                                <input type="radio" name="options" id="filteropt11" checked=""> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                            <label class="btn ">
+                                <div class="dropdown mb-0 mr-2">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-alert-circle mr-2"></i> Priority</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-check mr-2"></i> Open Tasks</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-calendar mr-2"></i> Due Date</a>
+                                        <a class="dropdown-item" href="#!"><i class="feather icon-target mr-2"></i> Status</a>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <span class="my-2">|</span>
+                        <div class="btn-group btn-group-toggle btn-group-link">
+                            <label class="btn active">
+                                <input type="radio" name="options" id="listopt11" checked=""> <i class="fas fa-th-large"></i></label>
+                            <label class="btn ">
+                                <input type="radio" name="options" id="listopt12"> <i class="fas fa-list"></i></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-purple-2">CR</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">Create assets for new PR communication</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-danger">High Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-danger float-right text-uppercase">off track</span> 22 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Tobias B.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">HS</span>
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <button type="button" class="btn btn-icon mr-1">+2</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-yellow-2">NE</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">New internal communication and</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-warning">Normal Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-dark float-right text-uppercase">oN track</span> 19 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Ashoka T.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <button type="button" class="btn btn-icon mr-1">+1</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-orange-2">HO</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">Holiday marketing campaign assets</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-warning">Low Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-light-dark float-right text-uppercase">not started</span> 5 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <span class="avtar text-teal-2 bg-teal-1 avtar-xs">KO</span>
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Kyle O.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <span class="avtar text-red-2 bg-red-1 avtar-xs mr-1">PA</span>
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <button type="button" class="btn btn-icon mr-1">+2</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-red-2">UP</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">Updated payment modules based on</h5>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="text-danger">High Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-light-dark float-right text-uppercase">not started</span> 9 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Tobias B.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <span class="avtar text-red-2 bg-red-1 avtar-xs mr-1">PA</span>
+                                        <span class="avtar text-teal-2 bg-teal-1 avtar-xs mr-1">HS</span>
+                                        <button type="button" class="btn btn-icon mr-1">+2</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-teal-2">RE</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">Revamp Design System based on new</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>High Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-dark float-right text-uppercase">not started</span> 17 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Tobias B.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1">DV</span>
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <button type="button" class="btn btn-icon mr-1">+4</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="float-right">
+                                    <div class="btn-group card-option">
+                                        <button type="button" class="btn shadow-none pl-0">
+                                            <i class="feather icon-plus"></i>
+                                        </button>
+                                        <button type="button" class="btn shadow-none px-0 dropdown-toggle no-arrow" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="feather icon-more-horizontal"></i>
+                                        </button>
+                                        <ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+                                            <li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> reload</a></li>
+                                            <li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <span class="avtar avtar-square text-white bg-blue-2">PR</span>
+                                    <div class="media-body ml-3 align-self-center">
+                                        <h5 class="mb-0">Product Design Vision for next 5 years</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p>Normal Priority</p>
+                                <p>Donec id elit non mi porta gravida at eget metu nullam id dolor id nibh ultricies</p>
+                                <div class="border p-2 mb-3">
+                                    <h6 class="text-body font-weight-normal m-0 f-12"><span class="badge badge-pill badge-success float-right text-uppercase">Completed</span> 4 Open Tasks • 8/04/2019</h6>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5">
+                                        <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Lissa A.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7">
+                                        <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1">
+                                        <button type="button" class="btn btn-icon mr-1">+9</button>
+                                        <button type="button" class="btn btn-icon"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="card empty-card">
+                            <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add New</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

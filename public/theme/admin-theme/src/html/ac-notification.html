@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- ekko-lightbox css -->
+    <link rel="stylesheet" href="assets/css/plugins/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/css/plugins/lightbox.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Notification",
+"subtitle": "Notification is use to display alert message on screen"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row btn-page">
+            <div class="col-sm-12">
+                <!-- [ notification ] start -->
+                <h3 class="mb-3 font-weight-bold">Notification Alert</h3>
+                <span class="d-block mb-4">Notification color : <code> data-type="inverse"</code> Notification position : <code> data-align="left" </code></span>
+                <div class="d-block">
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="top" data-align="left" data-notify-icon="feather icon-bell">Top Left</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="top" data-align="right" data-notify-icon="feather icon-layers">Top Right</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="top" data-align="center" data-notify-icon="feather icon-shopping-cart">Top Center</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="bottom" data-align="left">Bottom Left</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="bottom" data-align="right">Bottom Right</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-from="bottom" data-align="center">Bottom Center</button>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Notification Position</h3>
+                <span class="d-block mb-4">Change data-type : <code> data-type="inverse"</code> to change notification color</span>
+                <div class="d-block">
+                    <button class="btn notifications btn-primary" data-type="primary" data-from="top" data-align="right" data-notify-icon="feather icon-layers">Primary</button>
+                    <button class="btn notifications btn-info" data-type="info" data-from="top" data-align="right" data-notify-icon="feather icon-shopping-cart">Info</button>
+                    <button class="btn notifications btn-success" data-type="success" data-from="top" data-align="right">success</button>
+                    <button class="btn notifications btn-warning" data-type="warning" data-from="top" data-align="right">Warning</button>
+                    <button class="btn notifications btn-danger" data-type="danger" data-from="top" data-align="right">Danger</button>
+                    <button class="btn notifications btn-secondary" data-type="secondary" data-from="top" data-align="right" data-notify-icon="feather icon-bell">secondary</button>
+                </div>
+                <h3 class="mb-3 font-weight-bold mt-5">Notification Behaviour</h3>
+                <span class="d-block mb-4">use code <code>data-animation-in="animated fadeIn" data-animation-out="animated fadeOut"</code> notification animation effect</span>
+                <div class="d-block">
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated fadeIn" data-animation-out="animated fadeOut">Fade In</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated fadeInLeft" data-animation-out="animated fadeOutLeft">Fade In Left</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated fadeInRight" data-animation-out="animated fadeOutRight">Fade In Right</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated fadeInUp" data-animation-out="animated fadeOutUp">Fade In Up</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated fadeInDown" data-animation-out="animated fadeOutDown">Fade In Down</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated bounceIn" data-animation-out="animated bounceOut">Bounce In</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated bounceInLeft" data-animation-out="animated bounceOutLeft">Bounce In Left</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated bounceInRight" data-animation-out="animated bounceOutRight">Bounce In Right</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated rotateInDownRight" data-animation-out="animated rotateOutUpRight">Fall In Right</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated rotateIn" data-animation-out="animated rotateOut">Rotate In</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated flipInX" data-animation-out="animated flipOutX">Flip In X</button>
+                    <button class="btn notifications btn-primary" data-type="inverse" data-animation-in="animated flipInY" data-animation-out="animated flipOutY">Flip In Y</button>
+                </div>
+                <!-- [ notification ] end -->
+            </div>
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- notification Js -->
+<script src="assets/js/plugins/bootstrap-notify.min.js"></script>
+<script src="assets/js/pages/ac-notification.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

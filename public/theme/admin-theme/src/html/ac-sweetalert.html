@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Form Select",
+"subtitle": "Form Select is use to Select multiple items from data"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ sweetalert ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Alerts</h3>
+                <div class="d-inline-block btn-page">
+                    <button type="button" class="btn btn-primary sweet-basic">Basic</button>
+                    <button type="button" class="btn btn-success sweet-success">Success</button>
+                    <button type="button" class="btn btn-warning sweet-warning">Warning</button>
+                    <button type="button" class="btn btn-danger sweet-error">Error</button>
+                    <button type="button" class="btn btn-info sweet-info">Info</button>
+                    <button type="button" class="btn btn-primary sweet-multiple">Success or Cancel</button>
+                    <button type="button" class="btn btn-primary sweet-prompt">Prompt</button>
+                    <button type="button" class="btn btn-primary sweet-ajax">Ajax</button>
+                </div>
+            </div>
+            <!-- [ sweetalert ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- sweet alert Js -->
+<script src="assets/js/plugins/sweetalert.min.js"></script>
+<script src="assets/js/pages/ac-alert.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

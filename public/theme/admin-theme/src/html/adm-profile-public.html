@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <!-- data tables css -->
+    <link rel="stylesheet" href="assets/css/plugins/dataTables.bootstrap4.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main-dashboard.html')
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Dashboard ] start -->
+            <div class="col-sm-12">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-xl-3">
+                        <img src="assets/images/user/user-profile.jpg" class="figure-img img-fluid rounded" alt="...">
+                    </div>
+                    <div class="col-md-12 col-xl-5">
+                        <h1 class="d-inline-block font-weight-normal">Ashoka Tano</h1>
+                        <p>Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui. </p>
+                        <div class="row my-4">
+                            <div class="col-sm-6">
+                                <a href="mailto:ashoka@galactic.com">
+                                    <h5 class="text-h-primary mb-3">ashoka@galactic.com</h5>
+                                </a>
+                                <h5 class="mb-3">Product Design</h5>
+                            </div>
+                            <div class="col-sm-6">
+                                <h5 class="mb-3">Chicago</h5>
+                                <h5 class="mb-3">Administrator</h5>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary">Send Message</button>
+                    </div>
+                    <div class="col-md-12 col-xl-4">
+                        <h6 class="mb-3 text-uppercase text-body f-12">team</h6>
+                        <div class="media mb-5">
+                            <span class="avtar avtar-icon avtar-square "><img src="assets/images/uikit/logo-mailchimp.svg" alt="images" class="img-fluid"></span>
+                            <div class="media-body ml-3 align-self-center">
+                                <p class="mb-0 text-truncate">Mailchimp, Inc</p>
+                            </div>
+                        </div>
+                        <h6 class="mb-3 text-uppercase text-body f-12">team members</h6>
+                        <div class="mb-4">
+                            <span class="avtar text-blue-2 bg-blue-1 mr-3 mb-3">DV</span>
+                            <img src="assets/images/user/avatar-3.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar mr-3 mb-3">
+                            <span class="avtar text-purple-2 bg-purple-1 mr-3 mb-3">CD</span>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="d-inline-block font-weight-normal my-4">Ashoka’s projects</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="proftable" class="table table-center mb-0 ">
+                                <thead>
+                                    <tr>
+                                        <th>Project name</th>
+                                        <th>Team</th>
+                                        <th>due date</th>
+                                        <th>Open Tasks</th>
+                                        <th>Priority</th>
+                                        <th class="text-right">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Engineering</td>
+                                        <td>9/01/2019</td>
+                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                        <td>Low</td>
+                                        <td class="text-right"><span class="badge badge-pill badge-success">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Product Design</td>
+                                        <td>8/04/2019</td>
+                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                        <td>Low</td>
+                                        <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Product Design</td>
+                                        <td>8/04/2019</td>
+                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                        <td>Low</td>
+                                        <td class="text-right"><span class="badge badge-pill badge-dark">ON track</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td>8/04/2019</td>
+                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                        <td>Low</td>
+                                        <td class="text-right"><span class="badge badge-pill badge-light-dark">not started</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="media">
+                                                <span class="avtar avtar-square text-white bg-yellow-2 ">NE</span>
+                                                <div class="media-body ml-3 align-self-center">
+                                                    <p class="mb-0">New internal communication and <br>connectivity platform</p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>Marketing</td>
+                                        <td>8/04/2019</td>
+                                        <td>37 <i class="feather icon-arrow-down text-danger"></i></td>
+                                        <td class="text-danger">High</td>
+                                        <td class="text-right"><span class="badge badge-pill badge-danger">OFF Track</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="mb-0 text-body"><i class="feather icon-plus mr-2"></i>Add Projects</a>
+            </div>
+            <!-- [ Dashboard ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+@@include('./layouts/footer.html')
+<!-- datatable Js -->
+<script src="assets/js/plugins/jquery.dataTables.min.js"></script>
+<script src="assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+<script>
+    $('#proftable').DataTable();
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

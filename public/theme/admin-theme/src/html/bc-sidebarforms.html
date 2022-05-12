@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    <link rel="stylesheet" href="assets/css/plugins/daterangepicker.css">
+    <link rel="stylesheet" href="assets/css/plugins/dropify.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/select2.min.css">
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Sidebar Forms",
+"subtitle": "Full height containers used to create or add any type of information on the platform"
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Sidebar Forms ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New Team</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Team name</label>
+                                        <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Description</label>
+                                        <textarea class="form-control" rows="3">Ex. Building a new connectivity platform for the team</textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Offices</label>
+                                        <select class="office-mlt-select col-sm-12" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY" selected>Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY" selected>Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Members</label>
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <span class="avtar text-yellow-2 bg-yellow-1 avtar-xs mr-2 mb-2">LO</span>
+                                        <span class="avtar text-teal-2 bg-teal-1 avtar-xs mr-2 mb-2">HS</span>
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <button type="button" class="btn btn-icon mr-2 mb-2">+5</button>
+                                        <button type="button" class="btn btn-icon mb-2"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Visibility</label>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="visicustomRadio1" name="customRadio" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="visicustomRadio1">Private — Invite only</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="visicustomRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="visicustomRadio2">Public — Anyone can join</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-block">Create Team</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New User</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">User name</label>
+                                        <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Email</label>
+                                        <input type="email" class="form-control" placeholder="Ex. luke.s@galactic.com">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">user type</label>
+                                        <select class="form-control col-sm-12">
+                                            <option value="0">Select one option</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">CLIENT</label>
+                                        <select class="form-control col-sm-12">
+                                            <option value="0">Select one option</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">TEAM</label>
+                                        <select class="form-control col-sm-12">
+                                            <option value="0">Select one option</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">LOCATION</label>
+                                        <select class="location-mlt-select col-sm-12" multiple="multiple">
+                                            <option value="AL" selected>Admin</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <button class="btn btn-primary btn-block">Create User</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New Project</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Project name</label>
+                                        <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Description</label>
+                                        <textarea class="form-control" rows="3">Ex. Building a new connectivity platform for the team</textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Team</label>
+                                        <select class="form-control">
+                                            <option value="AL">Select team</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Priority</label>
+                                        <select class="form-control">
+                                            <option value="AL">Select one option</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Members</label>
+                                        <div class="media">
+                                            <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                            <div class="media-body ml-3 align-self-center">
+                                                <p class="mb-0 text-truncate">Ashoka T. <a href="#!" class="text-body text-h-danger ml-1">×</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Visibility</label>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="projvisicustomRadio1" name="customRadio" class="custom-control-input" checked>
+                                            <label class="custom-control-label" for="projvisicustomRadio1">Private — Invite only</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" id="projvisicustomRadio2" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="projvisicustomRadio2">Public — Anyone can join</label>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary btn-block">Create Team</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New Client</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">client name</label>
+                                        <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Description</label>
+                                        <textarea class="form-control" rows="3">Ex. Building a new connectivity platform for the team</textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">industry</label>
+                                        <select class="form-control">
+                                            <option value="AL">Select one option</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">logo</label>
+                                        <input type="file" id="logo-dropify1" class="dropify" />
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Members</label>
+                                        <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <img src="assets/images/user/avatar-1.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <span class="avtar text-yellow-2 bg-yellow-1 avtar-xs mr-2 mb-2">LO</span>
+                                        <span class="avtar text-teal-2 bg-teal-1 avtar-xs mr-2 mb-2">HS</span>
+                                        <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-2 mb-2">
+                                        <button type="button" class="btn btn-icon mr-2 mb-2">+5</button>
+                                        <button type="button" class="btn btn-icon mb-2"><i class="feather icon-plus"></i></button>
+                                    </div>
+                                    <button class="btn btn-primary btn-block">Create Task</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New Task</h5>
+                                <form>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Task name</label>
+                                        <input type="text" class="form-control" placeholder="Ex. Luke S.">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Description</label>
+                                        <textarea class="form-control" rows="3">Ex. Building a new connectivity platform for the team</textarea>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">peoject</label>
+                                        <select class="form-control">
+                                            <option value="AL">Select team</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="WY">Coming</option>
+                                            <option value="WY">Hanry Die</option>
+                                            <option value="WY">John Doe</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Due Date</label>
+                                        <div class="form-group mb-0">
+                                            <div id="duedate1" class="form-control">
+                                                <i class="feather icon-calendar"></i>&nbsp;
+                                                <span></span> <i class="feather icon-chevron-down"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase d-block">Members</label>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <h6 class="text-body text-uppercase f-12">Owner</h6>
+                                                <div class="media">
+                                                    <img src="assets/images/user/avatar-2.jpg" alt="images" class="img-fluid avtar avtar-xs">
+                                                    <div class="media-body ml-3 align-self-center">
+                                                        <p class="mb-0 text-truncate">Tobias B. <a href="#!" class="text-body text-h-danger ml-1">×</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7">
+                                                <h6 class="text-body text-uppercase f-12">Followers</h6>
+                                                <span class="avtar text-blue-2 bg-blue-1 avtar-xs mr-1 mb-2">HS</span>
+                                                <img src="assets/images/user/avatar-4.jpg" alt="images" class="img-fluid avtar avtar-xs mr-1 mb-2">
+                                                <button type="button" class="btn btn-icon mr-1 mb-2">+2</button>
+                                                <button type="button" class="btn btn-icon"><i class="feather icon-plus mb-2"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="h6 f-12 text-uppercase">Attachments</label>
+                                        <input type="file" id="attachments-dropify1" class="dropify" />
+                                    </div>
+                                    <div class="media mb-4">
+                                        <img src="assets/images/uikit/card-icon-3.svg" alt="images" class="img-fluid">
+                                        <div class="media-body ml-3">
+                                            <p class="mb-0">Death Star blueprint.pdf </p>
+                                        </div>
+                                        <a href="#!" class="text-body text-h-primary"><i class="feather icon-x"></i></a>
+                                    </div>
+                                    <button class="btn btn-primary btn-block">Create Task</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-right">
+                                    <a href="#!" class="text-body text-h-primary"><i class="fas fa-times-circle"></i></a>
+                                </div>
+                                <h5 class="mb-4">New Integration</h5>
+                                <form>
+                                    <div class="input-group search-form mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text bg-transparent"><i class="feather icon-search"></i></span>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="Search">
+                                    </div>
+                                    <hr>
+                                    <label class="h6 f-12 text-uppercase">recommended </label>
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-dropbox.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h6 class="mb-1">Dropbox Sync</h6>
+                                            <p class="mb-0 text-truncate">Version 0.5 </p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-dark border ml-3">Install</button>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-slack.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h6 class="mb-1">Slack connector</h6>
+                                            <p class="mb-0 text-truncate">Version 1.1 </p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-dark border ml-3">Install</button>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                        <span class="avtar avtar-icon avtar-square"><img src="assets/images/uikit/logo-mailchimp.svg" alt="images" class="img-fluid"></span>
+                                        <div class="media-body ml-3 align-self-center">
+                                            <h6 class="mb-1">Mailchimp Forms</h6>
+                                            <p class="mb-0 text-truncate">Version 2.0 </p>
+                                        </div>
+                                        <button type="button" class="btn btn-outline-dark border ml-3" disabled>Installed</button>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-primary btn-block">Create Task</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Sidebar Forms ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<script src="assets/js/plugins/moment.min.js"></script>
+<script src="assets/js/plugins/daterangepicker.js"></script>
+<script src="assets/js/plugins/dropify.min.js"></script>
+<script src="assets/js/plugins/select2.full.min.js"></script>
+<script>
+    // [ Sidebar Forms ] start
+    $(function() {
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+
+        function cb(start, end) {
+            $('#duedate1 span').html(start.format('MM - D - YYYY') + ' - ' + end.format('MM - D - YYYY'));
+        }
+        $('#duedate1').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+                'Today': [moment(), moment()],
+                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                'This Month': [moment().startOf('month'), moment().endOf('month')],
+                'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+        cb(start, end);
+    });
+    $(function() {
+        $('#logo-dropify1').dropify({
+            messages: {
+                'default': 'Drag and drop a file here',
+                'replace': 'Drag and drop or click to replace',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+        $('#attachments-dropify1').dropify({
+            messages: {
+                'default': 'Drag and drop a file here',
+                'replace': 'Drag and drop or click to replace',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong happended.'
+            }
+        });
+        $(".office-mlt-select").select2();
+        $(".location-mlt-select").select2();
+    });
+    // [ Sidebar Forms ] start
+</script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Toasts",
+"subtitle": "Toasts shows important information with actions. Toasts are displayed at the bottom right of the screen."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Toasts ] start -->
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h3 class="mb-4 font-weight-bold">VERTICAL</h3>
+                        <div class="toast toast-1 fade show toast-exmple" role="alert" aria-live="assertive" aria-atomic="true">
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <div class="toast-header p-0">
+                                <img class="img-fluid d-block w-100" src="assets/images/slider/img-slide-2.jpg" alt="First slide">
+                            </div>
+                            <div class="toast-body">
+                                <h4>Promotion title</h4>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam mollis, est non commodo luctus, nisi erat porttitor ligula</p>
+                                <a href="#!">Text link with right icon</a>
+                            </div>
+                        </div>
+                        <div class="datta-example">
+                            <button type="button" class="btn btn-primary v-toast">Launch Toast</button>
+                            <div class="toast toast-1 fade" id="v-toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <div class="toast-header p-0">
+                                    <img class="img-fluid d-block w-100" src="assets/images/slider/img-slide-2.jpg" alt="First slide">
+                                </div>
+                                <div class="toast-body">
+                                    <h4>Promotion title</h4>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam mollis, est non commodo luctus, nisi erat porttitor ligula</p>
+                                    <a href="#!">Text link with right icon</a>
+                                </div>
+                            </div>
+                            <script>
+                                $('.v-toast').on('click', function() {
+                                    $('#v-toast').toast('show');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h3 class="mb-4 font-weight-bold">HORIZONTAL</h3>
+                        <div class="toast toast-2 fade show toast-exmple" role="alert" aria-live="assertive" aria-atomic="true">
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                            <div class="toast-body p-0">
+                                <div class="media">
+                                    <img class="img-fluid d-none d-sm-block" src="assets/images/uikit/tost-img.jpg" alt="First slide">
+                                    <div class="media-body p-4">
+                                        <h4>Promotion title</h4>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam mollis, est non commodo luctus</p>
+                                        <a href="#!">Text link with right icon</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="datta-example">
+                            <button type="button" class="btn btn-primary h-toast">Launch Toast</button>
+                            <div class="toast toast-2 fade" id="h-toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="5000">
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                                <div class="toast-body p-0">
+                                    <div class="media">
+                                        <img class="img-fluid d-none d-sm-block" src="assets/images/uikit/tost-img.jpg" alt="First slide">
+                                        <div class="media-body p-4">
+                                            <h4>Promotion title</h4>
+                                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam mollis, est non commodo luctus</p>
+                                            <a href="#!">Text link with right icon</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                $('.h-toast').on('click', function() {
+                                    $('#h-toast').toast('show');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Toasts ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

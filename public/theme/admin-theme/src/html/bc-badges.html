@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Badges",
+"subtitle": "Badges are normally placed label and contain numeric values, such as the number of unread messages."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Badges ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">BASIC</h3>
+                <div class="datta-example">
+                    <span class="badge badge-primary">Primary</span>
+                    <span class="badge badge-secondary">Secondary</span>
+                    <span class="badge badge-success">Success</span>
+                    <span class="badge badge-danger">Danger</span>
+                    <span class="badge badge-warning">Warning</span>
+                    <span class="badge badge-info">Info</span>
+                    <span class="badge badge-dark">Dark</span>
+                </div>
+                <div class="mt-3 datta-example">
+                    <span class="badge badge-light-primary">Primary</span>
+                    <span class="badge badge-light-secondary">Secondary</span>
+                    <span class="badge badge-light-success">Success</span>
+                    <span class="badge badge-light-danger">Danger</span>
+                    <span class="badge badge-light-warning">Warning</span>
+                    <span class="badge badge-light-info">Info</span>
+                    <span class="badge badge-light-dark">Dark</span>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">CIRCULAR</h3>
+                <div class="datta-example">
+                    <span class="badge badge-circular badge-primary">12</span>
+                    <span class="badge badge-circular badge-secondary">12</span>
+                    <span class="badge badge-circular badge-success">12</span>
+                    <span class="badge badge-circular badge-danger">12</span>
+                    <span class="badge badge-circular badge-warning">12</span>
+                    <span class="badge badge-circular badge-info">12</span>
+                    <span class="badge badge-circular badge-dark">12</span>
+                </div>
+                <div class="mt-3 datta-example">
+                    <span class="badge badge-circular badge-light-primary">12</span>
+                    <span class="badge badge-circular badge-light-secondary">12</span>
+                    <span class="badge badge-circular badge-light-success">12</span>
+                    <span class="badge badge-circular badge-light-danger">12</span>
+                    <span class="badge badge-circular badge-light-warning">12</span>
+                    <span class="badge badge-circular badge-light-info">12</span>
+                    <span class="badge badge-circular badge-light-dark">12</span>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">PILL</h3>
+                <div class="datta-example">
+                    <span class="badge badge-pill badge-primary">Primary</span>
+                    <span class="badge badge-pill badge-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-success">Success</span>
+                    <span class="badge badge-pill badge-danger">Danger</span>
+                    <span class="badge badge-pill badge-warning">Warning</span>
+                    <span class="badge badge-pill badge-info">Info</span>
+                    <span class="badge badge-pill badge-dark">Dark</span>
+                </div>
+                <div class="mt-3 datta-example">
+                    <span class="badge badge-pill badge-light-primary">Primary</span>
+                    <span class="badge badge-pill badge-light-secondary">Secondary</span>
+                    <span class="badge badge-pill badge-light-success">Success</span>
+                    <span class="badge badge-pill badge-light-danger">Danger</span>
+                    <span class="badge badge-pill badge-light-warning">Warning</span>
+                    <span class="badge badge-pill badge-light-info">Info</span>
+                    <span class="badge badge-pill badge-light-dark">Dark</span>
+                </div>
+            </div>
+            <!-- [ Badges ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+
+<div class="datta-example-modal">
+    <a href="javascript:void(0)" class="md-datta-example-modal-copy">
+        <span class="feather icon-clipboard"></span>
+    </a>
+    <a href="javascript:void(0)" class="datta-example-modal-close">&times;</a>
+    <div class="scroll-div">
+        <!-- <div class="datta-example-modal-content"></div> -->
+    </div>
+</div>
+
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Search Bar",
+"subtitle": "Users should be able to quickly locate content by searching for it."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row">
+            <!-- [ Search Bar ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">DEFAULT</h3>
+                <div class="datta-example">
+                    <div class="input-group search-form">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text bg-transparent"><i class="feather icon-search"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Search post">
+                    </div>
+                </div>
+            </div>
+            <!-- [ Search Bar ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>

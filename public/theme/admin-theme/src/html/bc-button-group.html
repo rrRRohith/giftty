@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./layouts/head.html')
+    @@include('./layouts/head-bottom-link.html')
+</head>
+@@include('./layouts/main.html', {
+"header": "true",
+"category": "COMPONENTS",
+"title": "Buttons Groups",
+"subtitle": "Button groups give access to frequently performed, related actions. Use them logically into sets based on usage and importance."
+})
+
+<!-- [ Main Content ] start -->
+<div class="pcoded-main-container">
+    <div class="pcoded-content container">
+        <!-- [ Main Content ] start -->
+        <div class="row btn-page">
+            <!-- [ Buttons Groups ] start -->
+            <div class="col-sm-12">
+                <h3 class="mb-4 font-weight-bold">Basic Button Group</h3>
+                <div class="datta-example">
+                    <div class="btn-group mb-2" role="group" aria-label="Basic example">
+                        <button type="button" class="btn  btn-secondary">Left</button>
+                        <button type="button" class="btn  btn-secondary">Middle</button>
+                        <button type="button" class="btn  btn-secondary">Right</button>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Button Toolbar</h3>
+                <div class="datta-example">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group mr-2 mb-1" role="group" aria-label="First group">
+                            <button type="button" class="btn  btn-secondary">1</button>
+                            <button type="button" class="btn  btn-secondary">2</button>
+                            <button type="button" class="btn  btn-secondary">3</button>
+                            <button type="button" class="btn  btn-secondary">4</button>
+                        </div>
+                        <div class="btn-group mr-2 mb-1" role="group" aria-label="Second group">
+                            <button type="button" class="btn  btn-secondary">5</button>
+                            <button type="button" class="btn  btn-secondary">6</button>
+                            <button type="button" class="btn  btn-secondary">7</button>
+                        </div>
+                        <div class="btn-group mb-1" role="group" aria-label="Third group">
+                            <button type="button" class="btn  btn-secondary">8</button>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Button Toolbar Size</h3>
+                <div class="row">
+                    <div class="col-12 mb-2">
+                        <div class="datta-example">
+                            <div class="btn-group btn-group-lg" role="group" aria-label="button groups xl">
+                                <button type="button" class="btn  btn-secondary">Left</button>
+                                <button type="button" class="btn  btn-secondary">Middle</button>
+                                <button type="button" class="btn  btn-secondary">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <div class="datta-example">
+                            <div class="btn-group" role="group" aria-label="button groups">
+                                <button type="button" class="btn  btn-secondary">Left</button>
+                                <button type="button" class="btn  btn-secondary">Middle</button>
+                                <button type="button" class="btn  btn-secondary">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-2">
+                        <div class="datta-example">
+                            <div class="btn-group btn-group-sm" role="group" aria-label="button groups sm">
+                                <button type="button" class="btn  btn-secondary">Left</button>
+                                <button type="button" class="btn  btn-secondary">Middle</button>
+                                <button type="button" class="btn  btn-secondary">Right</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Nesting</h3>
+                <div class="datta-example">
+                    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <button type="button" class="btn  btn-secondary">1</button>
+                        <button type="button" class="btn  btn-secondary">2</button>
+                        <div class="btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="btn  btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Dropdown
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item" href="#!">Dropdown link</a>
+                                <a class="dropdown-item" href="#!">Dropdown link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">Vertical Variation</h3>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="datta-example">
+                            <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn  btn-secondary">1</button>
+                                <button type="button" class="btn  btn-secondary">2</button>
+                                <button type="button" class="btn  btn-secondary">3</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="datta-example">
+                            <div class="btn-group-vertical" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="btn  btn-secondary">1</button>
+                                <button type="button" class="btn  btn-secondary">2</button>
+                                <div class="btn-group" role="group">
+                                    <button id="btnGroupDrop3" type="button" class="btn  btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+                                        <a class="dropdown-item" href="#!">Dropdown link</a>
+                                        <a class="dropdown-item" href="#!">Dropdown link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">MINIMAL</h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="datta-example">
+                            <div class="btn-group btn-group-toggle btn-group-link" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" name="options" id="listopt1" checked> <i class="fas fa-th-large"></i></label>
+                                <label class="btn ">
+                                    <input type="radio" name="options" id="listopt2"> <i class="fas fa-list"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="datta-example">
+                            <div class="btn-group btn-group-toggle btn-group-link" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" name="options" id="filteropt1" checked> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                <label class="btn ">
+                                    <input type="radio" name="options" id="filteropt2"> <i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="datta-example">
+                            <div class="btn-group btn-group-toggle btn-group-link" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" name="options" id="filteropt11" checked> <i class="fas fa-sort-amount-down m-r-5"></i>SORT</label>
+                                <label class="btn ">
+                                    <input type="radio" name="options" id="filteropt12"> <i class="fas fa-sort-amount-up-alt m-r-5"></i>FILTER</label>
+                            </div>
+                            <span class="my-2">|</span>
+                            <div class="btn-group btn-group-toggle btn-group-link" data-toggle="buttons">
+                                <label class="btn active">
+                                    <input type="radio" name="options" id="listopt11" checked> <i class="fas fa-th-large"></i></label>
+                                <label class="btn ">
+                                    <input type="radio" name="options" id="listopt12"> <i class="fas fa-list"></i></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5">BASIC</h3>
+                <div class="datta-example">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-light text-dark border active">
+                            <input type="radio" name="bopt" id="bopt1" autocomplete="off" checked> Option 1
+                        </label>
+                        <label class="btn btn-outline-light text-dark border">
+                            <input type="radio" name="bopt" id="bopt2" autocomplete="off"> Option 2
+                        </label>
+                        <label class="btn btn-outline-light text-dark border">
+                            <input type="radio" name="bopt" id="bopt3" autocomplete="off"> Option 3
+                        </label>
+                    </div>
+                </div>
+                <h3 class="mb-4 font-weight-bold mt-5"></h3>
+                <div class="datta-example">
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-outline-light text-dark border active">
+                            <input type="radio" name="bspopt" id="bspopt1" autocomplete="off" checked> Option 1
+                        </label>
+                        <label class="btn btn-outline-light text-dark border mx-2">
+                            <input type="radio" name="bspopt" id="bspopt2" autocomplete="off"> Option 2
+                        </label>
+                        <label class="btn btn-outline-light text-dark border">
+                            <input type="radio" name="bspopt" id="bspopt3" autocomplete="off"> Option 3
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- [ Buttons Groups ] end -->
+        </div>
+        <!-- [ Main Content ] end -->
+    </div>
+</div>
+<!-- [ Main Content ] end -->
+
+@@include('./layouts/footer.html')
+<!-- highlight.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="assets/js/plugins/clipboard.min.js"></script>
+<script src="assets/js/uikit.min.js"></script>
+@@include('./layouts/footer-bottom-link.html')
+</body>
+
+</html>
