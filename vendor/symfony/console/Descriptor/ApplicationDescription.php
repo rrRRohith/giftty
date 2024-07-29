@@ -34,16 +34,16 @@ class ApplicationDescription
     private $namespaces;
 
     /**
-     * @var Command[]
+     * @var array<string, Command>
      */
     private $commands;
 
     /**
-     * @var Command[]
+     * @var array<string, Command>
      */
     private $aliases;
 
-    public function __construct(Application $application, string $namespace = null, bool $showHidden = false)
+    public function __construct(Application $application, ?string $namespace = null, bool $showHidden = false)
     {
         $this->application = $application;
         $this->namespace = $namespace;
@@ -80,7 +80,7 @@ class ApplicationDescription
             throw new CommandNotFoundException(sprintf('Command "%s" does not exist.', $name));
         }
 
-        return isset($this->commands[$name]) ? $this->commands[$name] : $this->aliases[$name];
+        return $this->commands[$name] ?? $this->aliases[$name];
     }
 
     private function inspectApplication()
@@ -131,7 +131,7 @@ class ApplicationDescription
         }
 
         if ($namespacedCommands) {
-            ksort($namespacedCommands);
+            ksort($namespacedCommands, \SORT_STRING);
             foreach ($namespacedCommands as $key => $commandsSet) {
                 ksort($commandsSet);
                 $sortedCommands[$key] = $commandsSet;

@@ -11,6 +11,8 @@ namespace PHPUnit\Framework\MockObject;
 
 use function array_diff;
 use function array_merge;
+use PHPUnit\Framework\Exception;
+use PHPUnit\Framework\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass;
 
@@ -111,15 +113,16 @@ final class MockBuilder
     /**
      * Creates a mock object using a fluent interface.
      *
-     * @throws UnknownTypeException
-     * @throws InvalidMethodNameException
-     * @throws DuplicateMethodException
-     * @throws ClassIsFinalException
      * @throws ClassAlreadyExistsException
+     * @throws ClassIsFinalException
+     * @throws ClassIsReadonlyException
+     * @throws DuplicateMethodException
+     * @throws InvalidArgumentException
+     * @throws InvalidMethodNameException
      * @throws OriginalConstructorInvocationRequiredException
-     * @throws RuntimeException
      * @throws ReflectionException
-     * @throws \PHPUnit\Framework\InvalidArgumentException
+     * @throws RuntimeException
+     * @throws UnknownTypeException
      *
      * @psalm-return MockObject&MockedType
      */
@@ -137,7 +140,7 @@ final class MockBuilder
             $this->callOriginalMethods,
             $this->proxyTarget,
             $this->allowMockingUnknownTypes,
-            $this->returnValueGeneration
+            $this->returnValueGeneration,
         );
 
         $this->testCase->registerMockObject($object);
@@ -150,9 +153,9 @@ final class MockBuilder
      *
      * @psalm-return MockObject&MockedType
      *
-     * @throws \PHPUnit\Framework\Exception
-     * @throws RuntimeException
+     * @throws Exception
      * @throws ReflectionException
+     * @throws RuntimeException
      */
     public function getMockForAbstractClass(): MockObject
     {
@@ -164,7 +167,7 @@ final class MockBuilder
             $this->originalClone,
             $this->autoload,
             $this->methods,
-            $this->cloneArguments
+            $this->cloneArguments,
         );
 
         $this->testCase->registerMockObject($object);
@@ -177,7 +180,7 @@ final class MockBuilder
      *
      * @psalm-return MockObject&MockedType
      *
-     * @throws \PHPUnit\Framework\Exception
+     * @throws Exception
      * @throws ReflectionException
      * @throws RuntimeException
      */
@@ -191,7 +194,7 @@ final class MockBuilder
             $this->originalClone,
             $this->autoload,
             $this->methods,
-            $this->cloneArguments
+            $this->cloneArguments,
         );
 
         $this->testCase->registerMockObject($object);
@@ -241,8 +244,8 @@ final class MockBuilder
         } catch (\ReflectionException $e) {
             throw new ReflectionException(
                 $e->getMessage(),
-                (int) $e->getCode(),
-                $e
+                $e->getCode(),
+                $e,
             );
         }
         // @codeCoverageIgnoreEnd
@@ -283,8 +286,8 @@ final class MockBuilder
         } catch (\ReflectionException $e) {
             throw new ReflectionException(
                 $e->getMessage(),
-                (int) $e->getCode(),
-                $e
+                $e->getCode(),
+                $e,
             );
         }
         // @codeCoverageIgnoreEnd
@@ -303,6 +306,8 @@ final class MockBuilder
     /**
      * Specifies the subset of methods to not mock. Default is to mock all of them.
      *
+     * @deprecated https://github.com/sebastianbergmann/phpunit/pull/3687
+     *
      * @throws ReflectionException
      */
     public function setMethodsExcept(array $methods = []): self
@@ -310,8 +315,8 @@ final class MockBuilder
         return $this->setMethods(
             array_diff(
                 $this->generator->getClassMethods($this->type),
-                $methods
-            )
+                $methods,
+            ),
         );
     }
 

@@ -102,13 +102,13 @@ final class InvocationHandler
         return new InvocationMocker(
             $this,
             $matcher,
-            ...$this->configurableMethods
+            ...$this->configurableMethods,
         );
     }
 
     /**
-     * @throws RuntimeException
      * @throws Exception
+     * @throws RuntimeException
      */
     public function invoke(Invocation $invocation)
     {

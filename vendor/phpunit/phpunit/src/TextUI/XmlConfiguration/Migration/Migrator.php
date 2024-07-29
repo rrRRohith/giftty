@@ -20,9 +20,9 @@ use PHPUnit\Util\Xml\SchemaDetector;
 final class Migrator
 {
     /**
+     * @throws Exception
      * @throws MigrationBuilderException
      * @throws MigrationException
-     * @throws Exception
      * @throws XmlException
      */
     public function migrate(string $filename): string
@@ -34,7 +34,7 @@ final class Migrator
                 sprintf(
                     '"%s" is not a valid PHPUnit XML configuration file that can be migrated',
                     $filename,
-                )
+                ),
             );
         }
 
@@ -42,7 +42,7 @@ final class Migrator
             $filename,
             false,
             true,
-            true
+            true,
         );
 
         foreach ((new MigrationBuilder)->build($origin->version()) as $migration) {

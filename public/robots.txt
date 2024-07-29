@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Sitemap:https://demo.giftty.ca/sitemap.xml
+Sitemap:https://demo.giftty.ca/sitemap_1.xml

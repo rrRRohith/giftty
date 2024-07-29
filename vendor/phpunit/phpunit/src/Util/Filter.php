@@ -15,6 +15,7 @@ use function in_array;
 use function is_file;
 use function realpath;
 use function sprintf;
+use function strpos;
 use PHPUnit\Framework\Exception;
 use PHPUnit\Framework\SyntheticError;
 use Throwable;
@@ -52,11 +53,11 @@ final class Filter
         if (!self::frameExists($eTrace, $eFile, $eLine)) {
             array_unshift(
                 $eTrace,
-                ['file' => $eFile, 'line' => $eLine]
+                ['file' => $eFile, 'line' => $eLine],
             );
         }
 
-        $prefix      = defined('__PHPUNIT_PHAR_ROOT__') ? __PHPUNIT_PHAR_ROOT__ : null;
+        $prefix      = defined('__PHPUNIT_PHAR_ROOT__') ? __PHPUNIT_PHAR_ROOT__ : false;
         $excludeList = new ExcludeList;
 
         foreach ($eTrace as $frame) {
@@ -64,7 +65,7 @@ final class Filter
                 $filteredStacktrace .= sprintf(
                     "%s:%s\n",
                     $frame['file'],
-                    $frame['line'] ?? '?'
+                    $frame['line'] ?? '?',
                 );
             }
         }
@@ -72,28 +73,26 @@ final class Filter
         return $filteredStacktrace;
     }
 
-    private static function shouldPrintFrame(array $frame, ?string $prefix, ExcludeList $excludeList): bool
+    private static function shouldPrintFrame(array $frame, $prefix, ExcludeList $excludeList): bool
     {
         if (!isset($frame['file'])) {
             return false;
         }
 
-        // @see https://github.com/sebastianbergmann/phpunit/issues/4033
-        $script = '';
+        $file              = $frame['file'];
+        $fileIsNotPrefixed = $prefix === false || strpos($file, $prefix) !== 0;
 
+        // @see https://github.com/sebastianbergmann/phpunit/issues/4033
         if (isset($GLOBALS['_SERVER']['SCRIPT_NAME'])) {
             $script = realpath($GLOBALS['_SERVER']['SCRIPT_NAME']);
+        } else {
+            $script = '';
         }
 
-        $file = $frame['file'];
-
-        if ($file === $script) {
-            return false;
-        }
-
-        return $prefix === null &&
+        return is_file($file) &&
                self::fileIsExcluded($file, $excludeList) &&
-               is_file($file);
+               $fileIsNotPrefixed &&
+               $file !== $script;
     }
 
     private static function fileIsExcluded(string $file, ExcludeList $excludeList): bool

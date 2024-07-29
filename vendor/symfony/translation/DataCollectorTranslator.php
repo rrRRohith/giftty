@@ -25,15 +25,11 @@ class DataCollectorTranslator implements TranslatorInterface, TranslatorBagInter
     public const MESSAGE_MISSING = 1;
     public const MESSAGE_EQUALS_FALLBACK = 2;
 
-    /**
-     * @var TranslatorInterface|TranslatorBagInterface
-     */
     private $translator;
-
     private $messages = [];
 
     /**
-     * @param TranslatorInterface $translator The translator must implement TranslatorBagInterface
+     * @param TranslatorInterface&TranslatorBagInterface&LocaleAwareInterface $translator
      */
     public function __construct(TranslatorInterface $translator)
     {
@@ -47,7 +43,7 @@ class DataCollectorTranslator implements TranslatorInterface, TranslatorBagInter
     /**
      * {@inheritdoc}
      */
-    public function trans(?string $id, array $parameters = [], string $domain = null, string $locale = null)
+    public function trans(?string $id, array $parameters = [], ?string $domain = null, ?string $locale = null)
     {
         $trans = $this->translator->trans($id = (string) $id, $parameters, $domain, $locale);
         $this->collectMessage($locale, $domain, $id, $trans, $parameters);
@@ -74,9 +70,17 @@ class DataCollectorTranslator implements TranslatorInterface, TranslatorBagInter
     /**
      * {@inheritdoc}
      */
-    public function getCatalogue(string $locale = null)
+    public function getCatalogue(?string $locale = null)
     {
         return $this->translator->getCatalogue($locale);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getCatalogues(): array
+    {
+        return $this->translator->getCatalogues();
     }
 
     /**
@@ -96,7 +100,7 @@ class DataCollectorTranslator implements TranslatorInterface, TranslatorBagInter
     /**
      * Gets the fallback locales.
      *
-     * @return array The fallback locales
+     * @return array
      */
     public function getFallbackLocales()
     {

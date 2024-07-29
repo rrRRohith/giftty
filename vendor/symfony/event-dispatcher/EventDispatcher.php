@@ -45,7 +45,7 @@ class EventDispatcher implements EventDispatcherInterface
     /**
      * {@inheritdoc}
      */
-    public function dispatch(object $event, string $eventName = null): object
+    public function dispatch(object $event, ?string $eventName = null): object
     {
         $eventName = $eventName ?? \get_class($event);
 
@@ -65,7 +65,7 @@ class EventDispatcher implements EventDispatcherInterface
     /**
      * {@inheritdoc}
      */
-    public function getListeners(string $eventName = null)
+    public function getListeners(?string $eventName = null)
     {
         if (null !== $eventName) {
             if (empty($this->listeners[$eventName])) {
@@ -108,7 +108,7 @@ class EventDispatcher implements EventDispatcherInterface
                     $v[0] = $v[0]();
                     $v[1] = $v[1] ?? '__invoke';
                 }
-                if ($v === $listener) {
+                if ($v === $listener || ($listener instanceof \Closure && $v == $listener)) {
                     return $priority;
                 }
             }
@@ -120,7 +120,7 @@ class EventDispatcher implements EventDispatcherInterface
     /**
      * {@inheritdoc}
      */
-    public function hasListeners(string $eventName = null)
+    public function hasListeners(?string $eventName = null)
     {
         if (null !== $eventName) {
             return !empty($this->listeners[$eventName]);
@@ -164,7 +164,7 @@ class EventDispatcher implements EventDispatcherInterface
                     $v[0] = $v[0]();
                     $v[1] = $v[1] ?? '__invoke';
                 }
-                if ($v === $listener) {
+                if ($v === $listener || ($listener instanceof \Closure && $v == $listener)) {
                     unset($listeners[$k], $this->sorted[$eventName], $this->optimized[$eventName]);
                 }
             }
@@ -184,10 +184,10 @@ class EventDispatcher implements EventDispatcherInterface
             if (\is_string($params)) {
                 $this->addListener($eventName, [$subscriber, $params]);
             } elseif (\is_string($params[0])) {
-                $this->addListener($eventName, [$subscriber, $params[0]], isset($params[1]) ? $params[1] : 0);
+                $this->addListener($eventName, [$subscriber, $params[0]], $params[1] ?? 0);
             } else {
                 foreach ($params as $listener) {
-                    $this->addListener($eventName, [$subscriber, $listener[0]], isset($listener[1]) ? $listener[1] : 0);
+                    $this->addListener($eventName, [$subscriber, $listener[0]], $listener[1] ?? 0);
                 }
             }
         }

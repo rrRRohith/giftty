@@ -23,7 +23,7 @@ class TranslatableMessage implements TranslatableInterface
     private $parameters;
     private $domain;
 
-    public function __construct(string $message, array $parameters = [], string $domain = null)
+    public function __construct(string $message, array $parameters = [], ?string $domain = null)
     {
         $this->message = $message;
         $this->parameters = $parameters;
@@ -50,8 +50,13 @@ class TranslatableMessage implements TranslatableInterface
         return $this->domain;
     }
 
-    public function trans(TranslatorInterface $translator, string $locale = null): string
+    public function trans(TranslatorInterface $translator, ?string $locale = null): string
     {
-        return $translator->trans($this->getMessage(), $this->getParameters(), $this->getDomain(), $locale);
+        return $translator->trans($this->getMessage(), array_map(
+            static function ($parameter) use ($translator, $locale) {
+                return $parameter instanceof TranslatableInterface ? $parameter->trans($translator, $locale) : $parameter;
+            },
+            $this->getParameters()
+        ), $this->getDomain(), $locale);
     }
 }
