@@ -6,10 +6,6 @@ use Carbon\Carbon;
 use Carbon\CarbonInterface;
 use DateTimeInterface;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
-use Doctrine\DBAL\Platforms\DB2Platform;
-use Doctrine\DBAL\Platforms\OraclePlatform;
-use Doctrine\DBAL\Platforms\SqlitePlatform;
-use Doctrine\DBAL\Platforms\SQLServerPlatform;
 use Doctrine\DBAL\Types\ConversionException;
 use Exception;
 
@@ -23,8 +19,10 @@ trait CarbonTypeConverter
      * from the ones embedded previously in nesbot/carbon source directly.
      *
      * @readonly
+     *
+     * @var bool
      */
-    public bool $external = true;
+    public $external = true;
 
     /**
      * @return class-string<T>
@@ -34,12 +32,21 @@ trait CarbonTypeConverter
         return Carbon::class;
     }
 
-    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform): string
+    /**
+     * @return string
+     */
+    public function getSQLDeclaration(array $fieldDeclaration, AbstractPlatform $platform)
     {
-        $precision = min(
-            $fieldDeclaration['precision'] ?? DateTimeDefaultPrecision::get(),
-            $this->getMaximumPrecision($platform),
-        );
+        $maximum = CarbonDoctrineType::MAXIMUM_PRECISION;
+        $precision = ($fieldDeclaration['precision'] ?? null) ?: $maximum;
+
+        if ($fieldDeclaration['secondPrecision'] ?? false) {
+            $precision = 0;
+        }
+
+        if ($precision === $maximum) {
+            $precision = DateTimeDefaultPrecision::get();
+        }
 
         $type = parent::getSQLDeclaration($fieldDeclaration, $platform);
 
@@ -85,7 +92,7 @@ trait CarbonTypeConverter
         if (!$date) {
             throw ConversionException::conversionFailedFormat(
                 $value,
-                $this->getTypeName(),
+                $this->getName(),
                 'Y-m-d H:i:s.u or any format supported by '.$class.'::parse()',
                 $error
             );
@@ -96,8 +103,10 @@ trait CarbonTypeConverter
 
     /**
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     *
+     * @return string|null
      */
-    public function convertToDatabaseValue($value, AbstractPlatform $platform): ?string
+    public function convertToDatabaseValue($value, AbstractPlatform $platform)
     {
         if ($value === null) {
             return $value;
@@ -107,35 +116,14 @@ trait CarbonTypeConverter
             return $value->format('Y-m-d H:i:s.u');
         }
 
-        throw ConversionException::conversionFailedInvalidType(
+        $method = method_exists(ConversionException::class, 'conversionFailedInvalidType')
+            ? 'conversionFailedInvalidType'
+            : 'conversionFailed'; // @codeCoverageIgnore
+
+        throw ConversionException::$method(
             $value,
-            $this->getTypeName(),
+            $this->getName(),
             ['null', 'DateTime', 'Carbon']
         );
-    }
-
-    private function getTypeName(): string
-    {
-        $chunks = explode('\\', static::class);
-        $type = preg_replace('/Type$/', '', end($chunks));
-
-        return strtolower(preg_replace('/([a-z])([A-Z])/', '$1_$2', $type));
-    }
-
-    private function getMaximumPrecision(AbstractPlatform $platform): int
-    {
-        if ($platform instanceof DB2Platform) {
-            return 12;
-        }
-
-        if ($platform instanceof OraclePlatform) {
-            return 9;
-        }
-
-        if ($platform instanceof SQLServerPlatform || $platform instanceof SqlitePlatform) {
-            return 3;
-        }
-
-        return 6;
     }
 }

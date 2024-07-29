@@ -1,4 +1,4 @@
-# carbonphp/carbon-doctrine-types
+# carbon-doctrine-types
 
 Types to use Carbon in Doctrine
 
